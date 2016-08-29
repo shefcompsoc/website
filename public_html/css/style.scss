@@ -76,3 +76,21 @@ $nav-margin: 8px;
     }
   }
 }
+
+.committee-member {
+  margin-top: 16px;
+  padding: 8px;
+  background-color: $c-brand-primary;
+  color: $c-brand-secondary;
+  h3 {
+    margin-top: 0px;
+  }
+  .left {
+    float: left;
+    margin-right: 12px;
+  }
+  .right {
+    float: right;
+    display: block;
+  }
+}
