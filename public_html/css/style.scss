@@ -1,0 +1,32 @@
+$c-brand-primary: #4260ac;
+$c-brand-secondary: #eee;
+
+.page-header {
+  background-color: $c-brand-primary;
+  padding: 16px;
+  color: $c-brand-secondary;
+
+  .page-title {
+    h1.topline {
+      margin: 8px 0px 0px 0px;
+    }
+    h1.bottomline {
+      margin: 12px 0px 4px 0px;
+    }
+  }
+}
+
+.content {
+  article {
+    background-color: $c-brand-secondary;
+    padding: 2px 16px 6px 16px;
+    margin: 0px 0px 16px 0px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0px auto 10px auto;
+      display: block;
+    }
+  }
+}
