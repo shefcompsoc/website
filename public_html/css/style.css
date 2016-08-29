@@ -28,14 +28,16 @@
   #navbar-custom .right {
     float: right; }
 
-.content article {
-  background-color: #4260ac;
-  padding: 2px 16px 6px 16px;
-  margin: 0px 0px 16px 0px; }
-  .content article img {
-    max-width: 100%;
-    height: auto;
-    margin: 0px auto 10px auto;
-    display: block; }
+.content {
+  margin-top: 16px; }
+  .content article {
+    background-color: #4260ac;
+    padding: 2px 16px 6px 16px;
+    margin: 0px 0px 16px 0px; }
+    .content article img {
+      max-width: 100%;
+      height: auto;
+      margin: 0px auto 10px auto;
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */
