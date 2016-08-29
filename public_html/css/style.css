@@ -54,13 +54,14 @@
   padding: 8px;
   background-color: #4260ac;
   color: #eee; }
+  .committee-member p {
+    display: block; }
   .committee-member h3 {
     margin-top: 0px; }
   .committee-member .left {
     float: left;
     margin-right: 12px; }
-  .committee-member .right {
-    float: right;
-    display: block; }
+    .committee-member .left img {
+      margin-top: 8px; }
 
 /*# sourceMappingURL=style.css.map */

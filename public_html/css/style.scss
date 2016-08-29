@@ -82,15 +82,18 @@ $nav-margin: 8px;
   padding: 8px;
   background-color: $c-brand-primary;
   color: $c-brand-secondary;
+  p {
+    display: block;
+  }
   h3 {
     margin-top: 0px;
   }
   .left {
     float: left;
     margin-right: 12px;
+    img {
+      margin-top: 8px;
+    }
   }
-  .right {
-    float: right;
-    display: block;
-  }
+
 }
