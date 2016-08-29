@@ -16,6 +16,22 @@ $c-brand-secondary: #eee;
   }
 }
 
+#navbar-custom {
+  background-color: $c-brand-secondary;
+
+  ul {
+    li {
+      a:link {
+        color: $c-brand-primary;
+      }
+      a:hover {
+        color: $c-brand-secondary;
+        background-color: $c-brand-primary;
+      }
+    }
+  }
+}
+
 .content {
   article {
     background-color: $c-brand-secondary;
