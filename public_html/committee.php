@@ -67,7 +67,7 @@
 							<h3>Ben Clegg</h3>
 							<h4>Vice President</h4>
 							<div class="left">
-								<img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+								<img src="assets/committee/bclegg.jpg" alt="Sheffield Computer Science Society">
 							</div class="right">
 							<div>
 								<p>
