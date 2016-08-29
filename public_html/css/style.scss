@@ -53,6 +53,7 @@ $nav-margin: 8px;
   margin-top: 16px;
   article {
     background-color: $c-brand-primary;
+    color: $c-brand-secondary;
     padding: 2px 16px 6px 16px;
     margin: 0px 0px 16px 0px;
 
@@ -61,6 +62,17 @@ $nav-margin: 8px;
       height: auto;
       margin: 0px auto 10px auto;
       display: block;
+    }
+
+    a:link, a:visited, a:active {
+      text-decoration: underline;
+      color: $c-brand-secondary;
+      background-color: $c-brand-primary;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: $c-brand-primary;
+      background-color: $c-brand-secondary;
     }
   }
 }
