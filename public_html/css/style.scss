@@ -1,6 +1,8 @@
 $c-brand-primary: #4260ac;
 $c-brand-secondary: #eee;
 
+$nav-margin: 8px;
+
 .page-header {
   background-color: $c-brand-primary;
   padding: 16px;
@@ -17,24 +19,39 @@ $c-brand-secondary: #eee;
 }
 
 #navbar-custom {
-  background-color: $c-brand-secondary;
-
+  background-color: $c-brand-primary;
+  font-size: 12pt;
   ul {
     li {
-      a:link {
-        color: $c-brand-primary;
-      }
-      a:hover {
+      a:link, a:visited, a:active {
         color: $c-brand-secondary;
         background-color: $c-brand-primary;
       }
+      a:hover {
+        color: $c-brand-primary;
+        background-color: $c-brand-secondary;
+      }
     }
+  }
+  .img-responsive {
+    float: right;
+    padding-top: $nav-margin;
+    padding-bottom: $nav-margin;
+    display: block;
+    width: auto;
+  }
+  .left {
+    margin-top: $nav-margin;
+    float: left;
+  }
+  .right {
+    float: right;
   }
 }
 
 .content {
   article {
-    background-color: $c-brand-secondary;
+    background-color: $c-brand-primary;
     padding: 2px 16px 6px 16px;
     margin: 0px 0px 16px 0px;
 

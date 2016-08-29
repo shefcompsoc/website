@@ -8,15 +8,28 @@
     margin: 12px 0px 4px 0px; }
 
 #navbar-custom {
-  background-color: #eee; }
-  #navbar-custom ul li a:link {
-    color: #4260ac; }
-  #navbar-custom ul li a:hover {
+  background-color: #4260ac;
+  font-size: 12pt; }
+  #navbar-custom ul li a:link, #navbar-custom ul li a:visited, #navbar-custom ul li a:active {
     color: #eee;
     background-color: #4260ac; }
+  #navbar-custom ul li a:hover {
+    color: #4260ac;
+    background-color: #eee; }
+  #navbar-custom .img-responsive {
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+    width: auto; }
+  #navbar-custom .left {
+    margin-top: 8px;
+    float: left; }
+  #navbar-custom .right {
+    float: right; }
 
 .content article {
-  background-color: #eee;
+  background-color: #4260ac;
   padding: 2px 16px 6px 16px;
   margin: 0px 0px 16px 0px; }
   .content article img {
