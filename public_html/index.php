@@ -8,8 +8,8 @@
 	</head>
 
 	<body>
+    <?php include("header.html"); ?>
 		<div class="container">
-			<?php include("header.html"); ?>
 			<div class="content">
 
 			</div>
