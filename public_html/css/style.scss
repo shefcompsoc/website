@@ -3,36 +3,73 @@ $c-brand-secondary: #eee;
 
 $nav-margin: 8px;
 
-.page-header {
+$max-width: 1100px;
+
+@mixin site-width {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+body {
+  background-color: darken($c-brand-secondary, 5%);
+}
+
+header {
   background-color: $c-brand-primary;
-  padding: 16px;
+  padding: 20px;
   color: $c-brand-secondary;
+
+  > .row {
+    @include site-width;
+  }
+
+  .logo {
+    padding-right: 20px;
+  }
 
   .page-title {
     h1.topline {
-      margin: 8px 0px 0px 0px;
+      margin: 8px 0 0 0;
     }
     h1.bottomline {
-      margin: 12px 0px 4px 0px;
+      margin: 12px 0 0 0;
     }
+  }
+
+  .logo::after {
+    content: '';
+    display: block;
+    clear: both;
   }
 }
 
-#navbar-custom {
-  background-color: $c-brand-primary;
+nav {
+  padding: 10px 0;
+
+  background-color: darken($c-brand-primary, 5%);
   font-size: 12pt;
+
   ul {
+    @include site-width;
+
+    padding: 0;
+
     li {
-      a:link, a:visited, a:active {
+      a:link,
+      a:visited,
+      a:active {
         color: $c-brand-secondary;
         background-color: $c-brand-primary;
       }
+
       a:hover {
         color: $c-brand-primary;
-        background-color: $c-brand-secondary;
+        background-color: darken($c-brand-secondary, 5%);
       }
     }
   }
+
   .img-responsive {
     float: right;
     padding-top: $nav-margin;
@@ -40,10 +77,12 @@ $nav-margin: 8px;
     display: block;
     width: auto;
   }
+
   .left {
     margin-top: $nav-margin;
     float: left;
   }
+
   .right {
     float: right;
   }
