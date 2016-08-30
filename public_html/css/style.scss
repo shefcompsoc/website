@@ -26,10 +26,16 @@ header {
 
   .logo {
     padding-right: 20px;
+    text-align: center;
   }
 
   .title {
+    padding-top: 10px;
 
+    h1,
+    h2 {
+      margin: 5px;
+    }
   }
 }
 
@@ -57,14 +63,6 @@ nav {
         background-color: darken($c-brand-secondary, 5%);
       }
     }
-  }
-
-  .img-responsive {
-    float: right;
-    padding-top: $nav-margin;
-    padding-bottom: $nav-margin;
-    display: block;
-    width: auto;
   }
 }
 
