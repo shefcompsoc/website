@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<?php include("meta.html"); ?>
-		<meta name="description" content="Sheffield Computer Science Society">
-		<title>Sheffield Computer Science Society</title>
-	</head>
+  <head>
+    <?php include("meta.html"); ?>
+    <meta name="description" content="Sheffield Computer Science Society">
+    <title>Sheffield Computer Science Society</title>
+  </head>
 
-	<body>
+  <body>
     <?php include("header.html"); ?>
-		<div class="container">
-			<div class="content">
+    <div class="container">
+      <div class="content">
 
-			</div>
-		</div>
-	</body>
+      </div>
+    </div>
+  </body>
 </html>
