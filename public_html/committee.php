@@ -24,7 +24,9 @@
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  I’m secretary meaning I keep these nerds in check.
+                  Don’t mean to brag but I got an A-level in IT so I know my way around a spreadsheet or two.
+                  I get pretty mental on the Comp Sci socials - one time at uBuffet I <i>almost</i> managed to eat 30 slices of cake as a bet… I ate 7.
                 </p>
               </div>
               <div style="clear: both;"></div>
@@ -38,7 +40,7 @@
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  I’m the President which basically means I keep the society on track, and come up with fresh new ideas.
                 </p>
               </div>
               <div style="clear: both;"></div>
@@ -52,7 +54,9 @@
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  You got a problem? Somebody getting you down? Don’t feel like you can come to an event?
+                  Come on down to your friendly neighbourhood Inclusions Officer and let’s talk it out.
+                  Savings, savings and more savings as I solve your problems and make events cater to your specific needs! Come see Billy today!
                 </p>
               </div>
               <div style="clear: both;"></div>
@@ -66,7 +70,9 @@
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  My role is basically helping everyone do anything, and keeping things organised.
+                  Don't worry, I'm not planning on becoming a Frank Underwood.
+                  On a side note, do you have time to talk about our Lord and Saviour, Haxe?
                 </p>
               </div>
               <div style="clear: both;"></div>
