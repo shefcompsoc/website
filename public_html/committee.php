@@ -101,7 +101,7 @@
 
             <div class="committee-member">
               <h3>Joshua Case</h3>
-              <h4>Design</h4>
+              <h4>Media Team Member</h4>
               <div class="left">
                 <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
               </div>
@@ -115,7 +115,7 @@
 
             <div class="committee-member">
               <h3>Louis Thorpe-Monaghan</h3>
-              <h4>Design</h4>
+              <h4>Media Team Member</h4>
               <div class="left">
                 <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
               </div>
@@ -143,7 +143,7 @@
 
             <div class="committee-member">
               <h3>Rob Ede</h3>
-              <h4>Technical Events Coordinator, Design</h4>
+              <h4>Technical Events Coordinator, Media Team Member</h4>
               <div class="left">
                 <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
               </div>

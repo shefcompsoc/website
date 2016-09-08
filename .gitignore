@@ -2,3 +2,4 @@ node_modules/
 .sass-cache/
 public_html/css/style.css
 public_html/css/style.css.map
+*.log
