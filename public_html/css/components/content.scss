@@ -1,0 +1,52 @@
+.content {
+  margin-top: 16px;
+
+  article {
+    background-color: $c-brand-primary;
+    color: $c-brand-secondary;
+    padding: 2px 16px 6px;
+    margin: 0 0 16px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 10px;
+      display: block;
+    }
+  }
+
+  a:active,
+  a:link,
+  a:visited {
+    text-decoration: underline;
+    color: $c-brand-secondary;
+    background-color: $c-brand-primary;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $c-brand-primary;
+    background-color: $c-brand-secondary;
+  }
+
+  .page-title {
+    background-color: $c-brand-primary;
+    width: 100%;
+    padding-left: 8px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+
+    h1 {
+      font-size: 32pt;
+      color: $c-brand-secondary;
+    }
+  }
+
+  .general-text {
+    width: 100%;
+    padding: 12px 8px 8px;
+    background-color: $c-brand-primary;
+    color: $c-brand-secondary;
+  }
+}

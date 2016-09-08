@@ -2,7 +2,7 @@
 @import 'vendor/bootstrap';
 @import 'vendor/bootstrap-theme';
 
-// varaibles
+// variables
 @import 'variables/colors';
 @import 'variables/sizes';
 @import 'variables/mixins';
@@ -11,75 +11,7 @@
 @import 'components/body';
 @import 'components/header';
 @import 'components/nav';
+@import 'components/content';
 
-.content {
-  margin-top: 16px;
-  article {
-    background-color: $c-brand-primary;
-    color: $c-brand-secondary;
-    padding: 2px 16px 6px 16px;
-    margin: 0px 0px 16px 0px;
-
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 0px auto 10px auto;
-      display: block;
-    }
-
-  }
-  a:link, a:visited, a:active {
-      text-decoration: underline;
-      color: $c-brand-secondary;
-      background-color: $c-brand-primary;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: $c-brand-primary;
-      background-color: $c-brand-secondary;
-    }
-
-  .page-title {
-    background-color: $c-brand-primary;
-    width: 100%;
-    padding-left: 8px;
-    padding-top: 1px;
-    padding-bottom: 4px;
-    margin-bottom: 16px;
-
-    h1 {
-      font-size: 32pt;
-      color: $c-brand-secondary;
-    }
-  }
-
-  .general-text {
-    width: 100%;
-    padding: 8px;
-    padding-top: 12px;
-    background-color: $c-brand-primary;
-    color: $c-brand-secondary;
-  }
-}
-
-.committee-member {
-  margin-bottom: 16px;
-  padding: 8px;
-  background-color: $c-brand-primary;
-  color: $c-brand-secondary;
-  p {
-    display: block;
-  }
-  h3 {
-    margin-top: 0px;
-  }
-  .left {
-    float: left;
-    margin-right: 12px;
-    img {
-      margin-top: 8px;
-      max-width: 100px;
-      height: auto;
-    }
-  }
-}
+// page specific
+@import 'pages/committee';

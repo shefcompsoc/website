@@ -1,0 +1,38 @@
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  force-pseudo-nesting: 0
+  force-element-nesting: 0
+  force-attribute-nesting: 0
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+  leading-zero: 0
+  nesting-depth:
+    - 1
+    -
+      max-depth: 3
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-important: 2
+  no-qualifying-elements:
+    - 1
+    -
+      allow-element-with-attribute: true
+      allow-element-with-class: true
+      allow-element-with-id: false
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+  indentation:
+    - 2
+    -
+      size: 2
+  space-before-brace: 1
+  property-sort-order: 0
