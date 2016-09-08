@@ -12,7 +12,7 @@
     <div class="container">
       <div class="content">
 
-        <div class="subtitle">
+        <div class="page-title">
           <h1>Committee</h1>
         </div>
         

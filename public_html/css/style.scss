@@ -86,7 +86,9 @@ nav {
       display: block;
     }
 
-    a:link, a:visited, a:active {
+    
+  }
+  a:link, a:visited, a:active {
       text-decoration: underline;
       color: $c-brand-secondary;
       background-color: $c-brand-primary;
@@ -96,9 +98,8 @@ nav {
       color: $c-brand-primary;
       background-color: $c-brand-secondary;
     }
-  }
 
-  .subtitle {
+  .page-title {
     background-color: $c-brand-primary;
     width: 100%;
     padding-left: 8px;
@@ -110,6 +111,14 @@ nav {
       font-size: 32pt;
       color: $c-brand-secondary;
     }
+  }
+
+  .general-text {
+    width: 100%;
+    padding: 8px;
+    padding-top: 12px;
+    background-color: $c-brand-primary;
+    color: $c-brand-secondary;
   }
 }
 
