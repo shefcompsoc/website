@@ -3,3 +3,4 @@ node_modules/
 public_html/css/style.css
 public_html/css/style.css.map
 *.log
+.DS_Store
