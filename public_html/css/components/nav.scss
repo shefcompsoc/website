@@ -1,0 +1,29 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+nav {
+  padding: 10px 0;
+
+  background-color: darken($c-brand-primary, 5%);
+  font-size: 12pt;
+
+  ul {
+    @include site-width;
+
+    padding: 0;
+
+    li {
+      a:link,
+      a:visited {
+        color: $c-brand-secondary;
+        background-color: $c-brand-primary;
+      }
+
+      a:hover {
+        color: $c-brand-primary;
+        background-color: darken($c-brand-secondary, 5%);
+      }
+    }
+  }
+}

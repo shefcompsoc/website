@@ -1,75 +1,16 @@
-$c-brand-primary: #333;
-$c-brand-secondary: #93c11f;
+// vendor
+@import 'vendor/bootstrap';
+@import 'vendor/bootstrap-theme';
 
-$nav-margin: 8px;
+// varaibles
+@import 'variables/colors';
+@import 'variables/sizes';
+@import 'variables/mixins';
 
-$max-width: 1100px;
-
-@mixin site-width {
-  width: 100%;
-  max-width: $max-width;
-  margin: 0 auto;
-}
-
-body {
-  //background-color: #eee;
-  background-image: url("../assets/hexabump.png");
-  overflow-y: scroll;
-  background-repeat: repeat;
-}
-
-header {
-  background-color: $c-brand-primary;
-  padding: 20px;
-  color: $c-brand-secondary;
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 95%;
-    height: auto;
-  }
-
-  > .row {
-    @include site-width;
-  }
-
-  .logo {
-    padding-right: 20px;
-    text-align: center;
-  }
-
-  .title {
-    padding-top: 10px;
-  }
-}
-
-nav {
-  padding: 10px 0;
-
-  background-color: darken($c-brand-primary, 5%);
-  font-size: 12pt;
-
-  ul {
-    @include site-width;
-
-    padding: 0;
-
-    li {
-      a:link,
-      a:visited {
-        color: $c-brand-secondary;
-        background-color: $c-brand-primary;
-      }
-
-      a:hover {
-        color: $c-brand-primary;
-        background-color: darken($c-brand-secondary, 5%);
-      }
-    }
-  }
-}
+// common components
+@import 'components/body';
+@import 'components/header';
+@import 'components/nav';
 
 .content {
   margin-top: 16px;
@@ -86,7 +27,6 @@ nav {
       display: block;
     }
 
-    
   }
   a:link, a:visited, a:active {
       text-decoration: underline;
@@ -106,7 +46,7 @@ nav {
     padding-top: 1px;
     padding-bottom: 4px;
     margin-bottom: 16px;
-    
+
     h1 {
       font-size: 32pt;
       color: $c-brand-secondary;
