@@ -11,6 +11,9 @@
     <?php include("header.html"); ?>
     <div class="container">
       <div class="content">
+        <div class="subtitle">
+          <h1>Welcome!</h1>
+        </div>
 
       </div>
     </div>

@@ -12,6 +12,10 @@
     <div class="container">
       <div class="content">
 
+        <div class="subtitle">
+          <h1>Committee</h1>
+        </div>
+        
         <div class="row">
 
           <div class="col-md-6">

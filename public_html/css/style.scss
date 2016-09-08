@@ -12,10 +12,10 @@ $max-width: 1100px;
 }
 
 body {
-  background-color: #eee;
-  //background-image: url("../assets/bg.jpg");
-  //background-size: auto 100%;
+  //background-color: #eee;
+  background-image: url("../assets/hexabump.png");
   overflow-y: scroll;
+  background-repeat: repeat;
 }
 
 header {
@@ -95,6 +95,20 @@ nav {
       background-color: $c-brand-secondary;
     }
   }
+
+  .subtitle {
+    background-color: $c-brand-primary;
+    width: 100%;
+    padding-left: 8px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+    
+    h1 {
+      font-size: 32pt;
+      color: $c-brand-secondary;
+    }
+  }
 }
 
 .committee-member {
@@ -117,9 +131,4 @@ nav {
       height: auto;
     }
   }
-
-  .subtitle {
-    background-color: $c-brand-primary;
-  }
-
 }
