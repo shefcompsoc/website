@@ -3,6 +3,8 @@
 @import '../variables/mixins';
 
 header {
+  background: url('../assets/compsoc-bg.png') center center repeat;
+  background-size: 50%;
   background-color: $c-brand-primary;
   padding: 20px;
   color: $c-brand-secondary;
