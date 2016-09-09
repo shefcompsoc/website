@@ -3,10 +3,12 @@
 @import '../variables/mixins';
 
 .committee-member {
-  margin-bottom: 16px;
-  padding: 8px;
+  margin-bottom: 30px;
+  padding: 16px;
   background-color: $c-brand-primary;
   color: $c-brand-secondary;
+
+  border-radius: 5px;
 
   p {
     display: block;
@@ -22,8 +24,12 @@
 
     img {
       margin-top: 8px;
-      max-width: 100px;
+      width: 150px;
       height: auto;
+
+      border: 4px solid $cs-green3;
+      border-radius: 50%;
+      box-shadow: 0 0 8px $cs-green3;
     }
   }
 }

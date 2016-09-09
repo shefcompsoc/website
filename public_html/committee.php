@@ -15,7 +15,7 @@
         <div class="page-title">
           <h1>Committee</h1>
         </div>
-        
+
         <div class="row">
 
           <div class="col-md-6">
@@ -24,7 +24,7 @@
               <h3>Abby Smith</h3>
               <h4>Secretary</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/abby.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -40,7 +40,7 @@
               <h3>Andy Tyler</h3>
               <h4>President</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/andy.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -54,7 +54,7 @@
               <h3>Billy Dawson</h3>
               <h4>Inclusions Officer</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/billy.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -70,7 +70,7 @@
               <h3>Ben Clegg</h3>
               <h4>Vice President</h4>
               <div class="left">
-                <img src="assets/committee/bclegg.jpg" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/ben.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -87,7 +87,7 @@
               <h3>James Webb</h3>
               <h4>Social Secretary</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/james.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -107,7 +107,7 @@
               <h3>Joshua Case</h3>
               <h4>Media Team Member</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/josh.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -121,7 +121,7 @@
               <h3>Louis Thorpe-Monaghan</h3>
               <h4>Media Team Member</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/louis.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -135,7 +135,7 @@
               <h3>Martin Cnobel</h3>
               <h4>Sponsorship</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/martin.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -149,7 +149,7 @@
               <h3>Rob Ede</h3>
               <h4>Technical Events Coordinator, Media Team Member</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/rob.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
@@ -163,7 +163,7 @@
               <h3>Tom Borcherds</h3>
               <h4>Treasurer</h4>
               <div class="left">
-                <img src="assets/logoSquare.png" alt="Sheffield Computer Science Society">
+                <img src="assets/committee/tom.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
