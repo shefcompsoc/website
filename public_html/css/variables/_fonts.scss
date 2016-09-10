@@ -1,5 +1,5 @@
 // generates font face declarations
-@mixin fontface($name, $filename, $weight: 'normal', $style: 'normal', $exts: woff ttf eot, $path: '/fonts/') {
+@mixin fontface($name, $filename, $weight: 'normal', $style: 'normal', $exts: woff ttf eot, $path: '../fonts/') {
   $src: null;
 
   // generate src string
