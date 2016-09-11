@@ -167,7 +167,7 @@
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  hi im the treasurer, which is a p similar role to billys except the only problems i can help you with are ones related to neko atsume. ty for ur time
                 </p>
               </div>
               <div style="clear: both;"></div>
