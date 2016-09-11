@@ -139,7 +139,7 @@
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  As Company Interaction Officer, my job is to make us ~seem~ important so that companies will think we’re a big deal and give us money to.. Do stuff.. But they do offer job opportunities and internships, so it’s all good. I’m also pretty fun.
                 </p>
               </div>
               <div style="clear: both;"></div>
