@@ -111,7 +111,7 @@
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  I'm on the publicity team. This means that a third of the things you see on social media is from me. You know how you can talk to Billy about anything? Yeah, don't come to me. I'm known for being short and brown, and therefore I have a short temper. Have a nice day!
                 </p>
               </div>
               <div style="clear: both;"></div>
