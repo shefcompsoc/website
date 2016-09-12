@@ -147,13 +147,13 @@
 
             <div class="committee-member">
               <h3>Rob Ede</h3>
-              <h4>Technical Events Coordinator, Media Team Member</h4>
+              <h4>Technical Events Co-ordinator, Media Team Member</h4>
               <div class="left">
                 <img src="assets/committee/rob.jpg" alt="Sheffield Computer Science Society">
               </div>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros odio, dignissim vitae dignissim lobortis, lobortis at ex. Etiam neque nibh, pulvinar vitae urna eget, mattis dignissim sapien.
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none;">The Technical Events Co-ordinatior co-ordinates technical events. Let's say there's an event and it's somewhat technical, chances are I was the guy who co-ordinated it. This includes but is not limited to Gamejams, Linux Tutorials and L33T H4CX0R1NG. Don't worry though, only good hacking. Promise.</a>
                 </p>
               </div>
               <div style="clear: both;"></div>
