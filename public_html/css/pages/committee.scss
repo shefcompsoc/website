@@ -2,34 +2,50 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
+.committee-members {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;;
+  align-items: stretch;
+}
+
 .committee-member {
+  flex: 1 1 400px;
+
   margin-bottom: 30px;
-  padding: 16px;
+  padding: 20px;
   background-color: $c-brand-primary;
   color: $c-brand-secondary;
 
   border-radius: 5px;
 
-  p {
-    display: block;
-  }
-
   h3 {
     margin-top: 0;
+    font-family: Aleo;
   }
 
-  .left {
-    float: left;
-    margin-right: 12px;
+  .role {
+    font-size: 20px;
+    font-family: Aleo;
+    font-weight: 300;
+  }
 
-    img {
-      margin-top: 8px;
-      width: 150px;
-      height: auto;
+  div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
 
-      border: 4px solid $cs-green3;
-      border-radius: 50%;
-      box-shadow: 0 0 8px $cs-green3;
-    }
+  .avatar {
+    padding-right: 20px;
+  }
+
+  img {
+    margin-top: 8px;
+    width: 150px;
+    height: auto;
+
+    border: 4px solid $cs-green3;
+    border-radius: 50%;
   }
 }
