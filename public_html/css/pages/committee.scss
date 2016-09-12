@@ -14,8 +14,8 @@
   padding: 20px;
   margin: 5px;
 
-  background-color: $c-brand-primary;
-  color: $c-brand-secondary;
+  background-color: $cs-dark1;
+  color: $cs-green3;
 
   border-radius: 5px;
 
@@ -34,14 +34,18 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    flex-flow: row wrap;
   }
 
   .avatar {
-    padding-right: 20px;
+    flex: 1 0 auto;
+    padding: 20px;
+    padding-left: 0;
   }
 
   img {
-    margin-top: 8px;
+    margin: 0 auto;
+
     width: 150px;
     height: auto;
 
@@ -50,6 +54,8 @@
   }
 
   .bio {
+    flex: 1 1 250px;
+
     font-size: 16px;
     line-height: 1.6;
   }

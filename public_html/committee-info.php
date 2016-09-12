@@ -39,7 +39,7 @@
       'bio' => '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none;">The Technical Events Co-ordinatior co-ordinates technical events. Let\'s say there\'s an event and it\'s somewhat technical, chances are I was the guy who co-ordinated it. This includes but is not limited to Gamejams, Linux Tutorials and L33T H4CX0R1NG. Don\'t worry though, only good hacking. Promise.</a>',
     ], [
       'name' => 'Joshua Case',
-      'role' => 'Secretary',
+      'role' => 'Media Team Member',
       'avatar' => 'josh',
       'bio' => 'I\'m on the publicity team. This means that a third of the things you see on social media is from me. You know how you can talk to Billy about anything? Yeah, don\'t come to me. I\'m known for being short and brown, and therefore I have a short temper. Have a nice day!'
     ], [
