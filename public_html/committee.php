@@ -30,7 +30,7 @@
                 <div class="avatar">
                   <img src="assets/committee/<?= $comem["avatar"] ?>.jpg">
                 </div>
-                <p><?= $comem["bio"] ?></p>
+                <p class="bio"><?= $comem["bio"] ?></p>
               </div>
             </section>
           <?php } ?>

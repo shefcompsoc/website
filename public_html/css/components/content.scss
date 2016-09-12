@@ -30,7 +30,7 @@
   }
 
   .page-title {
-    background-color: $c-brand-primary;
+    // background-color: $c-brand-primary;
     width: 100%;
     padding-left: 8px;
     padding-top: 1px;
@@ -38,9 +38,12 @@
     margin-bottom: 16px;
 
     h1 {
-      font-size: 32pt;
+      font-size: 64px;
       font-family: Aleo;
-      color: $c-brand-secondary;
+      font-weight: 300;
+      color: $cs-green4;
+      text-shadow: 1px 1px 0 $cs-green3, 2px 2px 0 $cs-green2, 3px 3px 0 $cs-green1;
+
     }
   }
 
