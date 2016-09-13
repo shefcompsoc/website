@@ -42,6 +42,10 @@
 
 
 @include mq(mobile) {
+  .container {
+    padding: 0;
+  }
+
   .title {
     font-size: 3.5rem;
     padding-left: 0;

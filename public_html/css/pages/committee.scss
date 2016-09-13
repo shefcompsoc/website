@@ -75,6 +75,8 @@
 
 @include mq(mobile) {
   .committee-member {
+    margin: 5px 5px 0;
+
     .role p {
       padding-bottom: 20px;
     }
