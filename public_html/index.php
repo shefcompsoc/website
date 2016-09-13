@@ -13,7 +13,7 @@
       <div class="content">
         <h1 class="title">Welcome!</h1>
 
-        <div class="general-text">
+        <section class="intro">
           <p>Welcome to the University of Sheffield Computer Science Society!</p>
           <p>Every year we host a series of events with the aim of appealing to everyone interested in Computer Science at the University.</p>
           <p>These are some of the events we plan to run this academic year:</p>
@@ -28,7 +28,7 @@
             <li>GNU/Linux Tutorials</li>
           </ul>
           <p>Follow us on social media and <a href="http://signup.shefcompsoc.co.uk" target="_blank">signup to our mailing list</a> to receive event updates.</p>
-        </div>
+        </section>
 
 <!--
         <div class="page-title">
@@ -41,5 +41,6 @@
 
       </div>
     </div>
+    <?php include('footer.html'); ?>
   </body>
 </html>
