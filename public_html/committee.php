@@ -24,14 +24,16 @@
               $comem = $committee[$i];
           ?>
             <section class="committee-member">
-              <h3><?= $comem["name"] ?></h3>
-              <p class="role"><?= $comem["role"] ?></p>
-              <div>
+              <div class="info">
+                <div class="role">
+                  <h3><?= $comem["name"] ?></h3>
+                  <p><?= $comem["role"] ?></p>
+                </div>
                 <div class="avatar">
                   <img src="assets/committee/<?= $comem["avatar"] ?>.jpg">
                 </div>
-                <p class="bio"><?= $comem["bio"] ?></p>
               </div>
+              <p class="bio"><?= $comem["bio"] ?></p>
             </section>
           <?php } ?>
 

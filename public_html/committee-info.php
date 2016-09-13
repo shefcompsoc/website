@@ -34,9 +34,9 @@
       'bio' => 'hi im the treasurer, which is a p similar role to billys except the only problems i can help you with are ones related to neko atsume. ty for ur time'
     ], [
       'name' => 'Rob Ede',
-      'role' => 'Technical Events Co-ordinator, Media Team Member',
+      'role' => 'Technical Events <nobr>Co-ordinator</nobr>, Media Team Member',
       'avatar' => 'rob',
-      'bio' => '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none;">The Technical Events Co-ordinatior co-ordinates technical events. Let\'s say there\'s an event and it\'s somewhat technical, chances are I was the guy who co-ordinated it. This includes but is not limited to Gamejams, Linux Tutorials and L33T H4CX0R1NG. Don\'t worry though, only good hacking. Promise.</a>',
+      'bio' => '<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="text-decoration: none; color: inherit;">The Technical Events Co-ordinatior co-ordinates technical events. Let\'s say there\'s an event and it\'s somewhat technical, chances are I was the guy who co-ordinated it. This includes but is not limited to Gamejams, Linux Tutorials and L33T H4CX0R1NG. Don\'t worry though, only good hacking. Promise.</a>',
     ], [
       'name' => 'Joshua Case',
       'role' => 'Media Team Member',
@@ -51,7 +51,7 @@
       'name' => 'Martin Cnobel',
       'role' => 'Company Interactions Officer',
       'avatar' => 'martin',
-      'bio' => 'As Company Interaction Officer, my job is to make us ~seem~ important so that companies will think we’re a big deal and give us money to.. Do stuff.. But they do offer job opportunities and internships, so it’s all good. I’m also pretty fun.'
+      'bio' => 'As Company Interaction Officer, my job is to make us <i>seem</i> important so that companies will think we’re a big deal and give us money to.. Do stuff.. But they do offer job opportunities and internships, so it’s all good. I’m also pretty fun.'
     ]
   ];
 ?>

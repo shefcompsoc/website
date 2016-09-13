@@ -5,7 +5,7 @@
 .committee-members {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;;
+  justify-content: space-between;
   align-items: stretch;
 }
 
@@ -14,49 +14,77 @@
   padding: 20px;
   margin: 5px;
 
-  background-color: $cs-dark1;
+  background: url('../assets/compsoc-bg.png') center center repeat $cs-dark1;
+  background-size: cover;
   color: $cs-green3;
 
   border-radius: 5px;
 
-  h3 {
-    margin-top: 0;
-    font-family: Aleo;
-  }
-
-  .role {
-    font-size: 20px;
-    font-family: Aleo;
-    font-weight: 300;
-  }
-
-  div {
+  .info {
     display: flex;
     justify-content: left;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row-reverse wrap;
+
+    color: $cs-green4;
+    font-size: 20px;
+    font-family: Aleo;
+
+    h3 {
+      margin: 5px 0;
+
+      font-size: 2.2rem;
+      font-family: Aleo;
+    }
+
+    p {
+      margin: 0;
+
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  }
+
+  .role {
+    flex: 3 1;
+    padding-left: 20px;
   }
 
   .avatar {
-    flex: 1 0 auto;
-    padding: 20px;
-    padding-left: 0;
-  }
+    flex: 1 0;
 
-  img {
-    margin: 0 auto;
+    img {
+      margin: 0;
+      width: 150px;
+      height: auto;
 
-    width: 150px;
-    height: auto;
-
-    border: 4px solid $cs-green3;
-    border-radius: 50%;
+      border: 4px solid $cs-green3;
+      border-radius: 50%;
+    }
   }
 
   .bio {
-    flex: 1 1 250px;
+    padding-top: 20px;
 
-    font-size: 16px;
+    color: $cs-green3;
+    font-size: 1.2rem;
     line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .committee-member {
+    .role p {
+      padding-bottom: 20px;
+    }
+
+    .info {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .bio {
+      text-align: left;
+    }
   }
 }

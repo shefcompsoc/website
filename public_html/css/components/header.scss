@@ -3,11 +3,11 @@
 @import '../variables/mixins';
 
 header {
-  background: url('../assets/compsoc-bg.png') center center repeat;
-  background-size: 50%;
-  background-color: $c-brand-primary;
+  background: url('../assets/compsoc-bg.png') center center repeat $cs-dark1;
+  background-size: 80%;
   padding: 20px;
-  color: $c-brand-secondary;
+
+  color: $cs-green3;
 
   img {
     display: block;
