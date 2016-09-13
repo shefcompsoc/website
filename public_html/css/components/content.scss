@@ -26,31 +26,27 @@
   a:hover {
     text-decoration: underline;
     color: $c-brand-primary;
-    background-color: $c-brand-secondary;
   }
+}
 
-  .page-title {
-    // background-color: $c-brand-primary;
-    width: 100%;
-    padding-left: 8px;
-    padding-top: 1px;
-    padding-bottom: 4px;
-    margin-bottom: 16px;
+.title {
+  margin: 0.2em 0 0.4em;
 
-    h1 {
-      font-size: 64px;
-      font-family: Aleo;
-      font-weight: 300;
-      color: $cs-green4;
-      text-shadow: 1px 1px 0 $cs-green3, 2px 2px 0 $cs-green2, 3px 3px 0 $cs-green1;
+  padding-left: 20px;
 
-    }
-  }
+  font-size: 4rem;
+  font-family: Aleo;
+  font-weight: 300;
+  color: $cs-green4;
 
-  .general-text {
-    width: 100%;
-    padding: 12px 8px 8px;
-    background-color: $c-brand-primary;
-    color: $c-brand-secondary;
+  text-shadow: 1px 1px 0 $cs-green3, 2px 2px 0 $cs-green2, 3px 3px 0 $cs-green1;
+}
+
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 3.5rem;
+    padding-left: 0;
+    text-align: center;
   }
 }

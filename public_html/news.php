@@ -11,9 +11,7 @@
     <?php include("header.html"); ?>
     <div class="container">
       <div class="content">
-        <div class="page-title">
-          <h1>News</h1>
-        </div>
+        <h1 class="title">News</h1>
 
         <?php require "wp-blog-header.php";?>
         <?php

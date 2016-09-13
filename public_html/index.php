@@ -11,9 +11,7 @@
     <?php include("header.html"); ?>
     <div class="container">
       <div class="content">
-        <div class="page-title">
-          <h1>Welcome!</h1>
-        </div>
+        <h1 class="title">Welcome!</h1>
 
         <div class="general-text">
           <p>Welcome to the University of Sheffield Computer Science Society!</p>
