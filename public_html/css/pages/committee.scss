@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@include mq(mobile) {
   .committee-member {
     .role p {
       padding-bottom: 20px;

@@ -43,7 +43,7 @@
 }
 
 
-@media (max-width: 480px) {
+@include mq(mobile) {
   .title {
     font-size: 3.5rem;
     padding-left: 0;
