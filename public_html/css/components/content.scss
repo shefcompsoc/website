@@ -2,8 +2,8 @@
   margin-top: 16px;
 
   article {
-    background-color: $c-brand-primary;
-    color: $c-brand-secondary;
+    background-color: $cs-dark1;
+    color: $cs-green3;
     padding: 2px 16px 6px;
     margin: 0 0 16px;
 
@@ -18,14 +18,12 @@
   a:active,
   a:link,
   a:visited {
-    text-decoration: underline;
-    color: $c-brand-secondary;
-    background-color: $c-brand-primary;
+    color: $cs-green4;
+    text-decoration: none;
   }
 
   a:hover {
     text-decoration: underline;
-    color: $c-brand-primary;
   }
 }
 

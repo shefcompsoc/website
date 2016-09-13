@@ -1,0 +1,11 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+.intro {
+  padding: 20px;
+
+  background: $cs-dark1;
+
+  color: $cs-green3;
+}

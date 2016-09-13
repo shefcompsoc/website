@@ -5,7 +5,7 @@
 nav {
   padding: 10px 0;
 
-  background-color: darken($c-brand-primary, 5%);
+  background-color: darken($cs-dark1, 5%);
   font-size: 12pt;
 
   ul {
@@ -16,13 +16,13 @@ nav {
     li {
       a:link,
       a:visited {
-        color: $c-brand-secondary;
-        background-color: $c-brand-primary;
+        color: $cs-green3;
+        background-color: $cs-dark1;
       }
 
       a:hover {
-        color: $c-brand-primary;
-        background-color: darken($c-brand-secondary, 5%);
+        color: $cs-dark1;
+        background-color: darken($cs-green3, 5%);
       }
     }
   }

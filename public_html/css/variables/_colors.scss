@@ -5,8 +5,7 @@ $cs-green3: #93c11f;
 $cs-green4: #b6cd01;
 
 // greys
-$cs-dark1: #222222;
+$cs-dark1: #222;
 $cs-dark2: lighten($cs-dark1, 5%);
-
-$c-brand-primary: $cs-dark1;
-$c-brand-secondary: $cs-green3;
+$cs-dark3: lighten($cs-dark1, 10%);
+$cs-dark4: lighten($cs-dark1, 15%);
