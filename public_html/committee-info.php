@@ -9,7 +9,7 @@
       'name' => 'Ben Clegg',
       'role' => 'Vice President',
       'avatar' => 'ben',
-      'bio' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      'bio' => 'My role is basically helping everyone do anything, and keeping things organised.<br>Don\'t worry, I\'m not planning on becoming a Frank Underwood.<br>On a side note, do you have time to talk about our Lord and Saviour, Haxe?'
     ], [
       'name' => 'Abby Smith',
       'role' => 'Secretary',
@@ -46,7 +46,7 @@
       'name' => 'Louis Thorpe-Monaghan',
       'role' => 'Media Team Member',
       'avatar' => 'louis',
-      'bio' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      'bio' => 'As a member of the Media Team, I am (at least partly) responsible for making sure everything looks suitably "bourgeois", "on point", "dank" and other popular words for describing the aesthetics of our society. Most importantly, if you feel uncomfortable by any of our font choices (say, oh I don\'t know, a rogue Comic Sans making an appearance), remember - IT\'S NOT MY FAULT BLAME ROB OR JOSH.'
     ], [
       'name' => 'Martin Cnobel',
       'role' => 'Company Interactions Officer',
