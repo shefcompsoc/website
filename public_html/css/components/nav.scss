@@ -2,7 +2,7 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
-nav {
+body > nav {
   padding: 10px 0;
 
   background-color: darken($cs-dark1, 5%);

@@ -1,0 +1,28 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+footer {
+  width: 100%;
+  background: $cs-dark1;
+}
+
+.footer {
+  @include site-width;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  .logo {
+    flex: 1;
+    text-align: right;
+  }
+
+  .social {
+    flex: 1;
+    text-align: left;
+  }
+
+}
