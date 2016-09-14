@@ -4,6 +4,9 @@
 
 footer {
   width: 100%;
+  margin-top: 20px;
+  padding: 40px;
+
   background: $cs-dark1;
 }
 
@@ -13,16 +16,56 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   .logo {
     flex: 1;
     text-align: right;
+
+    img {
+      max-width: 200px;
+      height: auto;
+    }
   }
 
   .social {
     flex: 1;
     text-align: left;
-  }
 
+    ul {
+      padding-top: 15px;
+      padding-left: 30px;
+      margin: 0;
+
+      list-style-type: none;
+    }
+
+    a {
+      color: $cs-green4;
+      font-size: 1.5rem;
+      font-family: Aleo;
+      font-weight: 300;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background: $cs-green4;
+        width: 0;
+        position: relative;
+        top: -2px;
+        left: -4px;
+        transition: width 200ms ease-in-out;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        width: 110px;
+      }
+    }
+  }
 }
