@@ -17,19 +17,19 @@ const paths = {
 // Build Tasks
 gulp.task('sass', () => {
   return gulp.src(paths.sassEntry)
-    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init()) // not in production
     .pipe(sass({
       outputStyle: 'compact'
     }).on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(purifycss(paths.markup))
+    // .pipe(purifycss(paths.markup)) // only in production
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
     }))
-    .pipe(cleancss({
-      keepBreaks: true
-    }))
-    .pipe(sourcemaps.write())
+    // .pipe(cleancss({ // only in production
+    //   keepBreaks: true
+    // }))
+    .pipe(sourcemaps.write()) // not in production
     .pipe(gulp.dest(paths.cssOut))
     .pipe(livereload())
 })
@@ -39,8 +39,7 @@ gulp.task('markup', () => {
     .pipe(livereload())
 })
 
-// Watcher
-
+// Watch tasks
 gulp.task('observe', () => {
   livereload.listen()
 
