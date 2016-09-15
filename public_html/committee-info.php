@@ -9,7 +9,7 @@
       'name' => 'Ben Clegg',
       'role' => 'Vice President',
       'avatar' => 'ben',
-      'bio' => 'My role is basically helping everyone do anything, and keeping things organised.<br>Don\'t worry, I\'m not planning on becoming a Frank Underwood.<br>On a side note, do you have time to talk about our Lord and Saviour, Haxe?'
+      'bio' => 'My role is basically helping everyone do anything, and keeping things organised. Don\'t worry, I\'m not planning on becoming a Frank Underwood. On a side note, do you have time to talk about our Lord and Saviour, Haxe?'
     ], [
       'name' => 'Abby Smith',
       'role' => 'Secretary',
