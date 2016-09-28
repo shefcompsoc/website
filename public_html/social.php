@@ -22,13 +22,13 @@
               </div>
               <figcaption>
                 <h1>Slack</h1>
-                <p>shefcompsoc.slack.com</p>
+                <p>shefcompsoc<wrb>.slack.com</p>
               </figcaption>
             </figure>
           </a>
           <br>
           <p>
-            Slack is a great messaging platform for teams. Seperate channels means you only see what you want to.
+            Slack is a great messaging platform for teams. Seperate channels means you only see what you want to. You can sign-up without an invite using your Sheffield email.
           </p>
 
           <p>
