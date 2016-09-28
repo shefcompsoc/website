@@ -14,6 +14,56 @@
 
         <h1 class="title">Social</h1>
 
+        <section id="slack" class="social">
+          <a href="https://www.facebook.com/shefcompsoc/">
+            <figure>
+              <div>
+                <img src="assets/slack.png" alt="">
+              </div>
+              <figcaption>
+                <h1>Slack</h1>
+                <p>shefcompsoc.slack.com</p>
+              </figcaption>
+            </figure>
+          </a>
+          <br>
+          <p>
+            Slack is a great messaging platform for teams. Seperate channels means you only see what you want to.
+          </p>
+
+          <p>
+            We will be posting event announcements, internship and career adverts as well as being the place to use the various integrations for team project work.
+          </p>
+        </section>
+
+        <section id="twitter" class="social">
+          <a href="https://www.twitter.com/shefcompsoc/">
+            <figure>
+              <div>
+                <img src="assets/twitter.png" alt="">
+              </div>
+              <figcaption>
+                <h1>Twitter</h1>
+                <p>@shefcompsoc</p>
+              </figcaption>
+            </figure>
+          </a>
+        </section>
+
+        <section id="instagram" class="social">
+          <a href="https://www.instagram.com/shefcompsoc/">
+            <figure>
+              <div>
+                <img src="assets/instagram.png" alt="">
+              </div>
+              <figcaption>
+                <h1>Instagram</h1>
+                <p>@shefcompsoc</p>
+              </figcaption>
+            </figure>
+          </a>
+        </section>
+
         <section id="facebook" class="social">
           <h1>Facebook</h1>
 

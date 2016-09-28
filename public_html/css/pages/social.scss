@@ -25,12 +25,18 @@ section.social {
   }
 
   figure {
+    display: flex;
+    flex-flow: row wrap;
+
+    div {
+      flex: 1;
+    }
 
     img {
-      display: inline;
-      width: 100%;
       max-width: 5rem;
       max-height: auto;
+      width: auto;
+      height: auto;
       margin: 0 auto;
       padding-right: 20px;
 
@@ -38,10 +44,23 @@ section.social {
     }
 
     figcaption {
-      display: inline;
+      flex: 7;
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
 
       vertical-align: middle;
       font-size: 2rem;
+
+      h1 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
     }
   }
 
