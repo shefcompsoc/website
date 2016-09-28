@@ -74,6 +74,12 @@
             </figure>
           </a>
           <br>
+          <a href="https://www.facebook.com/groups/879150085447908/">
+            <figure>
+              <img src="assets/fb_logo.png" alt="">
+              <figcaption>CompSoc General Chat</figcaption>
+            </figure>
+          </a>
           <a href="https://www.facebook.com/groups/1788205561451417/">
             <figure>
               <img src="assets/fb_logo.png" alt="">
