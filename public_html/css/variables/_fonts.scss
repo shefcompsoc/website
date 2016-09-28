@@ -25,3 +25,16 @@
 @include fontface('Aleo', 'aleo-italic', 400, 'italic');
 @include fontface('Aleo', 'aleo-bolditalic', 700, 'italic');
 @include fontface('Aleo', 'aleo-lightitalic', 300, 'italic');
+
+@include fontface('Source Sans Pro', 'sourcesanspro-regular', 400);
+@include fontface('Source Sans Pro', 'sourcesanspro-light', 300);
+@include fontface('Source Sans Pro', 'sourcesanspro-extralight', 200);
+@include fontface('Source Sans Pro', 'sourcesanspro-semibold', 600);
+@include fontface('Source Sans Pro', 'sourcesanspro-bold', 700);
+@include fontface('Source Sans Pro', 'sourcesanspro-black', 900);
+@include fontface('Source Sans Pro', 'sourcesanspro-regular', 400, 'italic');
+@include fontface('Source Sans Pro', 'sourcesanspro-light', 300, 'italic');
+@include fontface('Source Sans Pro', 'sourcesanspro-extralight', 200, 'italic');
+@include fontface('Source Sans Pro', 'sourcesanspro-semibold', 600, 'italic');
+@include fontface('Source Sans Pro', 'sourcesanspro-bold', 700, 'italic');
+@include fontface('Source Sans Pro', 'sourcesanspro-black', 900, 'italic');
