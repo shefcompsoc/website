@@ -15,7 +15,7 @@
         <h1 class="title">Social</h1>
 
         <section id="slack" class="social">
-          <a href="https://www.facebook.com/shefcompsoc/">
+          <a href="https://shefcompsoc.slack.com/">
             <figure>
               <div>
                 <img src="assets/slack.png" alt="">
