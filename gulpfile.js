@@ -15,21 +15,35 @@ const paths = {
 }
 
 // Build Tasks
-gulp.task('sass', () => {
+gulp.task('sass:dist', () => {
   return gulp.src(paths.sassEntry)
-    .pipe(sourcemaps.init()) // not in production
     .pipe(sass({
       outputStyle: 'compact'
     }).on('error', sass.logError))
     .pipe(concat('style.css'))
-    // .pipe(purifycss(paths.markup)) // only in production
+    .pipe(purifycss(paths.markup))
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
     }))
-    // .pipe(cleancss({ // only in production
-    //   keepBreaks: true
-    // }))
-    .pipe(sourcemaps.write()) // not in production
+    .pipe(cleancss({
+      keepBreaks: true
+    }))
+    .pipe(gulp.dest(paths.cssOut))
+    .pipe(livereload())
+})
+
+// Build Tasks
+gulp.task('sass', () => {
+  return gulp.src(paths.sassEntry)
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      outputStyle: 'compact'
+    }).on('error', sass.logError))
+    .pipe(concat('style.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 3 versions']
+    }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.cssOut))
     .pipe(livereload())
 })
@@ -47,6 +61,7 @@ gulp.task('observe', () => {
   gulp.watch(paths.sass, ['sass'])
 })
 
+gulp.task('build:dist', ['sass:dist'])
 gulp.task('build', ['sass'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
