@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: url('../assets/hexabump.png') repeat top center $cs-light1;
+  background: $cs-dark3;
   overflow-y: scroll;
 
   font-size: 16px;

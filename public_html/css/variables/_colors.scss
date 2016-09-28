@@ -14,3 +14,7 @@ $cs-dark6: lighten($cs-dark1, 25%);
 
 // lights
 $cs-light1: #ddd;
+$cs-light2: darken($cs-light1, 5%);
+$cs-light3: darken($cs-light1, 10%);
+$cs-light4: darken($cs-light1, 15%);
+$cs-light5: darken($cs-light1, 20%);
