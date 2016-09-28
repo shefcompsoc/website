@@ -34,6 +34,14 @@
           <p>
             We will be posting event announcements, internship and career adverts as well as being the place to use the various integrations for team project work.
           </p>
+
+          <ul>
+            <li>#firstyear - First Years</li>
+            <li>#secondyear - Second Years</li>
+            <li>#thirdyear - Third Years and above</li>
+            <li>#yearout - Year In Industry</li>
+            <li>#postgrads - Postgraduates and PhDs</li>
+          </ul>
         </section>
 
         <section id="twitter" class="social">
@@ -80,6 +88,7 @@
               <figcaption>CompSoc General Chat</figcaption>
             </figure>
           </a>
+          <br>
           <a href="https://www.facebook.com/groups/1788205561451417/">
             <figure>
               <img src="assets/fb_logo.png" alt="">

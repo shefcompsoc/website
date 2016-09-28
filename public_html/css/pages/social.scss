@@ -24,9 +24,18 @@ section.social {
     margin: 0 auto;
   }
 
+  a:hover {
+    text-decoration: none;
+
+    figure figcaption::after {
+      width: 100%;
+    }
+  }
+
   figure {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 
     div {
       flex: 1;
@@ -46,19 +55,30 @@ section.social {
     figcaption {
       flex: 7;
 
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: center;
-
-      vertical-align: middle;
       font-size: 2rem;
 
+      &::after {
+        content: '';
+        display: block;
+        position: relative;
+        left: -10px;
+        // margin: 0 auto;
+        width: 0;
+        height: 1px;
+
+        background: currentColor;
+
+        transition: width 300ms ease;
+      }
+
       h1 {
+        display: inline-block;
         margin: 0;
+        padding-right: 1em;
       }
 
       p {
+        display: inline-block;
         margin: 0;
       }
     }
