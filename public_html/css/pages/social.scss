@@ -23,4 +23,27 @@ section.social {
     max-height: auto;
     margin: 0 auto;
   }
+
+  figure {
+
+    img {
+      display: inline;
+      width: 100%;
+      max-width: 5rem;
+      max-height: auto;
+      margin: 0 auto;
+      padding-right: 20px;
+
+      vertical-align: middle;
+    }
+
+    figcaption {
+      display: inline;
+
+      vertical-align: middle;
+      font-size: 2rem;
+    }
+  }
+
+
 }
