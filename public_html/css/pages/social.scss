@@ -1,0 +1,26 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+section.social {
+  padding: 20px;
+
+  background: $cs-dark2;
+  color: $cs-green4;
+
+  h1 {
+    font-family: Aleo;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px dashed $cs-dark6;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    max-height: auto;
+    margin: 0 auto;
+  }
+}
