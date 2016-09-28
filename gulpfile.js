@@ -8,8 +8,8 @@ const purifycss = require('gulp-purifycss')
 const sourcemaps = require('gulp-sourcemaps')
 
 const paths = {
-  markup: ['./**/*.{html,php}'],
-  sass: ['./**/*.{sass,scss}'],
+  markup: ['./**/*.{html,php}', '!./node_modules/**'],
+  sass: ['./**/*.{sass,scss}', '!./node_modules/**'],
   sassEntry: ['./public_html/css/style.scss'],
   cssOut: './public_html/css'
 }
