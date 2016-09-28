@@ -41,6 +41,9 @@
             <li>#thirdyear - Third Years and above</li>
             <li>#yearout - Year In Industry</li>
             <li>#postgrads - Postgraduates and PhDs</li>
+            <br>
+            <li>#internships - Internship opportunities as they arrive</li>
+            <li>#careers - Job opportunities and career information</li>
           </ul>
         </section>
 
