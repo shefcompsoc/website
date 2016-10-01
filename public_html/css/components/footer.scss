@@ -19,17 +19,17 @@ footer {
   align-items: center;
 
   .logo {
-    flex: 1;
+    flex: 1 1;
     text-align: right;
 
     img {
-      max-width: 200px;
+      max-width: 180px;
       height: auto;
     }
   }
 
   .social {
-    flex: 1;
+    flex: 1 0;
     text-align: left;
 
     ul {
@@ -64,7 +64,8 @@ footer {
 
       &:hover::after,
       &:focus::after {
-        width: 110px;
+        width: 150px;
+        max-width: 100%;
       }
     }
   }

@@ -22,7 +22,7 @@
               </div>
               <figcaption>
                 <h1>Slack</h1>
-                <p>shefcompsoc<wrb>.slack.com</p>
+                <p>shefcompsoc<wbr>.slack.com</p>
               </figcaption>
             </figure>
           </a>
