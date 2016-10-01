@@ -1,5 +1,5 @@
 // generates font face declarations
-@mixin fontface($name, $filename, $weight: 'normal', $style: 'normal', $exts: woff ttf eot, $path: '../fonts/') {
+@mixin fontface($name, $filename, $weight: normal, $style: normal, $exts: woff ttf eot, $path: '../fonts/') {
   $src: null;
 
   // generate src string
@@ -22,9 +22,9 @@
 @include fontface('Aleo', 'aleo-regular', 400);
 @include fontface('Aleo', 'aleo-light', 300);
 @include fontface('Aleo', 'aleo-bold', 700);
-@include fontface('Aleo', 'aleo-italic', 400, 'italic');
-@include fontface('Aleo', 'aleo-bolditalic', 700, 'italic');
-@include fontface('Aleo', 'aleo-lightitalic', 300, 'italic');
+@include fontface('Aleo', 'aleo-italic', 400, italic);
+@include fontface('Aleo', 'aleo-bolditalic', 700, italic);
+@include fontface('Aleo', 'aleo-lightitalic', 300, italic);
 
 @include fontface('Source Sans Pro', 'sourcesanspro-regular', 400);
 @include fontface('Source Sans Pro', 'sourcesanspro-light', 300);
@@ -32,9 +32,9 @@
 @include fontface('Source Sans Pro', 'sourcesanspro-semibold', 600);
 @include fontface('Source Sans Pro', 'sourcesanspro-bold', 700);
 @include fontface('Source Sans Pro', 'sourcesanspro-black', 900);
-@include fontface('Source Sans Pro', 'sourcesanspro-regular', 400, 'italic');
-@include fontface('Source Sans Pro', 'sourcesanspro-light', 300, 'italic');
-@include fontface('Source Sans Pro', 'sourcesanspro-extralight', 200, 'italic');
-@include fontface('Source Sans Pro', 'sourcesanspro-semibold', 600, 'italic');
-@include fontface('Source Sans Pro', 'sourcesanspro-bold', 700, 'italic');
-@include fontface('Source Sans Pro', 'sourcesanspro-black', 900, 'italic');
+@include fontface('Source Sans Pro', 'sourcesanspro-italic', 400, italic);
+@include fontface('Source Sans Pro', 'sourcesanspro-lightitalic', 300, italic);
+@include fontface('Source Sans Pro', 'sourcesanspro-extralightitalic', 200, italic);
+@include fontface('Source Sans Pro', 'sourcesanspro-semibolditalic', 600, italic);
+@include fontface('Source Sans Pro', 'sourcesanspro-bolditalic', 700, italic);
+@include fontface('Source Sans Pro', 'sourcesanspro-blackitalic', 900, italic);
