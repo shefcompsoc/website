@@ -28,7 +28,7 @@
           </a>
           <br>
           <p>
-            Slack is a great messaging platform for teams. Seperate channels means you only see what you want to. You can sign-up without an invite using your Sheffield email.
+            <a href="https://www.youtube.com/watch?v=9RJZMSsH7-g">Slack is a great messaging platform for teams.</a> Seperate channels means you only see what you want to. You can sign-up without an invite using your Sheffield email.
           </p>
 
           <p>
