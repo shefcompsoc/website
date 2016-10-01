@@ -83,6 +83,18 @@ section.social {
       }
     }
   }
+}
 
+@include mq(small) {
+  section.social {
+    figure {
+      img {
+        max-width: 4rem;
+      }
 
+      figcaption {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
