@@ -3,7 +3,19 @@
 @import '../variables/mixins';
 
 .nav {
-  background-color: $cs-dark0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: transparentize($cs-dark0, 0.05);
+}
+
+@supports (backdrop-filter: blur(0)) {
+  .nav {
+    background-color: transparentize($cs-dark0, 0.2);
+    backdrop-filter: blur(6px);
+  }
 }
 
 .nav nav {
@@ -12,22 +24,26 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 
   font-size: 1rem;
 
   a:link,
   a:visited {
     flex: 1 0 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     padding: 20px;
 
     font-size: 1.25rem;
     line-height: 1;
     font-family: Aleo;
     font-weight: 300;
-    font-style: normal;
-    color: $cs-green3;
     text-align: center;
+    color: $cs-green3;
   }
 
   a:hover {
