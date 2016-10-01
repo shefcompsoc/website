@@ -2,28 +2,33 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
-body > nav {
-  padding: 10px 0;
+.nav {
+  background-color: $cs-dark0;
+}
 
-  background-color: darken($cs-dark1, 5%);
+.nav nav {
+  @include site-width;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
   font-size: 1rem;
 
-  ul {
-    @include site-width;
+  a:link,
+  a:visited {
+    flex: 1 0 150px;
+    padding: 10px 20px;
 
-    padding: 0;
+    color: $cs-green3;
+    text-align: center;
+  }
 
-    li {
-      a:link,
-      a:visited {
-        color: $cs-green3;
-        background-color: $cs-dark1;
-      }
+  a:hover {
+    background-color: $cs-green2;
 
-      a:hover {
-        color: $cs-dark1;
-        background-color: darken($cs-green3, 5%);
-      }
-    }
+    text-decoration: none;
+    color: $cs-dark1;
   }
 }
