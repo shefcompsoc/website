@@ -42,7 +42,7 @@ footer {
 
     a {
       color: $cs-green4;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-family: Aleo;
       font-weight: 300;
 
@@ -64,7 +64,7 @@ footer {
 
       &:hover::after,
       &:focus::after {
-        width: 150px;
+        width: 120px;
         max-width: 100%;
       }
     }
