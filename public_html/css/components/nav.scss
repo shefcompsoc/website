@@ -19,8 +19,13 @@
   a:link,
   a:visited {
     flex: 1 0 150px;
-    padding: 10px 20px;
+    padding: 20px;
 
+    font-size: 1.25rem;
+    line-height: 1;
+    font-family: Aleo;
+    font-weight: 300;
+    font-style: normal;
     color: $cs-green3;
     text-align: center;
   }
