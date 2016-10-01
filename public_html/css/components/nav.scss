@@ -18,6 +18,12 @@
   }
 }
 
+@include mq(small) {
+  .nav {
+    position: static;
+  }
+}
+
 .nav nav {
   @include site-width;
 
