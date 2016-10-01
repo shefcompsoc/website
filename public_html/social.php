@@ -36,9 +36,9 @@
           </p>
 
           <ul>
-            <li>#firstyear - First Years</li>
-            <li>#secondyear - Second Years</li>
-            <li>#thirdyear - Third Years and above</li>
+            <li>#cs1 - First Years</li>
+            <li>#cs2 - Second Years</li>
+            <li>#cs3plus - Third Years and above</li>
             <li>#yearout - Year In Industry</li>
             <li>#postgrads - Postgraduates and PhDs</li>
             <br>
