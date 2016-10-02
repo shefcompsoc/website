@@ -11,6 +11,7 @@ const paths = {
   markup: ['./**/*.{html,php}', '!./node_modules/**'],
   sass: ['./**/*.{sass,scss}', '!./node_modules/**'],
   sassEntry: ['./public_html/css/style.scss'],
+  scripts: ['./public_html/scripts/**/*.js'],
   cssOut: './public_html/css'
 }
 
@@ -21,7 +22,7 @@ gulp.task('sass:dist', () => {
       outputStyle: 'compact'
     }).on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(purifycss(paths.markup))
+    .pipe(purifycss([paths.markup, paths.scripts]))
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
     }))
