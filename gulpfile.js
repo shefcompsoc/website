@@ -22,7 +22,7 @@ gulp.task('sass:dist', () => {
       outputStyle: 'compact'
     }).on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(purifycss([paths.markup, paths.scripts]))
+    .pipe(purifycss(paths.markup.concat(paths.scripts)))
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
     }))

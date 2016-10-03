@@ -24,6 +24,12 @@
   }
 }
 
+@media only screen and (max-height: 500px) {
+  .nav {
+    position: static;
+  }
+}
+
 .nav nav {
   @include site-width;
 
