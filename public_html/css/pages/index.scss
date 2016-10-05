@@ -6,6 +6,36 @@
   padding: 20px;
 
   background: $cs-dark1;
+  border-radius: 5px;
 
   color: $cs-green3;
+}
+
+.bubbles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  > figure {
+    flex: 1 1 250px;
+    margin-bottom: 3em;
+
+    text-align: center;
+
+    div {
+      margin-bottom: 1em;
+    }
+
+    img {
+      max-height: 7rem;
+      width: auto;
+    }
+
+    figcaption {
+      font-size: 1.5rem;
+      font-family: Aleo;
+      font-weight: 300;
+    }
+  }
 }
