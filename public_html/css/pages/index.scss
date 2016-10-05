@@ -23,8 +23,21 @@
 
     text-align: center;
 
+    &:hover,
+    &:focus {
+      div {
+        transform: translateY(6px);
+      }
+
+      figcaption {
+        transform: translateY(-6px);
+      }
+    }
+
     div {
       margin-bottom: 1em;
+
+      transition: transform 200ms ease;
     }
 
     img {
@@ -36,6 +49,8 @@
       font-size: 1.5rem;
       font-family: Aleo;
       font-weight: 300;
+
+      transition: transform 200ms ease;
     }
   }
 }
