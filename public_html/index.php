@@ -11,9 +11,15 @@
     <?php include("header.html"); ?>
     <div class="container">
       <div class="content">
-        <section class="intro">
-          <p>Welcome to the University of Sheffield Computer Science Society!</p>
-          <p>Every year we host a series of events with the aim of appealing to everyone interested in Computer Science at the University.</p>
+
+        <section class="intro shefjam">
+          <div>
+            <h2>ShefJam 3</h2>
+            <p>Coming Soon&trade;</p>
+          </div>
+          <div>
+            <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/ViLuFC3xV9g?modestbranding=1&rel=0&showinfo=1&color=white" frameborder="0" allowfullscreen></iframe>
+          </div>
         </section>
 
         <br>
