@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 
   background-color: transparentize($cs-dark0, 0.05);
 }
@@ -65,5 +66,6 @@
 
     text-decoration: none;
     color: $cs-dark1;
+
   }
 }
