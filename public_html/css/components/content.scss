@@ -1,3 +1,12 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+.wrap {
+  @include site-width;
+  padding: 0 20px;
+}
+
 .content {
   margin-top: 16px;
 
@@ -39,11 +48,13 @@
 }
 
 
-@include mq(mobile) {
-  .container {
-    padding: 0;
+@include mq(small) {
+  .wrap {
+    padding: 0 5px;
   }
+}
 
+@include mq(mobile) {
   .title {
     font-size: 3.5rem;
     padding-left: 0;

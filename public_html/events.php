@@ -9,7 +9,7 @@
 
   <body>
     <?php include("header.html"); ?>
-    <div class="container">
+    <div class="wrap">
       <div class="content">
 
         <h1 class="title">Events</h1>

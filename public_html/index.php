@@ -9,7 +9,7 @@
 
   <body>
     <?php include("header.html"); ?>
-    <div class="container">
+    <div class="wrap">
       <div class="content">
 
         <section class="intro shefjam">
