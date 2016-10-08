@@ -1,29 +1,47 @@
-doctype 5
-html(lang="en")
-  head
-    title Sheffield Computer Science Society
+extends layout
 
-    meta(charset="UTF-8")
-    meta(name="viewport" content="initial-scale=1.0, width=device-width")
-    meta(name="referrer" content="origin-when-cross-origin")
-    meta(name="description" content="Sheffield Computer Science Society")
-    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
-    meta(name="keywords" content="Sheffield, Computer, Science, Society, CompSoc")
-    meta(name="author" content="University of Sheffield Computer Science Society")
+block main
+  section.intro.shefjam
+    div
+      h2 ShefJam 3
+      p Coming Soon&trade;
 
-    link(rel="icon" href="assets/favicon.ico")
+    div
+      iframe#ytplayer(type="text/html" src="https://www.youtube.com/embed/ViLuFC3xV9g?modestbranding=1&rel=0&showinfo=1&color=white" frameborder="0" allowfullscreen)
 
-    block styles
-      link(rel="stylesheet" type="text/css" href="/style.css")
+  br
 
-    block scripts
-      script(src="/scripts/stickyfill.js")
-      script(src="/scripts/fixheader.js")
+  section.intro
+    h2 Events
+    div.bubbles
+      figure
+        div.icon: img(src="assets/gamejams.png" alt="")
+        figcaption Game Jams
 
-  body
-    include components/header
+      figure
+        div.icon: img(src="assets/socials.png" alt="")
+        figcaption Social Events
 
-    main
-      block main
+      figure
+        div.icon: img(src="assets/codetoast.png" alt="")
+        figcaption CodeToast
 
-    include components/footer
+      figure
+        div.icon: img(src="assets/tutorials.png" alt="")
+        figcaption Tutorials
+
+      figure
+        div.icon: img(src="assets/mentoring.png" alt="")
+        figcaption Mentoring
+
+      figure
+        div.icon: img(src="assets/summerball.png" alt="")
+        figcaption Summer Ball
+
+      figure
+        div.icon: img(src="assets/competitions.png" alt="")
+        figcaption Coding Competitions
+
+      figure
+        div.icon: img(src="assets/ctf.png" alt="")
+        figcaption Capture The Flag
