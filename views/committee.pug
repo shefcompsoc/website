@@ -9,11 +9,11 @@ block main
         div.info
           div.role
             h3= member.name
-            p= member.role
+            p!= member.role
 
           div.avatar
-            img(src=`/assets/committee/${member.avatar}.jpg`)
+            img(src=`/images/committee/${member.avatar}.jpg`)
 
-        p.bio= member.bio
+        p.bio!= member.bio
 
     <?php } ?>
