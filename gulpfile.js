@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const del = require('del')
 const autoprefixer = require('gulp-autoprefixer')
 const livereload = require('gulp-livereload')
 const concat = require('gulp-concat')
@@ -8,33 +9,46 @@ const purifycss = require('gulp-purifycss')
 const sourcemaps = require('gulp-sourcemaps')
 
 const paths = {
-  markup: ['./**/*.{html,php}', '!./node_modules/**'],
-  sass: ['./**/*.{sass,scss}', '!./node_modules/**'],
-  sassEntry: ['./public_html/css/style.scss'],
-  scripts: ['./public_html/**/*.js'],
-  cssOut: './public_html/css'
+  dist: './dist',
+  src: './src',
+
+  markup: ['./views/*.pug'],
+  styles: ['./src/styles/*.{sass,scss}'],
+  fonts: ['./src/fonts/*.{woff,woff2,ttf,otf,eot}'],
+  stylesEntry: ['./src/styles/style.scss'],
+  scripts: ['./src/scripts/**/*.js'],
+  images: ['./src/images/**/*.{png,jpg,svg,ico}'],
+
+  stylesOut: './dist',
+  scriptsOut: './dist/scripts',
+  fontsOut: './dist/fonts',
+  imagesOut: './dist/images'
 }
+
+// Clean Tasks
+gulp.task('clean:all', () => {
+  return del(`${paths.dist}/**/*`)
+})
 
 // Build Tasks
 gulp.task('sass:dist', () => {
-  return gulp.src(paths.sassEntry)
+  return gulp.src(paths.stylesEntry)
     .pipe(sass({
       outputStyle: 'compact'
     }).on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(purifycss(paths.markup.concat(paths.scripts)))
+    .pipe(purifycss([...paths.markup, ...paths.scripts]))
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
     }))
     .pipe(cleancss({
       keepBreaks: true
     }))
-    .pipe(gulp.dest(paths.cssOut))
-    .pipe(livereload())
+    .pipe(gulp.dest(paths.stylesOut))
 })
 
 gulp.task('sass', () => {
-  return gulp.src(paths.sassEntry)
+  return gulp.src(paths.stylesEntry)
     .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compact'
@@ -44,13 +58,28 @@ gulp.task('sass', () => {
       browsers: ['last 3 versions']
     }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.cssOut))
+    .pipe(gulp.dest(paths.stylesOut))
     .pipe(livereload())
 })
 
 gulp.task('markup', () => {
   return gulp.src(paths.markup)
     .pipe(livereload())
+})
+
+gulp.task('images', () => {
+  return gulp.src(paths.images)
+    .pipe(gulp.dest(paths.imagesOut))
+})
+
+gulp.task('scripts', () => {
+  return gulp.src(paths.scripts)
+    .pipe(gulp.dest(paths.scriptsOut))
+})
+
+gulp.task('fonts', () => {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest(paths.fontsOut))
 })
 
 // Watch tasks
@@ -62,6 +91,6 @@ gulp.task('observe', () => {
 })
 
 gulp.task('build:dist', ['sass:dist'])
-gulp.task('build', ['sass'])
+gulp.task('build', ['sass', 'images', 'fonts', 'scripts'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
