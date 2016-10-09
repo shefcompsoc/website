@@ -1,0 +1,19 @@
+extends layout
+
+block main
+  h1.title Committee
+
+  div.committee-members
+    - for (const member of committee)
+      section.committee-member
+        div.info
+          div.role
+            h3= member.name
+            p= member.role
+
+          div.avatar
+            img(src=`/assets/committee/${member.avatar}.jpg`)
+
+        p.bio= member.bio
+
+    <?php } ?>

@@ -33,7 +33,6 @@ gulp.task('sass:dist', () => {
     .pipe(livereload())
 })
 
-// Build Tasks
 gulp.task('sass', () => {
   return gulp.src(paths.sassEntry)
     .pipe(sourcemaps.init())
