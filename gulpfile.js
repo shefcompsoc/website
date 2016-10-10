@@ -98,6 +98,12 @@ gulp.task('images', ['clean:images'], () => {
     .pipe(livereload())
 })
 
+gulp.task('scripts:dist', ['clean:scripts'], () => {
+  return gulp.src(paths.scripts)
+    .pipe(gulp.dest(paths.scriptsOut))
+    .pipe(livereload())
+})
+
 gulp.task('scripts', ['clean:scripts'], () => {
   return gulp.src(paths.scripts)
     .pipe(gulp.dest(paths.scriptsOut))
@@ -130,7 +136,7 @@ gulp.task('observe', () => {
 })
 
 gulp.task('clean', ['clean:all'])
-gulp.task('build:dist', ['sass:dist', 'images', 'fonts', 'scripts'])
+gulp.task('build:dist', ['sass:dist', 'images:dist', 'fonts:dist', 'scripts:dist'])
 gulp.task('build', ['styles', 'images', 'fonts', 'scripts'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
