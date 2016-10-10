@@ -154,7 +154,7 @@ gulp.task('observe', () => {
 })
 
 gulp.task('clean', ['clean:all'])
-gulp.task('build:dist', ['sass:dist', 'images:dist', 'fonts:dist', 'scripts:dist'])
+gulp.task('build:dist', ['styles:dist', 'images:dist', 'fonts:dist', 'scripts:dist'])
 gulp.task('build', ['styles', 'images', 'fonts', 'scripts'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
