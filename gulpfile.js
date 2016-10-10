@@ -20,6 +20,7 @@ const paths = {
   stylesEntry: ['./src/styles/style.scss'],
   scripts: ['./src/scripts/**/*.js'],
   images: ['./src/images/**/*.{png,jpg,svg,ico}'],
+  favicons: ['./src/images/favicon.{ico,png}'],
 
   stylesOut: './dist',
   scriptsOut: './dist/scripts',
@@ -42,6 +43,10 @@ gulp.task('clean:scripts', () => {
 
 gulp.task('clean:images', () => {
   return del(paths.imagesOut)
+})
+
+gulp.task('clean:favicons', () => {
+  return del(`${paths.dist}/favicon.{ico,png}`)
 })
 
 gulp.task('clean:fonts', () => {
@@ -85,16 +90,29 @@ gulp.task('markup', () => {
     .pipe(livereload())
 })
 
-gulp.task('images:dist', ['clean:images'], () => {
+gulp.task('images:dist', ['clean:images', 'favicons:dist'], () => {
   return gulp.src(paths.images)
   .pipe(imagemin())
   .pipe(gulp.dest(paths.imagesOut))
   .pipe(livereload())
 })
 
-gulp.task('images', ['clean:images'], () => {
+gulp.task('images', ['clean:images', 'favicons'], () => {
   return gulp.src(paths.images)
     .pipe(gulp.dest(paths.imagesOut))
+    .pipe(livereload())
+})
+
+gulp.task('favicons:dist', ['clean:favicons'], () => {
+  return gulp.src(paths.favicons)
+  .pipe(imagemin())
+  .pipe(gulp.dest(paths.dist))
+  .pipe(livereload())
+})
+
+gulp.task('favicons', ['clean:favicons'], () => {
+  return gulp.src(paths.favicons)
+    .pipe(gulp.dest(paths.dist))
     .pipe(livereload())
 })
 
