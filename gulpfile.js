@@ -2,6 +2,8 @@ const gulp = require('gulp')
 const del = require('del')
 const autoprefixer = require('gulp-autoprefixer')
 const livereload = require('gulp-livereload')
+const flatten = require('gulp-flatten')
+const imagemin = require('gulp-imagemin')
 const concat = require('gulp-concat')
 const cleancss = require('gulp-clean-css')
 const sass = require('gulp-sass')
@@ -14,7 +16,7 @@ const paths = {
 
   markup: ['./views/*.pug'],
   styles: ['./src/styles/*.{sass,scss}'],
-  fonts: ['./src/fonts/*.{woff,woff2,ttf,otf,eot}'],
+  fonts: ['./src/fonts/**/*.{woff,woff2,ttf,otf,eot}'],
   stylesEntry: ['./src/styles/style.scss'],
   scripts: ['./src/scripts/**/*.js'],
   images: ['./src/images/**/*.{png,jpg,svg,ico}'],
@@ -47,7 +49,7 @@ gulp.task('clean:fonts', () => {
 })
 
 // Build Tasks
-gulp.task('styles:dist', () => {
+gulp.task('styles:dist', ['clean:styles'], () => {
   return gulp.src(paths.stylesEntry)
     .pipe(sass({
       outputStyle: 'compact'
@@ -83,6 +85,13 @@ gulp.task('markup', () => {
     .pipe(livereload())
 })
 
+gulp.task('images:dist', ['clean:images'], () => {
+  return gulp.src(paths.images)
+  .pipe(imagemin())
+  .pipe(gulp.dest(paths.imagesOut))
+  .pipe(livereload())
+})
+
 gulp.task('images', ['clean:images'], () => {
   return gulp.src(paths.images)
     .pipe(gulp.dest(paths.imagesOut))
@@ -95,8 +104,16 @@ gulp.task('scripts', ['clean:scripts'], () => {
     .pipe(livereload())
 })
 
+gulp.task('fonts:dist', ['clean:fonts'], () => {
+  return gulp.src(paths.fonts)
+    .pipe(flatten())
+    .pipe(gulp.dest(paths.fontsOut))
+    .pipe(livereload())
+})
+
 gulp.task('fonts', ['clean:fonts'], () => {
   return gulp.src(paths.fonts)
+    .pipe(flatten())
     .pipe(gulp.dest(paths.fontsOut))
     .pipe(livereload())
 })
