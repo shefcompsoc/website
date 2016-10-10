@@ -14,8 +14,8 @@ const paths = {
   dist: './dist',
   src: './src',
 
-  markup: ['./views/*.pug'],
-  styles: ['./src/styles/*.{sass,scss}'],
+  markup: ['./views/**/*.pug'],
+  styles: ['./src/styles/**/*.{sass,scss}'],
   fonts: ['./src/fonts/**/*.{woff,woff2,ttf,otf,eot}'],
   stylesEntry: ['./src/styles/style.scss'],
   scripts: ['./src/scripts/**/*.js'],
