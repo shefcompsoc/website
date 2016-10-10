@@ -1,5 +1,9 @@
 # compsocsite
 University of Sheffield Computer Science Society Website
 
-Requires sass to compile scss to css. A shell script is included to run sass (scss.sh). Gulp-sass can also be used.
+## Running in Development
+Run `npm start` and `gulp` in separate terminals simultaneously.
 
+## Running in Production
+-   Run `gulp build:dist` first.
+-   Run `NODE_ENV=production npm start`
