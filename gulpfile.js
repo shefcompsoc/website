@@ -26,12 +26,28 @@ const paths = {
 }
 
 // Clean Tasks
-gulp.task('clean:all', () => {
-  return del(`${paths.dist}/**/*`)
+gulp.task('clean:all', ['clean:styles', 'clean:scripts', 'clean:images', 'clean:fonts'], () => {
+  return
+})
+
+gulp.task('clean:styles', () => {
+  return del(`${paths.stylesOut}/style.css`)
+})
+
+gulp.task('clean:scripts', () => {
+  return del(paths.scriptsOut)
+})
+
+gulp.task('clean:images', () => {
+  return del(paths.imagesOut)
+})
+
+gulp.task('clean:fonts', () => {
+  return del(paths.fontsOut)
 })
 
 // Build Tasks
-gulp.task('sass:dist', () => {
+gulp.task('styles:dist', () => {
   return gulp.src(paths.stylesEntry)
     .pipe(sass({
       outputStyle: 'compact'
@@ -47,7 +63,7 @@ gulp.task('sass:dist', () => {
     .pipe(gulp.dest(paths.stylesOut))
 })
 
-gulp.task('sass', () => {
+gulp.task('styles', ['clean:styles'], () => {
   return gulp.src(paths.stylesEntry)
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -67,17 +83,17 @@ gulp.task('markup', () => {
     .pipe(livereload())
 })
 
-gulp.task('images', () => {
+gulp.task('images', ['clean:images'], () => {
   return gulp.src(paths.images)
     .pipe(gulp.dest(paths.imagesOut))
 })
 
-gulp.task('scripts', () => {
+gulp.task('scripts', ['clean:scripts'], () => {
   return gulp.src(paths.scripts)
     .pipe(gulp.dest(paths.scriptsOut))
 })
 
-gulp.task('fonts', () => {
+gulp.task('fonts', ['clean:fonts'], () => {
   return gulp.src(paths.fonts)
     .pipe(gulp.dest(paths.fontsOut))
 })
@@ -90,7 +106,8 @@ gulp.task('observe', () => {
   gulp.watch(paths.sass, ['sass'])
 })
 
+gulp.task('clean', ['clean:all'])
 gulp.task('build:dist', ['sass:dist'])
-gulp.task('build', ['sass', 'images', 'fonts', 'scripts'])
+gulp.task('build', ['styles', 'images', 'fonts', 'scripts'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
