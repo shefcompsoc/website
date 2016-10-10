@@ -86,16 +86,19 @@ gulp.task('markup', () => {
 gulp.task('images', ['clean:images'], () => {
   return gulp.src(paths.images)
     .pipe(gulp.dest(paths.imagesOut))
+    .pipe(livereload())
 })
 
 gulp.task('scripts', ['clean:scripts'], () => {
   return gulp.src(paths.scripts)
     .pipe(gulp.dest(paths.scriptsOut))
+    .pipe(livereload())
 })
 
 gulp.task('fonts', ['clean:fonts'], () => {
   return gulp.src(paths.fonts)
     .pipe(gulp.dest(paths.fontsOut))
+    .pipe(livereload())
 })
 
 // Watch tasks
@@ -103,11 +106,14 @@ gulp.task('observe', () => {
   livereload.listen()
 
   gulp.watch(paths.markup, ['markup'])
+  gulp.watch(paths.fonts, ['fonts'])
+  gulp.watch(paths.scripts, ['scripts'])
+  gulp.watch(paths.images, ['images'])
   gulp.watch(paths.sass, ['sass'])
 })
 
 gulp.task('clean', ['clean:all'])
-gulp.task('build:dist', ['sass:dist'])
+gulp.task('build:dist', ['sass:dist', 'images', 'fonts', 'scripts'])
 gulp.task('build', ['styles', 'images', 'fonts', 'scripts'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
