@@ -1,5 +1,8 @@
 extends layout
 
+append styles
+  link(rel="stylesheet" type="text/css" href="/styles/committee.css")
+
 block main
   h1.title Committee
 
@@ -15,5 +18,3 @@ block main
             img(src=`/images/committee/${member.avatar}.jpg`)
 
         p.bio!= member.bio
-
-    <?php } ?>

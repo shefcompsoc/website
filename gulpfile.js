@@ -17,12 +17,12 @@ const paths = {
   markup: ['./views/**/*.pug'],
   styles: ['./src/styles/**/*.{sass,scss}'],
   fonts: ['./src/fonts/**/*.{woff,woff2,ttf,otf,eot}'],
-  stylesEntry: ['./src/styles/style.scss'],
+  stylesEntry: ['./src/styles/style.scss', './src/styles/pages/**/*.scss'],
   scripts: ['./src/scripts/**/*.js'],
   images: ['./src/images/**/*.{png,jpg,svg,ico}'],
   favicons: ['./src/images/favicon.{ico,png}'],
 
-  stylesOut: './dist',
+  stylesOut: './dist/styles',
   scriptsOut: './dist/scripts',
   fontsOut: './dist/fonts',
   imagesOut: './dist/images'
@@ -34,7 +34,7 @@ gulp.task('clean:all', ['clean:styles', 'clean:scripts', 'clean:images', 'clean:
 })
 
 gulp.task('clean:styles', () => {
-  return del(`${paths.stylesOut}/style.css`)
+  return del(paths.stylesOut)
 })
 
 gulp.task('clean:scripts', () => {
@@ -76,7 +76,6 @@ gulp.task('styles', ['clean:styles'], () => {
     .pipe(sass({
       outputStyle: 'compact'
     }).on('error', sass.logError))
-    .pipe(concat('style.css'))
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
     }))

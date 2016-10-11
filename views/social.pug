@@ -1,5 +1,8 @@
 extends layout
 
+append styles
+  link(rel="stylesheet" type="text/css" href="/styles/social.css")
+
 block main
   1(class="title") Social
 
@@ -12,9 +15,10 @@ block main
           h1 Slack
           p shefcompsocwbr .slack.com
     br
-    p.
-      #[a(href="https://www.youtube.com/watch?v=9RJZMSsH7-g") Slack is a great messaging platform for teams.] Seperate channels means you only see what you want to. You can sign-up without an invite using your Sheffield email.
+    p #[a(href="https://www.youtube.com/watch?v=9RJZMSsH7-g") Slack is a great messaging platform for teams.] Seperate channels means you only see what you want to. You can sign-up without an invite using your Sheffield email.
+
     p We will be posting event announcements, internship and career adverts as well as being the place to use the various integrations for team project work.
+    
     ul
       li #cs1 - First Years
       li #cs2 - Second Years
