@@ -8,7 +8,7 @@ module.exports.init = router => {
 }
 
 const index = function* () {
-  debug('rendering committee')
+  debug('rendering committee page')
   yield this.render('committee', {
     committee
   })

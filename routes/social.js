@@ -8,6 +8,6 @@ module.exports.init = router => {
 }
 
 const index = function* () {
-  debug('rendering homepage')
+  debug('rendering social page')
   yield this.render('social')
 }
