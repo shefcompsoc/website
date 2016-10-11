@@ -17,7 +17,7 @@ const paths = {
   markup: ['./views/**/*.pug'],
   styles: ['./src/styles/**/*.{sass,scss}'],
   fonts: ['./src/fonts/**/*.{woff,woff2,ttf,otf,eot}'],
-  stylesEntry: ['./src/styles/style.scss', './src/styles/pages/**/*.scss'],
+  stylesEntry: ['./src/styles/style.scss', './src/styles/pages/**/*.scss', './src/styles/vendor/**/*.scss'],
   scripts: ['./src/scripts/**/*.js'],
   images: ['./src/images/**/*.{png,jpg,svg,ico}'],
   favicons: ['./src/images/favicon.{ico,png}'],
@@ -149,7 +149,7 @@ gulp.task('observe', () => {
   gulp.watch(paths.fonts, ['fonts'])
   gulp.watch(paths.scripts, ['scripts'])
   gulp.watch(paths.images, ['images'])
-  gulp.watch(paths.sass, ['sass'])
+  gulp.watch(paths.styles, ['styles'])
 })
 
 gulp.task('clean', ['clean:all'])
