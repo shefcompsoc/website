@@ -2,13 +2,16 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
-html {
+:root {
   font-size: 20px;
 
   background: $cs-dark1;
 }
 
 body {
+  display: inline-block;
+  width: 100%;
+
   background: $cs-dark3;
   overflow-y: scroll;
 
