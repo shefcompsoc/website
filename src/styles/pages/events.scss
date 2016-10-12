@@ -2,107 +2,107 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
-section.event {
-  padding: 20px;
+.events {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
 
-  background: $cs-dark2;
+.event {
+  flex: 1 1 300px;
+  padding: 20px;
+  margin: 5px;
+
+  background: url('../images/compsoc-bg.png') center center repeat $cs-dark1;
+  background-size: 600px;
+
   color: $cs-green3;
 
-  &:first-of-type {
-    border-radius: 5px 5px 0 0;
-  }
-
-  &:last-of-type {
-    border-radius: 0 0 5px 5px;
-  }
-
-  h1 {
-    font-family: Aleo;
-  }
-
-  &:not(:last-child) {
-    border-bottom: 1px dashed $cs-dark6;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    max-width: 30rem;
-    max-height: auto;
-    margin: 0 auto;
-  }
+  border-radius: 5px;
 
   a:hover {
     text-decoration: none;
 
-    figure figcaption::after {
-      width: 100%;
+    & figure {
+      figcaption::after {
+        width: 100%;
+      }
+
+      div {
+        transform: translateY(5px);
+      }
     }
   }
 
   figure {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+
+    color: $cs-green4;
+    font-size: 20px;
+    font-family: Aleo;
+    text-align: center;
 
     div {
-      flex: 1;
-    }
+      transition: transform 200ms ease;
 
-    img {
-      max-width: 5rem;
-      max-height: auto;
-      width: auto;
-      height: auto;
-      margin: 0 auto;
-      padding-right: 20px;
-
-      vertical-align: middle;
+      img {
+        margin: 0;
+        width: 150px;
+        height: auto;
+      }
     }
 
     figcaption {
-      flex: 7;
-
+      margin-top: 0.4em;
       font-size: 2rem;
+
+      &:hover {
+        text-decoration: none;
+      }
 
       &::after {
         content: '';
         display: block;
-        position: relative;
-        left: -10px;
-        // margin: 0 auto;
         width: 0;
+        margin: 0 auto;
         height: 1px;
 
         background: currentColor;
 
-        transition: width 300ms ease;
-      }
-
-      h1 {
-        display: inline-block;
-        margin: 0;
-        padding-right: 1em;
-      }
-
-      p {
-        display: inline-block;
-        margin: 0;
+        transition: width 100ms ease;
       }
     }
   }
+
+  p {
+    margin: 0 auto;
+    padding-top: 20px;
+    max-width: 400px;
+
+    color: $cs-green3;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
 }
 
-@include mq(small) {
-  section.social {
-    figure {
-      img {
-        max-width: 4rem;
-      }
+@include mq(mobile) {
+  .committee-member {
+    margin: 5px 5px 0;
 
-      figcaption {
-        font-size: 1.5rem;
-      }
+    .role p {
+      padding-bottom: 20px;
+    }
+
+    .info {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .bio {
+      text-align: left;
     }
   }
 }
