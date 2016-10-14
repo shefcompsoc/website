@@ -14,9 +14,11 @@ main {
 .content {
   margin-top: 16px;
 
+  // color: $cs-green3;
+  color: $cs-light1;
+
   article {
     background-color: $cs-dark1;
-    color: $cs-green3;
     padding: 2px 16px 6px;
     margin: 0 0 16px;
 
