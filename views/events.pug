@@ -7,27 +7,50 @@ block main
   h1.title Events
 
   section.upcoming
-    div.calendar
-      a(href="") Calendar View
-    div.list
-
-      h2 October
+    h2 October
+    div.month
+      div.event
+        time
+          span.moy Oct
+          span.dom 24
+        div.details
+          div.name Linux 101
+          div.link: a(href="https://www.facebook.com/events/1822714788015241/") Facebook Event &rarr;
 
       div.event
         time
-          span.month Oct
-          span.date 24
+          span.moy Oct
+          span.dom 31
         div.details
           div.name Linux 101
-          div.link: a(href="") Facebook Event &rarr;
+          //- div.link: a(href="") Facebook Event &rarr;
+
+    h2 November
+
+    div.month
+      div.event
+        time
+          span.moy Nov
+          span.dom 7
+        div.details
+          div.name Linux 101
+          //- div.link: a(href="") Facebook Event &rarr;
 
       div.event
         time
-          span.month Oct
-          span.date 31
+          span.moy Nov
+          span.dom 14
+        div.details
+          div.name Git 101
+          //- div.link: a(href="") Facebook Event &rarr;
+
+      div.event
+        time
+          span.moy Nov
+          span.dom 21
         div.details
           div.name Linux 101
-          div.link: a(href="") Facebook Event &rarr;
+          //- div.link: a(href="") Facebook Event &rarr;
 
   hr
 
