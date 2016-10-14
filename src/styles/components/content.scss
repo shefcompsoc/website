@@ -47,6 +47,12 @@
   color: $cs-green4;
 }
 
+hr {
+  height: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px dashed $cs-dark6;
+}
 
 @include mq(small) {
   .wrap {
