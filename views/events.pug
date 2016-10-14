@@ -6,7 +6,30 @@ append styles
 block main
   h1.title Events
 
-  div.events
+  section.upcoming
+    div.calendar
+      a(href="") Calendar View
+    div.list
+
+      div.event
+        time
+          span.month Oct
+          span.date 24
+        div.details
+          div.name Linux 101
+          div.link: a(href="") Facebook Event &rarr;
+
+      div.event
+        time
+          span.month Oct
+          span.date 31
+        div.details
+          div.name Linux 101
+          div.link: a(href="") Facebook Event &rarr;
+
+  hr
+
+  section.events
     section.event
       a(href="http://shefjam.shefcompsoc.co.uk/")
         figure

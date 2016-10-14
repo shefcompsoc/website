@@ -2,14 +2,89 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
-.events {
+section.upcoming {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  .calendar {
+    flex: 1 1 300px;
+    padding: 0 10px;
+  }
+
+  .list {
+    flex: 1 1 300px;
+    padding: 0 10px;
+
+    .event {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      padding: 20px 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px dashed $cs-dark6;
+      }
+
+      time {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: stretch;
+
+        border-radius: 10px;
+        background: $cs-light1;
+        overflow: hidden;
+
+        .month {
+          flex: 1;
+          padding: 0 0.8rem;
+
+          background: $cs-green4;
+
+          color: $cs-dark4;
+          font-size: 1.2rem;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .date {
+          flex: 2;
+          padding: 0 0.8rem;
+
+          color: $cs-dark1;
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+
+      .details {
+        margin-left: 1rem;
+
+        .name {
+          font-size: 1.6rem;
+          color: $cs-light1;
+        }
+
+        .link {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+section.events {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
 }
 
-.event {
+section.events .event {
   flex: 1 1 300px;
   padding: 20px;
   margin: 5px;
@@ -85,24 +160,5 @@
     font-size: 1rem;
     line-height: 1.6;
     text-align: center;
-  }
-}
-
-@include mq(mobile) {
-  .committee-member {
-    margin: 5px 5px 0;
-
-    .role p {
-      padding-bottom: 20px;
-    }
-
-    .info {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .bio {
-      text-align: left;
-    }
   }
 }
