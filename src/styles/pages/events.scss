@@ -17,6 +17,13 @@ section.upcoming {
     flex: 1 1 300px;
     padding: 0 10px;
 
+    h2 {
+      margin-bottom: 0;
+
+      color: $cs-light1;
+      font-size: 1.6rem;
+    }
+
     .event {
       display: flex;
       flex-flow: row nowrap;
@@ -25,7 +32,7 @@ section.upcoming {
 
       padding: 20px 0;
 
-      &:not(:last-child) {
+      &:not(:last-of-type) {
         border-bottom: 1px dashed $cs-dark6;
       }
 
@@ -43,7 +50,7 @@ section.upcoming {
           flex: 1;
           padding: 0 0.8rem;
 
-          background: $cs-green4;
+          background: $cs-green3;
 
           color: $cs-dark4;
           font-size: 1.2rem;
