@@ -15,7 +15,7 @@ section.social {
     border-radius: 0 0 5px 5px;
   }
 
-  h1 {
+  h2 {
     font-family: Aleo;
   }
 
@@ -78,10 +78,12 @@ section.social {
         transition: width 300ms ease;
       }
 
-      h1 {
-        display: inline-block;
+      h2 {
         margin: 0;
+        display: inline-block;
         padding-right: 1em;
+
+        font-size: 2.5rem;
       }
 
       p {

@@ -20,6 +20,8 @@ footer {
 
   .logo {
     flex: 1 1;
+    margin: 0;
+
     text-align: right;
 
     img {
@@ -45,6 +47,7 @@ footer {
       font-size: 1.2rem;
       font-family: Aleo;
       font-weight: 300;
+      text-decoration: none;
 
       &:hover {
         text-decoration: none;
