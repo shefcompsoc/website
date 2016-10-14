@@ -3,38 +3,34 @@
 @import '../variables/mixins';
 
 section.upcoming {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  h2 {
+    margin-bottom: 0;
 
-  .calendar {
-    flex: 1 1 300px;
-    padding: 0 10px;
+    color: $cs-green3;
+    font-size: 1.6rem;
   }
 
-  .list {
-    flex: 1 1 300px;
+  .month {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
     padding: 0 10px;
 
-    h2 {
-      margin-bottom: 0;
-
-      color: $cs-light1;
-      font-size: 1.6rem;
+    &:not(:last-child) {
+      border-bottom: 1px dashed $cs-dark6;
     }
 
     .event {
+      flex: 1 1 400px;
+
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
 
       padding: 20px 0;
-
-      &:not(:last-of-type) {
-        border-bottom: 1px dashed $cs-dark6;
-      }
 
       time {
         display: flex;
@@ -46,7 +42,7 @@ section.upcoming {
         background: $cs-light1;
         overflow: hidden;
 
-        .month {
+        .moy {
           flex: 1;
           padding: 0 0.8rem;
 
@@ -58,7 +54,7 @@ section.upcoming {
           text-transform: uppercase;
         }
 
-        .date {
+        .dom {
           flex: 2;
           padding: 0 0.8rem;
 
@@ -160,7 +156,7 @@ section.events .event {
 
   p {
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 0.5em;
     max-width: 400px;
 
     color: $cs-green3;
