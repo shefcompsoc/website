@@ -45,11 +45,13 @@
 
       h2 {
         @include responsive-font(6vw, 2.2rem, 4rem);
+        margin: 0;
         font-weight: 300;
       }
 
       p {
         @include responsive-font(4vw, 1.5rem, 2.5rem);
+        margin: 0;
       }
     }
 
