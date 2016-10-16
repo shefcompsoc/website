@@ -21,15 +21,24 @@
 
   border-radius: 5px;
 
+  @include mq(small) {
+    margin: 5px 5px 0;
+  }
+
   .info {
     display: flex;
     justify-content: left;
     align-items: center;
-    flex-flow: row-reverse wrap;
+    flex-flow: row-reverse nowrap;
 
     color: $cs-green4;
     font-size: 20px;
     font-family: Aleo;
+
+    @include mq(small) {
+      flex-direction: column;
+      text-align: center;
+    }
 
     h3 {
       margin: 5px 0;
@@ -49,6 +58,12 @@
   .role {
     flex: 3 1;
     padding-left: 20px;
+
+    p {
+      @include mq(small) {
+        padding-bottom: 20px;
+      }
+    }
   }
 
   .avatar {
@@ -71,23 +86,8 @@
     color: $cs-green3;
     font-size: 1rem;
     line-height: 1.6;
-  }
-}
 
-@include mq(mobile) {
-  .committee-member {
-    margin: 5px 5px 0;
-
-    .role p {
-      padding-bottom: 20px;
-    }
-
-    .info {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .bio {
+    @include mq(small) {
       text-align: left;
     }
   }
