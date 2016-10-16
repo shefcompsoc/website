@@ -89,7 +89,7 @@
   justify-content: space-between;
   align-items: stretch;
 
-  > figure {
+  > a {
     flex: 1 1 250px;
     margin-bottom: 3em;
 
@@ -97,6 +97,8 @@
 
     &:hover,
     &:focus {
+      text-decoration: none;
+
       div {
         transform: translateY(6px);
       }

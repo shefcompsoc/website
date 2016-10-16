@@ -10,37 +10,44 @@ block main
       p Coming Soon&trade;
 
     div
-      iframe#ytplayer(type="text/html" src="https://www.youtube.com/embed/ViLuFC3xV9g?modestbranding=1&rel=0&showinfo=1&color=white" frameborder="0" allowfullscreen)
+      +youtube('ViLuFC3xV9g')
 
   br
 
   section.intro
     h2 Events
     div.bubbles
-      figure
-        div.icon: img(src="/images/gamejams.png" alt="")
-        figcaption Game Jams
+      a(href="/event/shefjam")
+        figure
+          div.icon: img(src="/images/gamejams.png" alt="")
+          figcaption Game Jams
 
-      figure
-        div.icon: img(src="/images/socials.png" alt="")
-        figcaption Social Events
+      a(href="/event/socials")
+        figure
+          div.icon: img(src="/images/socials.png" alt="")
+          figcaption Social Events
 
-      figure
-        div.icon: img(src="/images/codetoast.png" alt="")
-        figcaption CodeToast
+      a(href="/event/codetoast")
+        figure
+          div.icon: img(src="/images/codetoast.png" alt="")
+          figcaption CodeToast
 
-      figure
-        div.icon: img(src="/images/tutorials.png" alt="")
-        figcaption Tutorials
+      a(href="/event/tutorials")
+        figure
+          div.icon: img(src="/images/tutorials.png" alt="")
+          figcaption Tutorials
 
-      figure
-        div.icon: img(src="/images/mentoring.png" alt="")
-        figcaption Mentoring
+      a(href="/event/mentoring")
+        figure
+          div.icon: img(src="/images/mentoring.png" alt="")
+          figcaption Mentoring
 
-      figure
-        div.icon: img(src="/images/summerball.png" alt="")
-        figcaption Summer Ball
+      a(href="/event/summerball")
+        figure
+          div.icon: img(src="/images/summerball.png" alt="")
+          figcaption Summer Ball
 
-      figure
-        div.icon: img(src="/images/ctf.png" alt="")
-        figcaption Capture The Flag
+      a(href="/event/ctf")
+        figure
+          div.icon: img(src="/images/ctf.png" alt="")
+          figcaption Capture The Flag
