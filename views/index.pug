@@ -1,0 +1,53 @@
+extends layout
+
+append styles
+  link(rel="stylesheet" type="text/css" href="/styles/index.css")
+
+block main
+  section.intro.shefjam
+    div
+      h2 ShefJam 3
+      p Coming Soon&trade;
+
+    div
+      +youtube('ViLuFC3xV9g')
+
+  br
+
+  section.intro
+    h2 Events
+    div.bubbles
+      a(href="/event/shefjam")
+        figure
+          div.icon: img(src="/images/gamejams.png" alt="")
+          figcaption Game Jams
+
+      a(href="/event/socials")
+        figure
+          div.icon: img(src="/images/socials.png" alt="")
+          figcaption Social Events
+
+      a(href="/event/codetoast")
+        figure
+          div.icon: img(src="/images/codetoast.png" alt="")
+          figcaption CodeToast
+
+      a(href="/event/tutorials")
+        figure
+          div.icon: img(src="/images/tutorials.png" alt="")
+          figcaption Tutorials
+
+      a(href="/event/mentoring")
+        figure
+          div.icon: img(src="/images/mentoring.png" alt="")
+          figcaption Mentoring
+
+      a(href="/event/summerball")
+        figure
+          div.icon: img(src="/images/summerball.png" alt="")
+          figcaption Summer Ball
+
+      a(href="/event/ctf")
+        figure
+          div.icon: img(src="/images/ctf.png" alt="")
+          figcaption Capture The Flag

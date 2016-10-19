@@ -1,0 +1,26 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 20px;
+
+  background: $cs-dark1;
+}
+
+body {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+
+  background: $cs-dark3;
+  overflow-y: scroll;
+
+  font-family: Source Sans Pro;
+  font-size: 1rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,167 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+section.upcoming {
+  h2 {
+    margin-bottom: 0;
+
+    color: $cs-green3;
+    font-size: 1.6rem;
+  }
+
+  .month {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding: 0 10px;
+
+    &:not(:last-child) {
+      border-bottom: 1px dashed $cs-dark6;
+    }
+
+    .event {
+      flex: 1 1 400px;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      padding: 20px 0;
+
+      time {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: stretch;
+
+        border-radius: 10px;
+        background: $cs-light1;
+        overflow: hidden;
+
+        .moy {
+          flex: 1;
+          padding: 0 0.8rem;
+
+          background: $cs-green3;
+
+          color: $cs-dark4;
+          font-size: 1.2rem;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .dom {
+          flex: 2;
+          padding: 0 0.8rem;
+
+          color: $cs-dark1;
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+
+      .details {
+        margin-left: 1rem;
+
+        .name {
+          font-size: 1.6rem;
+          color: $cs-light1;
+        }
+
+        .link {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+section.events {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+section.events .event {
+  flex: 1 1 300px;
+  padding: 20px;
+  margin: 5px;
+
+  background: url('../images/compsoc-bg.png') center center repeat $cs-dark1;
+  background-size: 600px;
+
+  color: $cs-green3;
+
+  border-radius: 5px;
+
+  a:hover {
+    text-decoration: none;
+
+    & figure {
+      figcaption::after {
+        width: 100%;
+      }
+
+      div {
+        transform: translateY(5px);
+      }
+    }
+  }
+
+  figure {
+    margin: 0 auto;
+    max-width: 400px;
+
+    color: $cs-green4;
+    font-size: 20px;
+    font-family: Aleo;
+    text-align: center;
+
+    div {
+      transition: transform 200ms ease;
+
+      img {
+        margin: 0;
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    figcaption {
+      margin-top: 0.4em;
+      font-size: 2rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        margin: 0 auto;
+        height: 1px;
+
+        background: currentColor;
+
+        transition: width 100ms ease;
+      }
+    }
+  }
+
+  p {
+    margin: 0 auto;
+    padding-top: 0.5em;
+    max-width: 400px;
+
+    color: $cs-green3;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+include mixins
+
+doctype 5
+html(lang="en")
+  head
+    title Sheffield Computer Science Society
+
+    meta(charset="UTF-8")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name="referrer" content="origin-when-cross-origin")
+    meta(name="description" content="Sheffield Computer Science Society")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+    meta(name="keywords" content="Sheffield, Computer, Science, Society, CompSoc")
+    meta(name="author" content="University of Sheffield Computer Science Society")
+
+    link(rel="icon" href="/images/favicon.ico")
+
+    block styles
+      link(rel="stylesheet" type="text/css" href="/styles/style.css")
+
+    block scripts
+      script(src="/scripts/stickyfill.js")
+      script(src="/scripts/fixheader.js")
+
+  body
+    include components/header
+
+    main
+      div.content
+        block main
+
+    include components/footer

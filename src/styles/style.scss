@@ -1,0 +1,15 @@
+// vendor
+@import 'vendor/normalize';
+
+// variables
+@import 'variables/colors';
+@import 'variables/sizes';
+@import 'variables/mixins';
+@import 'variables/fonts';
+
+// common components
+@import 'components/body';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/content';
+@import 'components/footer';

@@ -1,0 +1,109 @@
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/mixins';
+
+section.social {
+  padding: 20px;
+
+  background: $cs-dark2;
+
+  &:first-of-type {
+    border-radius: 5px 5px 0 0;
+  }
+
+  &:last-of-type {
+    border-radius: 0 0 5px 5px;
+  }
+
+  h2 {
+    font-family: Aleo;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px dashed $cs-dark6;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    max-height: auto;
+    margin: 0 auto;
+  }
+
+  a:hover {
+    text-decoration: none;
+
+    figure figcaption::after {
+      width: 100%;
+    }
+  }
+
+  figure {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    div {
+      flex: 1;
+    }
+
+    img {
+      max-width: 5rem;
+      max-height: auto;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding-right: 20px;
+
+      vertical-align: middle;
+    }
+
+    figcaption {
+      flex: 7;
+
+      font-size: 2rem;
+
+      &::after {
+        content: '';
+        display: block;
+        position: relative;
+        left: -10px;
+        // margin: 0 auto;
+        width: 0;
+        height: 1px;
+
+        background: currentColor;
+
+        transition: width 300ms ease;
+      }
+
+      h2 {
+        margin: 0;
+        display: inline-block;
+        padding-right: 1em;
+
+        font-size: 2.5rem;
+      }
+
+      p {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include mq(small) {
+  section.social {
+    figure {
+      img {
+        max-width: 4rem;
+      }
+
+      figcaption {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

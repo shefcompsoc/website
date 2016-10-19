@@ -1,0 +1,96 @@
+extends layout
+
+append styles
+  link(rel="stylesheet" type="text/css" href="/styles/social.css")
+
+block main
+  h1(class="title") Social
+
+  section.social#slack
+    a(href="https://shefcompsoc.slack.com/")
+      figure
+        div
+          img(src="/images/slack.png" alt="")
+        figcaption
+          h2 Slack
+          p shefcompsoc#[wbr].slack.com
+    br
+    p #[a(href="https://www.youtube.com/watch?v=9RJZMSsH7-g") Slack is a great messaging platform for teams.] Seperate channels means you only see what you want to. You can sign-up without an invite using your Sheffield email.
+
+    p We will be posting event announcements, internship and career adverts as well as being the place to use the various integrations for team project work.
+
+    ul
+      li #cs1 - First Years
+      li #cs2 - Second Years
+      li #cs3plus - Third Years and above
+      li #yearout - Year In Industry
+      li #postgrads - Postgraduates and PhDs
+      br
+      li #internships - Internship opportunities as they arrive
+      li #careers - Job opportunities and career information
+
+  section.social#twitter
+    a(href="https://www.twitter.com/shefcompsoc/")
+      figure
+        div
+          img(src="/images/twitter.png" alt="")
+
+        figcaption
+          h2 Twitter
+          p @shefcompsoc
+
+  section.social#instagram
+    a(href="https://www.instagram.com/shefcompsoc/")
+      figure
+        div
+          img(src="/images/instagram.png" alt="")
+
+        figcaption
+          h2 Instagram
+          p @shefcompsoc
+
+  section.social#facebook
+    h2 Facebook
+
+    a(href="https://www.facebook.com/shefcompsoc/")
+      figure
+        div
+          img(src="/images/fb_logo.png" alt="")
+        figcaption Main Facebook Page
+    br
+    a(href="https://www.facebook.com/groups/879150085447908/")
+      figure
+        div
+          img(src="/images/fb_logo.png" alt="")
+        figcaption CompSoc General Chat
+    br
+    a(href="https://www.facebook.com/groups/1788205561451417/")
+      figure
+        div
+          img(src="/images/fb_logo.png" alt="")
+        figcaption CompSoc CS1 (First Year)
+    br
+    a(href="https://www.facebook.com/groups/1092506430863758/")
+      figure
+        div
+          img(src="/images/fb_logo.png" alt="")
+        figcaption CompSoc CS2 (Second Year)
+    br
+    a(href="https://www.facebook.com/groups/1101868363183656/")
+      figure
+        div
+          img(src="/images/fb_logo.png" alt="")
+        figcaption CompSoc CS3+ (Third Year or above)
+
+  section.social#snapchat
+    figure
+      div
+        img(src="/images/sc-logo.png" alt="")
+      figcaption
+        h2 Snapchat
+        p @shefcompsoc
+
+    br
+    p #[a(href="https://support.snapchat.com/en-GB/article/friends-snapcodes") Scan this with your phone] or #[a(href="https://support.snapchat.com/en-GB/a/add-snapcodes") screenshot it and add it] in the Snapchat app.
+
+    img(src="/images/snapcode.png" alt="")
