@@ -6,7 +6,9 @@ const debug = new Debug('app:routes/events.js')
 module.exports.init = router => {
   router.get('/events', index)
   router.get('/event', events)
-  router.get('/event/shefjam', shefjam)
+  router.get('/event/gamejams', gamejams)
+  router.get('/event/modjam', modjam)
+  router.get('/event/shefjam3', shefjam3)
   router.get('/event/socials', socials)
   router.get('/event/codetoast', codetoast)
   router.get('/event/tutorials', tutorials)
@@ -25,9 +27,19 @@ const events = function* () {
   this.redirect('/events')
 }
 
-const shefjam = function* () {
+const gamejams = function* () {
+  debug('rendering gamejams page')
+  yield this.render('event/gamejams')
+}
+
+const modjam = function* () {
+  debug('rendering modjam page')
+  yield this.render('event/modjam')
+}
+
+const shefjam3 = function* () {
   debug('rendering shefjam page')
-  yield this.render('event/shefjam')
+  yield this.render('event/shefjam3')
 }
 
 const socials = function* () {

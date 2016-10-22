@@ -25,6 +25,14 @@ block main
           div.name Linux 101
           //- div.link: a(href="") Facebook Event &rarr;
 
+      div.event
+        time
+          span.moy Oct
+          span.dom 31
+        div.details
+          div.name Halloween Social
+          div.link: a(href="https://www.facebook.com/events/190109711432601/") Facebook Event &rarr;
+
     h2 November
 
     div.month
@@ -57,7 +65,7 @@ block main
           span.moy Nov
           span.dom 19
         div.details
-          div.name ShefJam 3
+          div.name: a(href="/event/shefjam3") ShefJam 3
           div.link: a(href="https://www.facebook.com/events/1341879175852841/") Facebook Event &rarr;
 
       div.event
@@ -72,7 +80,7 @@ block main
 
   section.events
     section.event
-      a(href="/event/shefjam")
+      a(href="/event/gamejams")
         figure
           div: img(src="/images/gamejams.png" alt="")
           figcaption GameJams
