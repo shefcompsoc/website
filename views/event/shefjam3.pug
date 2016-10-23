@@ -1,28 +1,69 @@
 extends ../layout
 
+append styles
+  link(rel="stylesheet", type="text/css", href="/styles/event/shefjam3.css")
+
 block main
   h1.title ShefJam 3
 
-  section.venue
-    h2 Venue
-    p Venue infomation
+  div.flex
+    aside
+      section.venue
+        h2 Venue
+        p Venue infomation
 
-  section.schedule
-    h2 Schedule
-    p Schedule information
+      section.schedule
+        h2 Schedule
+        .start
+          time
+            span.moy Nov
+            span.dom 24
+          .details
+            .time 12:00
+            .duration 30 Hours
 
-  section.faq
-    h2 FAQ
-    p questions and answers
+        h3 Saturday
+        table
+          tr
+            td Arrival &amp; Team Forming
+            td 12:00
+          tr
+            td Start Jamming
+            td 13:00
+          tr
+            td Pizza Delivery
+            td 19:00
 
-  section.rules
-    h2 Rules
-    p Standard gamejam rules
+        h3 Sunday
+        table
+          tr
+            td End Jamming
+            td 17:00
+          tr
+            td Showcase
+            td 17:30
+          tr
+            td Awards
+            td 18:30
 
-  section.resources
-    h2 Resources
-    p Some links to useful stuff
+      section.links
+        h2 Tickets
+        p: a(href="") Tickets (Eventbrite) &rarr;
+        p: a(href="") Facbook Event &rarr;
 
-  section.sponsors
-    h2 Sponsors
-    p These guys
+    div.info
+      section.faq
+        h2 FAQ
+        p questions and answers
+
+      section.rules
+        h2 Rules
+        p Standard gamejam rules
+
+      section.resources
+        h2 Resources
+        p Some links to useful stuff
+
+      section.sponsors
+        h2 Sponsors
+        p These guys

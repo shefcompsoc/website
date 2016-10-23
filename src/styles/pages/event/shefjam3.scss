@@ -1,0 +1,112 @@
+@import '../../variables/colors';
+@import '../../variables/sizes';
+@import '../../variables/mixins';
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-flow: row-reverse wrap;
+}
+
+.content .info {
+  flex: 2;
+
+  section {
+    margin: 0 auto 1rem;
+
+    border-radius: 5px;
+
+    h2 {
+    }
+
+    p {
+    }
+  }
+}
+
+.content aside {
+  flex: 1;
+  padding: 0 20px;
+
+  background: $cs-dark2;
+
+  section {
+    h2 {
+    }
+  }
+
+  .start {
+    flex: 1 1 400px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    time {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: stretch;
+
+      border-radius: 10px;
+      background: $cs-light1;
+      overflow: hidden;
+
+      .moy {
+        flex: 1;
+        padding: 0 0.8rem;
+
+        background: $cs-green3;
+
+        color: $cs-dark4;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .dom {
+        flex: 2;
+        padding: 0 0.8rem;
+
+        color: $cs-dark1;
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+
+    .details {
+      margin-left: 1rem;
+
+      .time {
+        font-size: 1.6rem;
+        color: $cs-light1;
+      }
+
+      .duration {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .schedule table {
+    width: 100%;
+    border-collapse: collapse;
+
+    color: inherit;
+    font-size: inherit;
+
+    tr:nth-child(2n-1) {
+      background: transparentize($cs-dark1, 0.4);
+    }
+
+    td {
+      padding: 0 0.5em;
+    }
+
+    td:last-child {
+      text-align: right;
+    }
+  }
+}
