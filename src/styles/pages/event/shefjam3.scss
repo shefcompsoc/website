@@ -10,14 +10,18 @@
 }
 
 .content .info {
-  flex: 2;
+  flex: 2 1 400px;
+  padding: 0 20px;
 
   section {
     margin: 0 auto 1rem;
 
-    border-radius: 5px;
-
     h2 {
+      color: $cs-green3;
+    }
+
+    h3 {
+      color: $cs-green4;
     }
 
     p {
@@ -26,13 +30,16 @@
 }
 
 .content aside {
-  flex: 1;
+  flex: 1 1 250px;
   padding: 0 20px;
+  position: sticky;
+  top: 0;
 
   background: $cs-dark2;
 
   section {
     h2 {
+      color: $cs-green3;
     }
   }
 
@@ -102,7 +109,7 @@
     }
 
     td {
-      padding: 0 0.5em;
+      padding: 0.3em 0.5em;
     }
 
     td:last-child {
