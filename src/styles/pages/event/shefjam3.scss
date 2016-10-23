@@ -26,14 +26,21 @@
 
     p {
     }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    strong {
+      color: $cs-light0;
+      font-weight: 600;
+    }
   }
 }
 
 .content aside {
   flex: 1 1 250px;
   padding: 0 20px;
-  position: sticky;
-  top: 0;
 
   background: $cs-dark2;
 
