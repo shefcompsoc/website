@@ -27,7 +27,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
+    "start:w": "nodemon app.js",
+    "build": "npm install && ./node_modules/.bin/gulp build",
+    "build:w": "npm install && ./node_modules/.bin/gulp",
+    "build:dist": "npm install && ./node_modules/.bin/gulp build:dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
