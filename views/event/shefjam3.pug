@@ -1,24 +1,24 @@
 extends layout
 
-block title
+append title
   | ShefJam 3
 
-block venue
+append venue
   | TBD
 
-block dom
+append dom
   | 24
 
-block moy
+append moy
   | Nov
 
-block time
+append time
   | 12:00
 
-block duration
+append duration
   | 30 Hours
 
-block schedule
+append schedule
   h3 Saturday
   table
     tr
@@ -43,11 +43,11 @@ block schedule
       td Awards
       td 18:30
 
-block tickets
+append tickets
   p: a(href="") Tickets (Eventbrite) &rarr;
   p: a(href="") Facbook Event &rarr;
 
-block info
+append info
   section.info
     p general info
     p video promo

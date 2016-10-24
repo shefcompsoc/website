@@ -9,25 +9,24 @@ block main
   div.flex
     aside
       section.venue
-        h2 Venue
         block venue
+          h2 Venue
 
       section.schedule
-        h2 Schedule
-        .start
-          time
-            span.moy: block moy
-            span.dom: block dom
-          .details
-            .time: block time
-            .duration: block duration
-
         block schedule
+          h2 Schedule
+          .start
+            time
+              span.moy: block moy
+              span.dom: block dom
+            .details
+              .time: block time
+              .duration: block duration
 
 
       section.links
-        h2 Tickets
         block tickets
+          h2 Tickets
 
     div.info
       block info
