@@ -12,6 +12,7 @@ module.exports.init = router => {
   router.get('/event/socials', socials)
   router.get('/event/codetoast', codetoast)
   router.get('/event/tutorials', tutorials)
+  router.get('/event/linux101', linux101)
   router.get('/event/mentoring', mentoring)
   router.get('/event/summerball', summerball)
   router.get('/event/ctf', ctf)
@@ -55,6 +56,11 @@ const codetoast = function* () {
 const tutorials = function* () {
   debug('rendering tutorials page')
   yield this.render('event/tutorials')
+}
+
+const linux101 = function* () {
+  debug('rendering linux101 page')
+  yield this.render('event/linux101')
 }
 
 const mentoring = function* () {

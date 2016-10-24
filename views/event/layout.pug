@@ -1,0 +1,33 @@
+extends ../layout
+
+append styles
+  link(rel="stylesheet", type="text/css", href="/styles/event/shefjam3.css")
+
+block main
+  h1.title: block title
+
+  div.flex
+    aside
+      section.venue
+        h2 Venue
+        block venue
+
+      section.schedule
+        h2 Schedule
+        .start
+          time
+            span.moy: block moy
+            span.dom: block dom
+          .details
+            .time: block time
+            .duration: block duration
+
+        block schedule
+
+
+      section.links
+        h2 Tickets
+        block tickets
+
+    div.info
+      block info
