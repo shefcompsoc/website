@@ -10,7 +10,7 @@ const Koa = require('koa')
 const Router = require('koa-router')
 const views = require('koa-views')
 const serve = require('koa-better-static')
-const logger = require('koa-logger')
+const logger = require('koa-morgan')
 const json = require('koa-json')
 const bodyparser = require('koa-bodyparser')
 
@@ -19,7 +19,10 @@ const debug = new Debug('app:app.js')
 const app = new Koa()
 const router = new Router()
 
-if (app.env === 'development') app.use(logger())
+let format = 'short'
+if (app.env === 'development') format = 'tiny'
+app.use(logger.middleware(format))
+
 app.use(bodyparser())
 app.use(json())
 app.use(serve('./dist'), {
