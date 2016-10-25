@@ -10,7 +10,7 @@ const Koa = require('koa')
 const Router = require('koa-router')
 const views = require('koa-views')
 const serve = require('koa-better-static')
-const logger = require('koa-morgan')
+const logger = require('./lib/koa-morgan')
 const json = require('koa-json')
 const bodyparser = require('koa-bodyparser')
 
@@ -18,6 +18,8 @@ const bodyparser = require('koa-bodyparser')
 const debug = new Debug('app:app.js')
 const app = new Koa()
 const router = new Router()
+
+if (app.env === 'production') app.proxy = true
 
 let format = 'short'
 if (app.env === 'development') format = 'tiny'
