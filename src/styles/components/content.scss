@@ -37,7 +37,8 @@ main {
     text-decoration: none;
   }
 
-  a:hover {
+  a:hover,
+  a:focus {
     // instead of text-decoration: underline
     box-shadow: 0 1.5px 0 0 currentColor;
   }

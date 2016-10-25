@@ -42,7 +42,8 @@ footer {
       list-style-type: none;
     }
 
-    a {
+    a:link,
+    a:visited {
       color: $cs-green4;
       font-size: 1.2rem;
       font-family: Aleo;
