@@ -40,6 +40,9 @@
       font-weight: 300;
 
       @include mq(small) {
+        margin-bottom: 1rem;
+        padding-right: 0;
+
         text-align: center;
       }
 

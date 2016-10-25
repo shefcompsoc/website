@@ -6,13 +6,21 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  flex-flow: row-reverse wrap;
+  flex-flow: row-reverse nowrap;
+
+  @include mq(small) {
+    flex-direction: column;
+  }
 }
 
 .content .info {
   flex: 2 1 400px;
   padding: 0;
-  padding-right: 20px;
+  padding-right: 1rem;
+
+  @include mq(small) {
+    padding: 1rem 1rem 0;
+  }
 
   section {
     margin: 0 auto 1rem;
