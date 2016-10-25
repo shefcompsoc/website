@@ -59,7 +59,6 @@ gulp.task('styles:dist', ['clean:styles'], () => {
     .pipe(sass({
       outputStyle: 'compact'
     }).on('error', sass.logError))
-    .pipe(concat('style.css'))
     .pipe(purifycss([...paths.markup, ...paths.scripts]))
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
