@@ -9,7 +9,8 @@ const path = require('path')
 const Koa = require('koa')
 const Router = require('koa-router')
 const views = require('koa-views')
-const serve = require('koa-better-static')
+// const serve = require('koa-static-cache')
+const serve = require('koa-file-server')
 const logger = require('./lib/koa-morgan')
 const json = require('koa-json')
 const bodyparser = require('koa-bodyparser')
@@ -19,17 +20,24 @@ const debug = new Debug('app:app.js')
 const app = new Koa()
 const router = new Router()
 
+// tell koa about nginx
 if (app.env === 'production') app.proxy = true
 
+// apache style loggins
 let format = 'short'
 if (app.env === 'development') format = 'tiny'
 app.use(logger.middleware(format))
 
+// middleware
 app.use(bodyparser())
 app.use(json())
-app.use(serve('./dist'), {
-  maxage: 60 * 60 * 1000
-})
+app.use(serve({
+  root: './dist',
+  maxage: 60 * 60 * 1000,
+  etag: {
+    algorithm: 'md5'
+  }
+}))
 app.use(views(path.resolve('views'), {
   extension: 'pug'
 }))
