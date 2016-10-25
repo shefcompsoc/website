@@ -67,10 +67,12 @@
 
   a:hover,
   a:focus {
-    background-position: 0 100%;
-
     text-decoration: none;
     color: $cs-dark1;
+  }
 
+  a:not(.better-hover):hover,
+  a:not(.better-hover):focus {
+    background-position: 0 100%;
   }
 }

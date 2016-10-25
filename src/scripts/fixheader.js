@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('nav')
   Array.prototype.slice.call(nav.querySelectorAll('a')).forEach(function (el) {
+    el.classList.add('better-hover')
     var pos = 0
 
     function animate (ev) {
@@ -18,5 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
     el.addEventListener('mouseleave', animate)
     el.addEventListener('focus', animate)
     el.addEventListener('blur', animate)
+
+    el.addEventListener('dragstart', function (ev) {
+      ev.preventDefault()
+      return false
+    })
   })
 })
