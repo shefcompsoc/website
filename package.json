@@ -1,8 +1,8 @@
 {
-  "name": "shefcompsoc.co.uk",
+  "name": "shefcompsoc.uk",
   "version": "1.0.0",
   "description": "University of Sheffield Computer Science Society Website",
-  "main": "",
+  "main": "app.js",
   "dependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
@@ -42,12 +42,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BenClegg/compsocsite.git"
+    "url": "git+https://github.com/shefcompsoc/compsocsite.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BenClegg/compsocsite/issues"
+    "url": "https://github.com/shefcompsoc/compsocsite/issues"
   },
-  "homepage": "http://shefcompsoc.co.uk"
+  "homepage": "http://shefcompsoc.uk"
 }
