@@ -10,6 +10,7 @@
   font-size: 20px;
 
   background: $cs-dark1;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
 
   background: $cs-dark3;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   font-family: Source Sans Pro;
   font-size: 1rem;
