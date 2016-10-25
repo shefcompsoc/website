@@ -24,5 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
       ev.preventDefault()
       return false
     })
+
+    el.addEventListener('mousedown', function (ev) {
+      ev.preventDefault()
+      return false
+    })
   })
 })
