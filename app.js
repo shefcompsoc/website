@@ -9,7 +9,7 @@ const path = require('path')
 const Koa = require('koa')
 const Router = require('koa-router')
 const views = require('koa-views')
-const serve = require('koa-static')
+const serve = require('koa-better-static')
 const logger = require('koa-logger')
 const json = require('koa-json')
 const bodyparser = require('koa-bodyparser')
@@ -22,7 +22,9 @@ const router = new Router()
 if (app.env === 'development') app.use(logger())
 app.use(bodyparser())
 app.use(json())
-app.use(serve('./dist'))
+app.use(serve('./dist'), {
+  maxage: 60 * 60 * 1000
+})
 app.use(views(path.resolve('views'), {
   extension: 'pug'
 }))
