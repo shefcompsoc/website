@@ -11,8 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var pos = 0
 
     function animate (ev) {
+      el.classList.remove('no-hover')
       pos += 100
       this.style.setProperty('background-position', '0 ' + pos + '%')
+    }
+
+    function mobile (ev) {
+      el.classList.add('no-hover')
+    }
+
+    function prevent (ev) {
+      ev.preventDefault()
     }
 
     el.addEventListener('mouseenter', animate)
@@ -20,14 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
     el.addEventListener('focus', animate)
     el.addEventListener('blur', animate)
 
-    el.addEventListener('dragstart', function (ev) {
-      ev.preventDefault()
-      return false
-    })
+    el.addEventListener('touchstart', mobile)
+    el.addEventListener('touchend', mobile)
+    el.addEventListener('touchcancel', mobile)
 
-    el.addEventListener('mousedown', function (ev) {
-      ev.preventDefault()
-      return false
-    })
+    el.addEventListener('dragstart', prevent)
+    el.addEventListener('mousedown', prevent)
   })
 })

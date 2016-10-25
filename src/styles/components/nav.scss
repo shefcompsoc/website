@@ -65,14 +65,14 @@
     transition: background-position 200ms ease, color 150ms ease;
   }
 
-  a:hover,
-  a:focus {
+  a:not(.no-hover):hover,
+  a:not(.no-hover):focus {
     text-decoration: none;
     color: $cs-dark1;
   }
 
-  a:not(.better-hover):hover,
-  a:not(.better-hover):focus {
+  a:not(.better-hover):not(.no-hover):hover,
+  a:not(.better-hover):not(.no-hover):focus {
     background-position: 0 100%;
   }
 }
