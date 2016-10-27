@@ -19,7 +19,7 @@ const committee = [
     name: 'Andy Tyler',
     role: 'President',
     avatar: 'andy',
-    bio: 'I’m the President which basically means I keep the society on track...'
+    bio: 'My role basically involves keeping the society on track, so while all the committee are organising awesome events I have to make sure we are running smoothly and all the boring stuff gets done. I occasionally get to make executive decisions which is fun. I\'m your first port of call for any queries or suggestions. If you have any ideas or something exciting that you want to be involved in then hit me up!'
   }, {
     name: 'Ben Clegg',
     role: 'Vice President',
