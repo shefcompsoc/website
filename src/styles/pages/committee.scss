@@ -31,6 +31,9 @@
     align-items: center;
     flex-flow: row-reverse nowrap;
 
+    max-width: 500px;
+    margin: 0 auto;
+
     color: $cs-green4;
     font-size: 20px;
     font-family: Aleo;
@@ -80,6 +83,8 @@
   }
 
   .bio {
+    max-width: 600px;
+    margin: 0 auto;
     margin-bottom: 0;
     padding-top: 20px;
 

@@ -65,5 +65,10 @@ const committee = [
     role: 'Company Interactions Officer',
     avatar: 'martin',
     bio: 'As Company Interaction Officer, my job is to make us <i>seem</i> important so that companies will think we’re a big deal and give us money to.. Do stuff.. But they do offer job opportunities and internships, so it’s all good. I’m also pretty fun.'
+  }, {
+    name: 'Kai Barclay',
+    role: 'Outreach Officer',
+    avatar: 'kai',
+    bio: 'As the outreach officer, I create events to encourage people outside Computer Science to try programming. My goal is to welcome those who can gain a lot from knowing a little programming but might not otherwise learn how to do so. We don\'t bite! I promise! (Well, maybe Josh.)'
   }
 ]
