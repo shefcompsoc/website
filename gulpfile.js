@@ -21,11 +21,13 @@ const paths = {
   scripts: ['./src/scripts/**/*.js'],
   images: ['./src/images/**/*.{png,jpg,svg,ico}'],
   favicons: ['./src/images/favicon.{ico,png}'],
+  files: ['./src/files/**/*'],
 
   stylesOut: './dist/styles',
   scriptsOut: './dist/scripts',
   fontsOut: './dist/fonts',
-  imagesOut: './dist/images'
+  imagesOut: './dist/images',
+  filesOut: './dist/files'
 }
 
 // Clean Tasks
@@ -51,6 +53,10 @@ gulp.task('clean:favicons', () => {
 
 gulp.task('clean:fonts', () => {
   return del(paths.fontsOut)
+})
+
+gulp.task('clean:files', () => {
+  return del(paths.filesOut)
 })
 
 // Build Tasks
@@ -114,6 +120,18 @@ gulp.task('favicons', ['clean:favicons'], () => {
     .pipe(livereload())
 })
 
+gulp.task('files:dist', ['clean:files'], () => {
+  return gulp.src(paths.files)
+    .pipe(gulp.dest(paths.filesOut))
+    .pipe(livereload())
+})
+
+gulp.task('files', ['clean:files'], () => {
+  return gulp.src(paths.files)
+    .pipe(gulp.dest(paths.filesOut))
+    .pipe(livereload())
+})
+
 gulp.task('scripts:dist', ['clean:scripts'], () => {
   return gulp.src(paths.scripts)
     .pipe(gulp.dest(paths.scriptsOut))
@@ -152,7 +170,7 @@ gulp.task('observe', () => {
 })
 
 gulp.task('clean', ['clean:all'])
-gulp.task('build:dist', ['styles:dist', 'images:dist', 'fonts:dist', 'scripts:dist'])
-gulp.task('build', ['styles', 'images', 'fonts', 'scripts'])
+gulp.task('build:dist', ['styles:dist', 'images:dist', 'fonts:dist', 'scripts:dist', 'files:dist'])
+gulp.task('build', ['styles', 'images', 'fonts', 'scripts', 'files'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
