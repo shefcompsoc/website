@@ -44,11 +44,12 @@ append schedule
       td 18:30
 
 append tickets
-  p: a(href="") Tickets (Eventbrite) &rarr;
-  p: a(href="") Facbook Event &rarr;
+  //- p: a(href="") Tickets (Eventbrite) &rarr;
+  p: a(href="https://www.facebook.com/events/1341879175852841/") Facbook Event &rarr;
 
 append info
   section
+    p ShefJam returns for its third event, with ShefJam3 - CompSoc's 30-Hour Game Jam.
     p GameJams are a great way to get experience programming for fun in a team or on your own. We're endevouring to make ShefJam 3 bigger than before.
     p Here's a time lapse of ShefJam 2:
     +youtube('oILmWg7OW1I')
@@ -61,78 +62,12 @@ append info
       li: a(href="https://github.com/shefcompsoc/shefjam2") ShefJam 2
 
   section
-    h2 FAQ
-    h3 Do I have to be a member of CompSoc?
-    p Non-members can come as well, but non-members tickets are slightly more expensive.
-
-    h3 What do I need to bring?
-    p You'll need to bring a laptop (and its charger), with all the tools you need installed. You can also bring graphics tablets, small midi controllers, and some cold drinks and snacks.
-
-    h3 But I can’t program.
-    p You don’t have to! You could team up with someone who can program, and your strengths in other fields, such as music or graphics can improve the game. There are also some free game engines which require very little programming knowledge, such as Construct 2 and GameMaker: Studio.
-
-    h3 But I’ve never made a game before.
-    p Make one now! Start with something simple, there a lots of tutorials available for any game engine or library you choose, see our recommendations list below.
-
-    h3 I’m a Hallam Student / UoS Alumni / Non-Student, can I come?
-    p Yes you can! You will have to buy a non-members ticket, which will cost a bit more.
-
-    h3 I don’t have any / enough team members, what should I do?
-    p You can contact others on our Slack channel, or talk to people on the day of the event to team up. Alternatively you could enter solo, we have given awards to soloists in the past..
-
-    h3 What happens to our games after the jam?
-    p You retain full ownership of whatever you create. We can host it for you or if you make it public (on Github, etc.), we will publicise it on our site.
-
-    h3 How many team members can we have?
-    p There is no limit. However, smaller teams make management easier. We can only award up to 5 prizes per team.
-
-  section
-    h2 Rules
-    p We will be following fairly standard game jam rules, which are designed to inspire creativity:
-
-    ol
-      li #[strong You can use any tools you want], including proprietary and custom made ones. You could even make your own level editor to prepare for the jam.
-      li #[strong Premade assets (graphics, music, etc.) can be used, provided they are openly available.] You must declare that you used them and you won't be eligible for prizes related to fields which you used assets for. (For example, you won't be eligible for the graphics prize if you used an open 3D model.) We encourage you to make your own assets if you can, even if they don't look like they're from a AAA game.
-      li #[strong Any code used in the game that was not written during the jam must be publicly available], for example, libraries such as OpenFL and LWJGL are allowed.
-      li #[strong The theme should be followed], but does not need to be followed strictly. Try to find a unique interpretation of the theme if you can.
-      li Due to prize limitations, #[strong only up to 5 prizes will be available for each category], so if your team has more than 5 members, you will have to split the prizes between yourselves.
-
-  section
-    h2 Resources
-    p These are some free gamedev resources we believe to be useful, yet you can use whatever tools suit you.
-
-    p We highly recommend trying out any tools and languages which you aren’t familiar with before the jam.
-
-    h3 Game Engines
-    ul
-      li #[a(href="https://www.scirra.com/construct2") Construct 2] and #[a(href="https://www.yoyogames.com/gamemaker") GameMaker: Studio] are both great engines for non-programmers.
-      li #[a(href="http://haxe.org") Haxe]-based engines, #[a(href="http://haxeflixel.com") HaxeFlixel] and #[a(href="http://haxepunk.com") HaxePunk] are both excellent choices for Computer Science students, as Haxe has many similarities to Java, and is able to deploy to many targets. Both engines also boast controller support.
-      li #[a(href="http://www.pygame.org/hifi.html") PyGame] is a great option for those who are most familiar with Python.
-      li #[a(href="https://unity3d.com") Unity] is probably the best option for 3D games in game jams, and you can also make 2D games in it.
-
-    h3 Graphics
-    ul
-      li #[a(href="http://www.aseprite.org") aseprite] is an excellent animated pixel-art editor. The newest version costs money, but there’s a #[a(href="http://www.aseprite.org/older-versions/") free older version] available. That version can be a bit buggy, so be sure to save often.
-      li #[a(href="http://www.getpaint.net/index.html") Paint.NET] and #[a(href="https://www.gimp.org") GIMP] are both good free alternatives to Photoshop. Paint.NET's UI is a bit more user-friendly, though.
-      li #[a(href="https://www.blender.org") Blender] is the best free 3D modelling software available.
-      li #[a(href="http://opengameart.org") OpenGameArt.Org] provides open game assets, note the second rule if you do use this, however.
-
-    h3 Audio
-    ul
-      li #[a(href="http://www.bfxr.net") Bfxr] (an iteration on #[a(href="http://www.drpetter.se/project_sfxr.html") sfxr]) can randomly generate and tweak various types of sound effects.
-      li #[a(href="http://boscaceoil.net") Bosca Ceoil] is an excellent simple music editor made by Terry Cavanagh, the developer of Super Hexagon and VVVVVV. It uses premade instruments so you can spend more time composing rather than designing sounds.
-      li #[a(href="http://www.audacityteam.org") Audacity] is a good audio editor, use it to cut silence from and compress files generated by the other tools. Make sure to get the #[a(href="http://manual.audacityteam.org/o/man/faq_installation_and_plug_ins.html#lame") LAME plugin] if you want to export MP3s.
-      li For the hardcore musicians and sound engineers, #[a(href="https://lmms.io") LMMS] is a free DAW (Digital Audio Workstation), if you don't have something like FL Studio or Ableton.
-
-    h3 Other
-    ul
-      li #[a(href="https://git-scm.com") Git] is excellent version control software, and is essential if you're working in a team. Ensure you and your team know how to use it, and set up a repository beforehand. This #[strong will] save your team if you accidentally break your game, as you can just jump back to an old version.
-      li #[a(href="http://www.mapeditor.org") Tiled] and #[a(href="http://www.ogmoeditor.com") Ogmo] are both good tile-based level editors. Make sure you can import their outputs into your workflow before the jam, however. Try looking for a library which adds support for the data files they output.
-      li #[a(href="https://www.chronolapse.com") Chronolapse] (Windows) and #[a(href="http://saltares.com/blog/apps-tools/glapse/") glaspe] (GNU/Linux) both screenshot your desktop at regular intervals, allowing you to make a timelapse of your game’s development.
-      li #[a(href="http://www.pixelprospector.com") Pixel Prospector] - One of the most extensive lists of gamedev resources, including information on game design and distribution.
-      li #[a(href="https://itch.io") itch.io] is a great site for publishing games, you can even sell your games there. Try publishing your game there after the jam.
-      li #[a(href="http://ludumdare.com/compo/tools/") Ludum Dare (Tools)] - Tools recommended by the Ludum Dare game jam.
-      li #[a(href="https://www.reddit.com/r/gamedev/comments/18e38t/pocketknives_for_game_developers") Pocketknives for Game Developers (Reddit Thread)] - A list of various web-based resources, some parts may be slightly outdated.
+    h2 Information
+    p: a(href="https://github.com/shefcompsoc/shefjam3/blob/master/FAQ.md") FAQ &rarr;
+    p: a(href="https://github.com/shefcompsoc/shefjam3/blob/master/RULES.md") Rules &rarr;
+    p: a(href="https://github.com/shefcompsoc/shefjam3/blob/master/RESOURCES.md") Resources &rarr;
+    p: a(href="https://github.com/shefcompsoc/shefjam3/blob/master/ENTRIES.md") Entries (after event) &rarr;
+    p: a(href="https://github.com/shefcompsoc/shefjam3/") GitHub Repo &rarr;
 
 
   //- section
