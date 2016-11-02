@@ -7,7 +7,7 @@ module.exports.init = router => {
   router.get('/social', index)
 }
 
-const index = function* () {
+const index = async ctx => {
   debug('rendering social page')
-  yield this.render('social')
+  await ctx.render('social')
 }

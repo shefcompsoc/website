@@ -18,62 +18,62 @@ module.exports.init = router => {
   router.get('/event/ctf', ctf)
 }
 
-const index = function* () {
+const index = async ctx => {
   debug('rendering events page')
-  yield this.render('events')
+  await ctx.render('events')
 }
 
-const events = function* () {
+const events = async ctx => {
   debug('redirecting to events page')
-  this.redirect('/events')
+  ctx.redirect('/events')
 }
 
-const gamejams = function* () {
+const gamejams = async ctx => {
   debug('rendering gamejams page')
-  yield this.render('event/gamejams')
+  await ctx.render('event/gamejams')
 }
 
-const modjam = function* () {
+const modjam = async ctx => {
   debug('rendering modjam page')
-  yield this.render('event/modjam')
+  await ctx.render('event/modjam')
 }
 
-const shefjam3 = function* () {
+const shefjam3 = async ctx => {
   debug('rendering shefjam page')
-  yield this.render('event/shefjam3')
+  await ctx.render('event/shefjam3')
 }
 
-const socials = function* () {
+const socials = async ctx => {
   debug('rendering socials page')
-  yield this.render('event/socials')
+  await ctx.render('event/socials')
 }
 
-const codetoast = function* () {
+const codetoast = async ctx => {
   debug('rendering codetoast page')
-  yield this.render('event/codetoast')
+  await ctx.render('event/codetoast')
 }
 
-const tutorials = function* () {
+const tutorials = async ctx => {
   debug('rendering tutorials page')
-  yield this.render('event/tutorials')
+  await ctx.render('event/tutorials')
 }
 
-const linux101 = function* () {
+const linux101 = async ctx => {
   debug('rendering linux101 page')
-  yield this.render('event/linux101')
+  await ctx.render('event/linux101')
 }
 
-const mentoring = function* () {
+const mentoring = async ctx => {
   debug('rendering mentoring page')
-  yield this.render('event/mentoring')
+  await ctx.render('event/mentoring')
 }
 
-const summerball = function* () {
+const summerball = async ctx => {
   debug('rendering summerball page')
-  yield this.render('event/summerball')
+  await ctx.render('event/summerball')
 }
 
-const ctf = function* () {
+const ctf = async ctx => {
   debug('rendering ctf page')
-  yield this.render('event/ctf')
+  await ctx.render('event/ctf')
 }

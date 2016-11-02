@@ -7,7 +7,7 @@ module.exports.init = router => {
   router.get('/', index)
 }
 
-const index = function* () {
+const index = async ctx => {
   debug('rendering homepage')
-  yield this.render('index')
+  await ctx.render('index')
 }

@@ -9,7 +9,6 @@ const path = require('path')
 const Koa = require('koa')
 const Router = require('koa-router')
 const views = require('koa-views')
-// const serve = require('koa-static-cache')
 const serve = require('koa-file-server')
 const logger = require('./lib/koa-morgan')
 const json = require('koa-json')
@@ -24,9 +23,8 @@ const router = new Router()
 if (app.env === 'production') app.proxy = true
 
 // apache style loggins
-let format = 'short'
-if (app.env === 'development') format = 'tiny'
-app.use(logger.middleware(format))
+let format = app.env === 'development' ? 'tiny' : 'short'
+app.use(logger(format))
 
 // middleware
 app.use(bodyparser())

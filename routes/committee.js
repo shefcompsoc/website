@@ -7,9 +7,9 @@ module.exports.init = router => {
   router.get('/committee', index)
 }
 
-const index = function* () {
+const index = async ctx => {
   debug('rendering committee page')
-  yield this.render('committee', {
+  await ctx.render('committee', {
     committee
   })
 }

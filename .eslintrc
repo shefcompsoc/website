@@ -4,6 +4,9 @@
     "node": true,
     "browser": true,
   },
+  parserOptions: {
+    "ecmaVersion": 2017
+  },
   "root": true,
   "plugins": [],
   "rules": {
@@ -281,6 +284,10 @@
           ","
         ]
       }
+    ],
+    "strict": [
+      2,
+      "global"
     ],
     "template-curly-spacing": [
       2,

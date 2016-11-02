@@ -9,17 +9,17 @@ module.exports.init = router => {
   router.get('/membership', membership)
 }
 
-const index = function* () {
+const index = async ctx => {
   debug('rendering signup page')
-  yield this.render('signup')
+  await ctx.render('signup')
 }
 
-const register = function* () {
+const register = async ctx => {
   debug('redirecting to signup google form')
-  this.redirect('http://signup.shefcompsoc.co.uk')
+  ctx.redirect('http://signup.shefcompsoc.co.uk')
 }
 
-const membership = function* () {
+const membership = async ctx => {
   debug('redirecting to SU membership')
-  this.redirect('http://su.sheffield.ac.uk/groups/computer-science--2')
+  ctx.redirect('http://su.sheffield.ac.uk/groups/computer-science--2')
 }
