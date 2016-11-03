@@ -37,7 +37,7 @@
   "scripts": {
     "start": "yarn && node --harmony-async-await app.js",
     "start:w": "yarn && nodemon --harmony-async-await app.js",
-    "start:dist": "yarn build:dist && node --harmony-async-await start",
+    "start:dist": "yarn && PORT=3100 node --harmony-async-await app.js",
     "build": "yarn && ./node_modules/gulp/bin/gulp.js build",
     "build:w": "yarn && ./node_modules/gulp/bin/gulp.js",
     "build:dist": "yarn && ./node_modules/gulp/bin/gulp.js build:dist",
