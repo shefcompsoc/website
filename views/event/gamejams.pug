@@ -1,9 +1,16 @@
-extends ../layout
+extends layout-list
 
-block main
-  h1.title GameJams
+append title
+  | GameJams
 
-  div
-    //- h3: a(href="/event/shefjam1") ShefJam 1 &rarr;
-    //- h3: a(href="/event/shefjam2") ShefJam 2 &rarr;
-    h3: a(href="/event/shefjam3") ShefJam 3 &rarr;
+//- block upcoming
+
+block past
+  h2 Past GameJams
+
+
+append pre
+
+append mid
+
+append post

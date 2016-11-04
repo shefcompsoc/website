@@ -16,6 +16,7 @@ module.exports.init = router => {
   router.get('/event/mentoring', mentoring)
   router.get('/event/summerball', summerball)
   router.get('/event/ctf', ctf)
+  router.get('/event/gms', gms)
 
   // event details
   router.get('/event/linux101', linux101)
@@ -39,7 +40,9 @@ const events = async ctx => {
 
 const gamejams = async ctx => {
   debug('rendering gamejams page')
-  await ctx.render('event/gamejams')
+  await ctx.render('event/gamejams', {
+    events: filter('gamejam')
+  })
 }
 
 const socials = async ctx => {
@@ -51,27 +54,44 @@ const socials = async ctx => {
 
 const codetoast = async ctx => {
   debug('rendering codetoast page')
-  await ctx.render('event/codetoast')
+  await ctx.render('event/codetoast', {
+    events: filter('codetoast')
+  })
 }
 
 const tutorials = async ctx => {
   debug('rendering tutorials page')
-  await ctx.render('event/tutorials')
+  await ctx.render('event/tutorials', {
+    events: filter('tutorial')
+  })
 }
 
 const mentoring = async ctx => {
   debug('rendering mentoring page')
-  await ctx.render('event/mentoring')
+  await ctx.render('event/mentoring', {
+    events: filter('mentoring')
+  })
 }
 
 const summerball = async ctx => {
   debug('rendering summerball page')
-  await ctx.render('event/summerball')
+  await ctx.render('event/summerball', {
+    events: filter('ball')
+  })
 }
 
 const ctf = async ctx => {
   debug('rendering ctf page')
-  await ctx.render('event/ctf')
+  await ctx.render('event/ctf', {
+    events: filter('ctf')
+  })
+}
+
+const gms = async ctx => {
+  debug('rendering gms page')
+  await ctx.render('event/gms', {
+    events: filter('gm')
+  })
 }
 
 // event details
@@ -224,29 +244,49 @@ const socialsdb = [
   {moy: 12, dom: 9, year: 2011, type: 'social', title: 'Corp Night Out', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/675758145862041/'}},
   {moy: 12, dom: 9, year: 2011, type: 'social', title: 'Christmas Night Out', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/951740268192242/'}},
   {moy: 11, dom: 15, year: 2011, type: 'social', title: 'Tuesday Club', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/701286659982811/'}},
-  {moy: 11, dom: 13, year: 2011, type: 'social', title: 'Comedy Club', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/819013021525301/'}}
+  {moy: 11, dom: 13, year: 2011, type: 'social', title: 'Comedy Club', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/819013021525301/'}},
+  {moy: 10, dom: 15, year: 2011, type: 'social', title: 'Pop Tarts', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/883426665055194/'}}
 ]
 
 const gamejamdb = [
-  {moy: 11, dom: 21, year: 2016, type: 'gamejam', title: 'ShefJam 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1341879175852841/'}}
+  {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1341879175852841/'}},
+  {moy: 4, dom: 30, year: 2016, url: '/event/shefjam2', type: 'gamejam', title: 'ShefJam 2', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/111821595886013/'}},
+  {moy: 11, dom: 14, year: 2015, url: '/event/shefjam1', type: 'gamejam', title: 'ShefJam', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1217277844954075/'}}
 ]
 
-const codetoastdb = []
+const codetoastdb = [
+  {moy: 12, dom: 12, year: 2012, type: 'codetoast', title: 'Coding Competition', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/256100537849969/'}}
+]
 
 const tutorialsdb = [
   {moy: 11, dom: 21, year: 2016, type: 'tutorial', title: 'Linux 101: Week 5', link: null},
   {moy: 11, dom: 14, year: 2016, type: 'tutorial', title: 'Linux 101: Week 4 (Git)', link: null},
   {moy: 11, dom: 9, year: 2016, type: 'tutorial', title: 'ShefJam Primer', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1175583659187576/'}},
-  {moy: 11, dom: 7, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 3', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}}
+  {moy: 11, dom: 7, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 3', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}},
+  {moy: 10, dom: 31, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 2', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}},
+  {moy: 10, dom: 24, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 1', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1822714788015241/'}},
+  {moy: 3, dom: 9, year: 2016, type: 'tutorial', title: 'Playing Solitaire Smart', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/753203341447755/'}},
+  {moy: 11, dom: 19, year: 2013, type: 'tutorial', title: 'Tech Talk - Aardvark Swift, Microsoft and Marmalade!', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}},
+  {moy: 11, dom: 15, year: 2012, type: 'tutorial', title: 'Tech Talk - The Limits of Computation', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/113737545453707/'}}
 ]
 
 const mentoringdb = [
-  {moy: 11, dom: 5, year: 2016, type: 'mentoring', title: 'Open Mentoring Session', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1812637265644016/'}}
+  {moy: 11, dom: 5, year: 2016, type: 'mentoring', title: 'Open Mentoring Session', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1812637265644016/'}},
+  {moy: 10, dom: 28, year: 2013, type: 'mentoring', title: 'Mentoring Meeting', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1409970799232637/'}}
 ]
 
-const summerballdb = []
+const balldb = [
+  {moy: 5, dom: 20, year: 2016, type: 'ball', title: 'Masquerade Summer Ball', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/139368646462411/'}}
+]
 
 const ctfdb = []
+
+const gmdb = [
+  {moy: 4, dom: 20, year: 2016, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/454115051465347/'}},
+  {moy: 4, dom: 2, year: 2014, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1384481291828301/'}},
+  {moy: 5, dom: 15, year: 2013, type: 'gm', title: 'CompSoc EGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/576999388999019/'}},
+  {moy: 4, dom: 11, year: 2013, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/542225675798492/'}}
+]
 
 const db = process([
   ...gamejamdb,
@@ -254,6 +294,7 @@ const db = process([
   ...codetoastdb,
   ...tutorialsdb,
   ...mentoringdb,
-  ...summerballdb,
-  ...ctfdb
+  ...balldb,
+  ...ctfdb,
+  ...gmdb
 ])

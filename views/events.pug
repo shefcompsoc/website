@@ -7,22 +7,13 @@ block main
   h1.title Events
 
   section.upcoming
+    //- iterate months
     - for (const month of events) if (month)
       h3= month[0].fullmoy
       div.month
+        //- iterate events
         - for (const event of month)
-          div.event
-            time
-              span.moy= event.moy
-              span.dom= event.dom
-            div.details
-              - if (event.url)
-                div.name: a(href=event.url)= event.title
-              - else
-                div.name= event.title
-
-              - if (event.link)
-                div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
+          +eventSummary(event)
 
   hr
 
@@ -75,3 +66,10 @@ block main
           div: img(src="/images/events/ctf.png" alt="")
           figcaption Capture The Flag
       p A chance to practice offensive security. Gain access to a tightly controlled server using a variety of penetration testing techniques.
+
+    section.event
+      a(href="/event/gms")
+        figure
+          div: img(src="/images/events/gms.png" alt="")
+          figcaption AGMs
+      p Annual General Meetings (AGMs) are held every year around April/May time. If you wish to get involved with the running of the society, apply for a position beforehand.

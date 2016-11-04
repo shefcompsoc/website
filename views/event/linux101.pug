@@ -1,4 +1,4 @@
-extends layout
+extends layout-details
 
 append title
   | Linux 101
@@ -10,19 +10,16 @@ append venue
 
     (Go to the back entrance of Pam Liversidge on Newcastle Street)
 
-append dom
-  | 7
-
-append moy
-  | Nov
-
-append time
-  | 18:00
-
-append duration
-  | 2 Hours
-
-append schedule
+//- special case for recurring event
+block schedule
+  h2 Next Session
+  .start
+    time
+      span.moy Nov
+      span.dom 7
+    .details
+      .time 18:00
+      .duration 2 Hours
 
 append tickets
   p: a(href="https://www.facebook.com/events/1698490173800111/") Facebook Event &rarr;

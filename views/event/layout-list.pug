@@ -1,0 +1,46 @@
+extends ../layout
+
+append styles
+  link(rel="stylesheet" type="text/css" href="/styles/events.css")
+
+block main
+  h1.title: block title
+
+  block pre
+
+  - const now = new Date()
+  - if (events.some(year => year.some(event => event.timestamp >= now)))
+    block upcoming
+      h2 Upcoming
+
+  section.upcoming
+    //- iterate years (only to flatten)
+    - for (const year of events) if (year)
+      div.month
+
+        //- iterate future events
+        - for (const event of year) if (event.timestamp >= now)
+          +eventSummary(event)
+
+  block mid
+
+  - if (events.some(year => year.some(event => event.timestamp < now)))
+    block past
+      h2 Past Events
+
+  section.upcoming
+    //- iterate existing academic years
+    - for (const year of events) if (year)
+
+      //- check there are events for this year in the past
+      - if (year.some(item => item.timestamp < now))
+
+        //- print academic year eg. 2016/17
+        h3= `${year[0].acyear}/${String(year[0].acyear + 1).slice(2)}`
+        div.month
+
+          //- iterate past events in given academic year
+          - for (const event of year) if (event.timestamp < now)
+            +eventSummary(event)
+
+  block post

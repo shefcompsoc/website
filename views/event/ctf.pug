@@ -1,6 +1,17 @@
-extends ../layout
+extends layout-list
 
-block main
-  h1.title Capture the Flag
+append title
+  | Capture The Flag
 
-  p Information about our CTF events coming soon.
+//- block upcoming
+
+block past
+  h2 Past CTFs
+
+
+block pre
+  p Capture the Flag events are something we are looking into starting this year. They offer a chance to practice offensive security by attempting to gain access to a tightly controlled server using a variety of penetration testing techniques.
+
+block mid
+
+append post

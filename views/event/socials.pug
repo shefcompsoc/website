@@ -1,46 +1,16 @@
-extends ../layout
+extends layout-list
 
-append styles
-  link(rel="stylesheet" type="text/css" href="/styles/events.css")
+append title
+  | Socials
 
-block main
-  h1.title Socials
+//- block upcoming
 
-  - const now = new Date()
-  section.upcoming
-    h3 Upcoming
-    div.month
+block past
+  h2 Past Socials
 
-      - for (const year of events) if (year)
-        - for (const event of year) if (event.timestamp >= now)
-          div.event
-            time
-              span.moy= event.moy
-              span.dom= event.dom
-            div.details
-              - if (event.url)
-                div.name: a(href=event.url)= event.title
-              - else
-                div.name= event.title
 
-              - if (event.link)
-                div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
+append pre
 
-    section.upcoming
-      h2 Past Socials
+append mid
 
-      - for (const year of events) if (year)
-        h3= `${year[0].acyear}/${String(year[0].acyear + 1).slice(2)}`
-        div.month
-          - for (const event of year) if (event.timestamp < now)
-            div.event
-              time
-                span.moy= event.moy
-                span.dom= event.dom
-              div.details
-                - if (event.url)
-                  div.name: a(href=event.url)= event.title
-                - else
-                  div.name= event.title
-                - if (event.link !== null)
-                  div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
+append post

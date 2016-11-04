@@ -1,2 +1,21 @@
 mixin youtube(videoId)
   iframe(id="ytplayer" type="text/html" src=`https://www.youtube.com/embed/${videoId}?modestbranding=1&rel=0&showinfo=1&color=white` frameborder="0" allowfullscreen)
+
+mixin eventSummary(event)
+  div.event
+    //- calendar icon
+    time
+      span.moy= event.moy
+      span.dom= event.dom
+
+    div.details
+      div.name
+        //- if event has page on website link it
+        - if (event.url)
+          a(href=event.url)= event.title
+        - else
+          = event.title
+
+      //- external facebook/ticket link
+      - if (event.link !== null)
+        div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
