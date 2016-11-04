@@ -7,64 +7,22 @@ block main
   h1.title Events
 
   section.upcoming
-    h2 November
-    div.month
+    - for (const month of events) if (month)
+      h2= month[0].fullmoy
+      div.month
+        - for (const event of month)
+          div.event
+            time
+              span.moy= event.moy
+              span.dom= event.dom
+            div.details
+              - if (event.url)
+                div.name: a(href=event.url)= event.title
+              - else
+                div.name= event.title
 
-      div.event
-        time
-          span.moy Nov
-          span.dom 5
-        div.details
-          div.name Open Mentoring Session
-          div.link: a(href="https://www.facebook.com/events/1812637265644016/") Facebook Event &rarr;
-
-      div.event
-        time
-          span.moy Nov
-          span.dom 7
-        div.details
-          div.name: a(href="/event/linux101") Linux 101: Week 3
-          div.link: a(href="https://www.facebook.com/events/545752938957835/") Facebook Event &rarr;
-
-      div.event
-        time
-          span.moy Nov
-          span.dom 9
-        div.details
-          div.name ShefJam Primer
-          div.link: a(href="https://www.facebook.com/events/1175583659187576/") Facebook Event &rarr;
-
-      div.event
-        time
-          span.moy Nov
-          span.dom 14
-        div.details
-          div.name Linux 101: Week 4 (Git)
-          //- div.link: a(href="") Facebook Event &rarr;
-
-      div.event
-        time
-          span.moy Nov
-          span.dom 19
-        div.details
-          div.name: a(href="/event/shefjam3") ShefJam 3
-          div.link: a(href="https://www.facebook.com/events/1341879175852841/") Facebook Event &rarr;
-
-      div.event
-        time
-          span.moy Nov
-          span.dom 21
-        div.details
-          div.name Linux 101: Week 5
-          //- div.link: a(href="") Facebook Event &rarr;
-
-      div.event
-        time
-          span.moy Nov
-          span.dom 23
-        div.details
-          div.name Wednesday Corp Social
-          div.link: a(href="https://www.facebook.com/events/1154334107986361/") Facebook Event &rarr;
+              - if (event.link)
+                div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
 
   hr
 

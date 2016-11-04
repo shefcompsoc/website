@@ -18,8 +18,12 @@ block main
               span.moy= event.moy
               span.dom= event.dom
             div.details
-              div.name= event.title
-              - if (event.link !== null)
+              - if (event.url)
+                div.name: a(href=event.url)= event.title
+              - else
+                div.name= event.title
+
+              - if (event.link)
                 div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
 
     section.upcoming
@@ -34,6 +38,9 @@ block main
                 span.moy= event.moy
                 span.dom= event.dom
               div.details
-                div.name= event.title
+                - if (event.url)
+                  div.name: a(href=event.url)= event.title
+                - else
+                  div.name= event.title
                 - if (event.link !== null)
                   div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`

@@ -26,7 +26,7 @@ module.exports.init = router => {
 const index = async ctx => {
   debug('rendering events page')
   await ctx.render('events', {
-    events: filter()
+    events: upcoming(db)
   })
 }
 
@@ -112,6 +112,32 @@ const filter = type => {
     .sort((a, b) => a[0].acyear > b[0].acyear ? -1 : 1)
 }
 
+const upcoming = db => {
+  const now = new Date()
+
+  return db
+    .filter(item => item.timestamp > now)
+
+    // group events into months
+    .reduce((months, item) => {
+      if (months[item.nmoy]) {
+        months[item.nmoy].push(item)
+      } else {
+        months[item.nmoy] = [item]
+      }
+
+      return months
+    }, [])
+
+    // days in order
+    .map(item => {
+      return item.sort((a, b) => a.timestamp < b.timestamp ? -1 : 1)
+    })
+
+    // months in order
+    .sort((a, b) => a[0].nmoy < b[0].nmoy ? -1 : 1)
+}
+
 const process = db => {
   return db
     // add timestamp for ordering
@@ -128,12 +154,19 @@ const process = db => {
 
     // convert numeric month to short month
     .map(item => {
-      const months = {
+      const short = {
         1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun',
         7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'
       }
 
-      item.moy = months[item.moy]
+      const full = {
+        1: 'January', 2: 'Febrary', 3: 'March', 4: 'April', 5: 'May', 6: 'June',
+        7: 'July', 8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'
+      }
+
+      item.nmoy = item.moy
+      item.moy = short[item.nmoy]
+      item.fullmoy = full[item.nmoy]
       return item
     })
 }
@@ -189,17 +222,25 @@ const socialsdb = [
   {moy: 12, dom: 9, year: 2011, type: 'social', title: 'Corp Night Out', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/675758145862041/'}},
   {moy: 12, dom: 9, year: 2011, type: 'social', title: 'Christmas Night Out', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/951740268192242/'}},
   {moy: 11, dom: 15, year: 2011, type: 'social', title: 'Tuesday Club', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/701286659982811/'}},
-  {moy: 11, dom: 13, year: 2011, type: 'social', title: 'Comedy Club', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/819013021525301/'}},
-  {moy: 10, dom: 15, year: 2011, type: 'social', title: 'Pop Tarts', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/883426665055194/'}}
+  {moy: 11, dom: 13, year: 2011, type: 'social', title: 'Comedy Club', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/819013021525301/'}}
 ]
 
-const gamejamdb = []
+const gamejamdb = [
+  {moy: 11, dom: 21, year: 2016, type: 'gamejam', title: 'ShefJam 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1341879175852841/'}}
+]
 
 const codetoastdb = []
 
-const tutorialsdb = []
+const tutorialsdb = [
+  {moy: 11, dom: 21, year: 2016, type: 'tutorial', title: 'Linux 101: Week 5', link: null},
+  {moy: 11, dom: 14, year: 2016, type: 'tutorial', title: 'Linux 101: Week 4 (Git)', link: null},
+  {moy: 11, dom: 9, year: 2016, type: 'tutorial', title: 'ShefJam Primer', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1175583659187576/'}},
+  {moy: 11, dom: 7, year: 2016, type: 'tutorial', title: 'Linux 101: Week 3', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}}
+]
 
-const mentoringdb = []
+const mentoringdb = [
+  {moy: 11, dom: 5, year: 2016, type: 'mentoring', title: 'Open Mentoring Session', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1812637265644016/'}}
+]
 
 const summerballdb = []
 
