@@ -8,7 +8,7 @@ block main
 
   - const now = new Date()
   section.upcoming
-    h2 Upcoming
+    h3 Upcoming
     div.month
 
       - for (const year of events) if (year)
@@ -27,10 +27,10 @@ block main
                 div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
 
     section.upcoming
-      h3 Past Socials
+      h2 Past Socials
 
       - for (const year of events) if (year)
-        h2= year[0].acyear
+        h3= year[0].acyear
         div.month
           - for (const event of year) if (event.timestamp < now)
             div.event
