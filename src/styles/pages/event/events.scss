@@ -83,6 +83,8 @@
     align-items: center;
 
     time {
+      flex: 0 0 75px;
+
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;

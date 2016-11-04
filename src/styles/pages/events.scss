@@ -33,6 +33,8 @@ section.upcoming {
       padding: 20px 0;
 
       time {
+        flex: 0 0 75px;
+
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
