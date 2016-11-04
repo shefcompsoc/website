@@ -104,11 +104,12 @@ const filter = type => {
       return years
     }, [])
 
+    // days in reverse order
     .map(item => {
-      return item.sort((a, b) => a.timestamp < b.timestamp ? -1 : 1)
+      return item.sort((a, b) => a.timestamp > b.timestamp ? -1 : 1)
     })
 
-    // most recent first
+    // years in reverse order
     .sort((a, b) => a[0].acyear > b[0].acyear ? -1 : 1)
 }
 
@@ -116,6 +117,7 @@ const upcoming = db => {
   const now = new Date()
 
   return db
+    // only future events
     .filter(item => item.timestamp > now)
 
     // group events into months
@@ -195,10 +197,10 @@ const socialsdb = [
   {moy: 10, dom: 28, year: 2015, type: 'social', title: 'Halloween Bar Crawl', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/319026651605658/'}},
   {moy: 10, dom: 8, year: 2015, type: 'social', title: 'Red Deer Social', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1687925271441597/'}},
   {moy: 9, dom: 28, year: 2015, type: 'social', title: 'Freshers Bar Crawl', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/395485227288543/'}},
-  {moy: 5, dom: 27, year: 2015, type: 'social', title: 'End of Year Meal', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/665526086818085/'}},
-  {moy: 4, dom: 3, year: 2015, type: 'social', title: 'Laser Quest + Night Out', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/291316887692206/'}},
-  {moy: 3, dom: 20, year: 2015, type: 'social', title: 'Curry Night', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/512947188825206/'}},
-  {moy: 2, dom: 24, year: 2015, type: 'social', title: 'Laser Quest', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/274492706060050/'}},
+  {moy: 5, dom: 27, year: 2014, type: 'social', title: 'End of Year Meal', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/665526086818085/'}},
+  {moy: 4, dom: 3, year: 2014, type: 'social', title: 'Laser Quest + Night Out', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/291316887692206/'}},
+  {moy: 3, dom: 20, year: 2014, type: 'social', title: 'Curry Night', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/512947188825206/'}},
+  {moy: 2, dom: 24, year: 2014, type: 'social', title: 'Laser Quest', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/274492706060050/'}},
   {moy: 12, dom: 17, year: 2013, type: 'social', title: 'Chrismas Clubbing', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/788281361197945/'}},
   {moy: 12, dom: 17, year: 2013, type: 'social', title: 'Chrismas Meal', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/319023014905630/'}},
   {moy: 11, dom: 17, year: 2013, type: 'social', title: 'CompSoc Does Geek Chic', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/539186716168452/'}},

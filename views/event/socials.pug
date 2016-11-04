@@ -30,7 +30,7 @@ block main
       h2 Past Socials
 
       - for (const year of events) if (year)
-        h3= year[0].acyear
+        h3= `${year[0].acyear}/${String(year[0].acyear + 1).slice(2)}`
         div.month
           - for (const event of year) if (event.timestamp < now)
             div.event
