@@ -282,6 +282,7 @@ const balldb = [
 const ctfdb = []
 
 const gmdb = [
+  {moy: 10, dom: 25, year: 2016, type: 'gm', title: 'CompSoc EGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1326701184016442/'}},
   {moy: 4, dom: 20, year: 2016, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/454115051465347/'}},
   {moy: 4, dom: 2, year: 2014, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1384481291828301/'}},
   {moy: 5, dom: 15, year: 2013, type: 'gm', title: 'CompSoc EGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/576999388999019/'}},
