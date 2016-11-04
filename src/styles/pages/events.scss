@@ -105,7 +105,7 @@ section.events .event {
 
     & figure {
       figcaption::after {
-        width: 100%;
+        transform: scaleX(1);
       }
 
       div {
@@ -144,13 +144,14 @@ section.events .event {
       &::after {
         content: '';
         display: block;
-        width: 0;
+        width: 100%;
         margin: 0 auto;
         height: 1px;
 
         background: currentColor;
+        transform: scaleX(0);
 
-        transition: width 100ms ease;
+        transition: transform 100ms ease;
       }
     }
   }
