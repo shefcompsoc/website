@@ -1,3 +1,5 @@
+'use strict'
+
 const gulp = require('gulp')
 const del = require('del')
 const autoprefixer = require('gulp-autoprefixer')
@@ -9,6 +11,8 @@ const cleancss = require('gulp-clean-css')
 const sass = require('gulp-sass')
 const purifycss = require('gulp-purifycss')
 const sourcemaps = require('gulp-sourcemaps')
+const cache = require('gulp-cached')
+const remember = require('gulp-remember')
 
 const paths = {
   dist: './dist',
@@ -91,6 +95,7 @@ gulp.task('styles', ['clean:styles'], () => {
 
 gulp.task('markup', () => {
   return gulp.src(paths.markup)
+    .pipe(cache('markup'))
     .pipe(livereload())
 })
 
@@ -98,7 +103,6 @@ gulp.task('images:dist', ['clean:images', 'favicons:dist'], () => {
   return gulp.src(paths.images)
   .pipe(imagemin())
   .pipe(gulp.dest(paths.imagesOut))
-  .pipe(livereload())
 })
 
 gulp.task('images', ['clean:images', 'favicons'], () => {
@@ -111,7 +115,6 @@ gulp.task('favicons:dist', ['clean:favicons'], () => {
   return gulp.src(paths.favicons)
   .pipe(imagemin())
   .pipe(gulp.dest(paths.dist))
-  .pipe(livereload())
 })
 
 gulp.task('favicons', ['clean:favicons'], () => {
@@ -123,7 +126,6 @@ gulp.task('favicons', ['clean:favicons'], () => {
 gulp.task('files:dist', ['clean:files'], () => {
   return gulp.src(paths.files)
     .pipe(gulp.dest(paths.filesOut))
-    .pipe(livereload())
 })
 
 gulp.task('files', ['clean:files'], () => {
@@ -135,7 +137,6 @@ gulp.task('files', ['clean:files'], () => {
 gulp.task('scripts:dist', ['clean:scripts'], () => {
   return gulp.src(paths.scripts)
     .pipe(gulp.dest(paths.scriptsOut))
-    .pipe(livereload())
 })
 
 gulp.task('scripts', ['clean:scripts'], () => {
@@ -148,7 +149,6 @@ gulp.task('fonts:dist', ['clean:fonts'], () => {
   return gulp.src(paths.fonts)
     .pipe(flatten())
     .pipe(gulp.dest(paths.fontsOut))
-    .pipe(livereload())
 })
 
 gulp.task('fonts', ['clean:fonts'], () => {
@@ -171,6 +171,6 @@ gulp.task('observe', () => {
 
 gulp.task('clean', ['clean:all'])
 gulp.task('build:dist', ['styles:dist', 'images:dist', 'fonts:dist', 'scripts:dist', 'files:dist'])
-gulp.task('build', ['styles', 'images', 'fonts', 'scripts', 'files'])
+gulp.task('build', ['styles', 'images', 'fonts', 'scripts', 'files', 'markup'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])
