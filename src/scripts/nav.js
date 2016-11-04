@@ -1,10 +1,10 @@
+'use strict'
+
 document.addEventListener('DOMContentLoaded', function () {
   Array.from(document.querySelectorAll('.fixable')).forEach(function (el) {
     Stickyfill.add(el)
   })
-})
 
-document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('nav')
   Array.prototype.slice.call(nav.querySelectorAll('a')).forEach(function (el) {
     el.classList.add('better-hover')
