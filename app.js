@@ -13,6 +13,7 @@ const serve = require('koa-file-server')
 const logger = require('./lib/koa-morgan')
 const json = require('koa-json')
 const bodyparser = require('koa-bodyparser')
+const error = require('koa-error')
 
 // instantiations
 const debug = new Debug('app:app.js')
@@ -21,6 +22,12 @@ const router = new Router()
 
 // tell koa about nginx
 if (app.env === 'production') app.proxy = true
+
+// error handling
+app.use(error({
+  engine: 'pug',
+  template: path.resolve('views') + '/error.pug'
+}))
 
 // apache style loggins
 let format = app.env === 'development' ? 'tiny' : 'short'
