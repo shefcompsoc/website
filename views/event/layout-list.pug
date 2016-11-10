@@ -19,7 +19,7 @@ block main
       div.month
 
         //- iterate future events
-        - for (const event of year) if (event.timestamp >= now)
+        - for (const event of [...year].reverse()) if (event.timestamp >= now)
           +eventSummary(event)
 
   block mid
