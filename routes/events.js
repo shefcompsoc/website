@@ -249,7 +249,7 @@ const socialsdb = [
 ]
 
 const gamejamdb = [
-  {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1341879175852841/'}},
+  {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Reserve Ticket', url: 'https://www.eventbrite.co.uk/e/shefjam-3-tickets-28818430702'}},
   {moy: 4, dom: 30, year: 2016, url: '/event/shefjam2', type: 'gamejam', title: 'ShefJam 2', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/111821595886013/'}},
   {moy: 11, dom: 14, year: 2015, url: '/event/shefjam1', type: 'gamejam', title: 'ShefJam', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1217277844954075/'}}
 ]
@@ -260,7 +260,7 @@ const codetoastdb = [
 
 const tutorialsdb = [
   {moy: 11, dom: 21, year: 2016, type: 'tutorial', title: 'Linux 101: Week 5', link: null},
-  {moy: 11, dom: 14, year: 2016, type: 'tutorial', title: 'Linux 101: Week 4 (Git)', link: null},
+  {moy: 11, dom: 14, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 4 (Git)', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/670224403146078/'}},
   {moy: 11, dom: 9, year: 2016, type: 'tutorial', title: 'ShefJam Primer', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1175583659187576/'}},
   {moy: 11, dom: 7, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 3', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}},
   {moy: 10, dom: 31, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 2', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}},

@@ -4,11 +4,14 @@ append title
   | Linux 101
 
 append venue
+  //- address.
+  //-   Lecture Theatre 8 #[br]
+  //-   Mappin, Broad Lane Block #[br] #[br]
+  //-
+  //-   (Go to the back entrance of Pam Liversidge on Newcastle Street)
   address.
-    Lecture Theatre 8 #[br]
-    Mappin, Broad Lane Block #[br] #[br]
-
-    (Go to the back entrance of Pam Liversidge on Newcastle Street)
+    Work Room 1 #[br]
+    The Diamond
 
 //- special case for recurring event
 block schedule
@@ -16,13 +19,14 @@ block schedule
   .start
     time
       span.moy Nov
-      span.dom 7
+      span.dom 14
     .details
       .time 18:00
       .duration 2 Hours
 
-append tickets
-  p: a(href="https://www.facebook.com/events/1698490173800111/") Facebook Event &rarr;
+block tickets
+  h2 Register Interest
+  p: a(href="https://www.facebook.com/events/670224403146078/") Facebook Event &rarr;
 
 append info
   section
@@ -42,6 +46,6 @@ append info
     ul
       li: a(href="https://drive.google.com/open?id=1-U2Oc6s4lQoLcDm-BSISdeB1tYuVgRlTSIY8SNSvtnU") Session One: Basics
       li: a(href="https://drive.google.com/open?id=1BgKuYkuFpA5JFZTRwGKTiaIA3umwqqCeKrZgHao60ZY") Session Two: File Editing and Scripting
-      li Session Three: Under the Hood
+      li: a(href="https://drive.google.com/open?id=1g29ypw03WGqgdXUN5DXuXzbZ1W6xr_mvsA_bdoV4kkU") Session Three: Under the Hood
       li Session Four: Git Gud
       li Session Five: Useful Tools
