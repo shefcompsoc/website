@@ -126,7 +126,7 @@ const filter = type => {
 
     // days in reverse order
     .map(item => {
-      return item.sort((a, b) => a.timestamp > b.timestamp ? -1 : 1)
+      return item.sort((a, b) => a.timestamp < b.timestamp ? -1 : 1)
     })
 
     // years in reverse order
