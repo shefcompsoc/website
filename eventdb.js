@@ -153,7 +153,7 @@ const codetoastdb = [
 ]
 
 const tutorialsdb = [
-  {moy: 11, dom: 21, year: 2016, type: 'tutorial', title: 'Linux 101: Week 5', link: null},
+  {moy: 11, dom: 21, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 5', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/571998606341858/'}},
   {moy: 11, dom: 14, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 4 (Git Gud)', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/670224403146078/'}},
   {moy: 11, dom: 9, year: 2016, type: 'tutorial', title: 'ShefJam Primer', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1175583659187576/'}},
   {moy: 11, dom: 7, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 3', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/545752938957835/'}},
