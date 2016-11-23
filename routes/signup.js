@@ -16,7 +16,7 @@ const index = async ctx => {
 
 const register = async ctx => {
   debug('redirecting to signup google form')
-  ctx.redirect('http://signup.shefcompsoc.co.uk')
+  ctx.redirect('https://docs.google.com/forms/d/e/1FAIpQLSe6DQTcThzP3coMqYEfoEgKR3kzpFkja1MOItzdZTv-VU_nRg/viewform')
 }
 
 const membership = async ctx => {
