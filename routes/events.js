@@ -90,7 +90,7 @@ const ctf = async ctx => {
 const gms = async ctx => {
   debug('rendering gms page')
   await ctx.render('event/gms', {
-    events: filter('gm')
+    events: filter(db, 'gm')
   })
 }
 
