@@ -100,8 +100,9 @@ const process = db => {
 // }
 
 const socialsdb = [
-  {dom: 23, moy: 11, year: 2016, type: 'social', title: 'Wednesday Corp', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1154334107986361/'}},
-  {dom: 31, moy: 10, year: 2016, type: 'social', title: 'Halloween Social', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/190109711432601/'}},
+  {moy: 2, dom: 3, year: 2017, type: 'social', title: 'Winter Party', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/227906127669634/'}},
+  {moy: 11, dom: 23, year: 2016, type: 'social', title: 'Wednesday Corp', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1154334107986361/'}},
+  {moy: 10, dom: 31, year: 2016, type: 'social', title: 'Halloween Social', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/190109711432601/'}},
   {moy: 9, dom: 30, year: 2016, type: 'social', title: 'Freshers Bar Crawl', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/301175760255487/'}},
   {moy: 9, dom: 28, year: 2016, type: 'social', title: 'Midweek Pint', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/301175760255487/'}},
   {moy: 3, dom: 16, year: 2016, type: 'social', title: 'Bar Crawl + Corp', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/203773056644735/'}},
@@ -153,6 +154,7 @@ const codetoastdb = [
 ]
 
 const tutorialsdb = [
+  {moy: 2, dom: 6, year: 2017, type: 'tutorial', title: 'Workshop 1 (Theme TBD)', link: null},
   {moy: 11, dom: 21, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 5', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/571998606341858/'}},
   {moy: 11, dom: 14, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 4 (Git Gud)', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/670224403146078/'}},
   {moy: 11, dom: 9, year: 2016, type: 'tutorial', title: 'ShefJam Primer', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1175583659187576/'}},
