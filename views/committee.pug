@@ -15,6 +15,6 @@ block main
             p!= member.role
 
           div.avatar
-            img(src=`/images/committee/${member.avatar}.jpg` onerror="this.style.background='#4d1fc1'; this.src=''; this.style.overflow='hidden'")
+            img(src=`/images/committee/${member.avatar}.jpg`)
 
         p.bio!= member.bio

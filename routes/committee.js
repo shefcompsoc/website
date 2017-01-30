@@ -23,12 +23,12 @@ const committee = [
   }, {
     name: 'TBD',
     role: 'Vice President',
-    avatar: '',
+    avatar: 'tbd',
     bio: 'If you are interested in this position, visit the events page and find the CompSoc EGM. More information is available on the Facebook event.'
   }, {
     name: 'TBD',
     role: 'Secretary',
-    avatar: '',
+    avatar: 'tbd',
     bio: 'If you are interested in this position, visit the events page and find the CompSoc EGM. More information is available on the Facebook event.'
   }, {
     name: 'James Webb',
@@ -63,7 +63,7 @@ const committee = [
   }, {
     name: 'TBD',
     role: 'Company Interactions Officer',
-    avatar: '',
+    avatar: 'tbd',
     bio: 'If you are interested in this position, visit the events page and find the CompSoc EGM. More information is available on the Facebook event.'
   }, {
     name: 'Kai Barclay',
