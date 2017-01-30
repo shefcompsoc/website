@@ -21,15 +21,15 @@ const committee = [
     avatar: 'andy',
     bio: 'My role basically involves keeping the society on track, so while all the committee are organising awesome events I have to make sure we are running smoothly and all the boring stuff gets done. I occasionally get to make executive decisions which is fun. I\'m your first port of call for any queries or suggestions. If you have any ideas or something exciting that you want to be involved in then hit me up!'
   }, {
-    name: 'Ben Clegg',
+    name: 'TBD',
     role: 'Vice President',
-    avatar: 'ben',
-    bio: 'My role is basically helping everyone do anything, and keeping things organised. Don\'t worry, I\'m not planning on becoming a Frank Underwood. On a side note, do you have time to talk about our Lord and Saviour, Haxe?'
+    avatar: '',
+    bio: 'If you are interested in this position, visit the events page and find the CompSoc EGM. More information is available on the Facebook event.'
   }, {
-    name: 'Abby Smith',
+    name: 'TBD',
     role: 'Secretary',
-    avatar: 'abby',
-    bio: 'I’m secretary meaning I keep these nerds in check. Don’t mean to brag but I got an A-level in IT so I know my way around a spreadsheet or two. I get pretty mental on the Comp Sci socials - one time at uBuffet I <i>almost</i> managed to eat 30 slices of cake as a bet… I ate 7.'
+    avatar: '',
+    bio: 'If you are interested in this position, visit the events page and find the CompSoc EGM. More information is available on the Facebook event.'
   }, {
     name: 'James Webb',
     role: 'Social Secretary',
@@ -61,10 +61,10 @@ const committee = [
     avatar: 'louis',
     bio: 'As a member of the Media Team, I am (at least partly) responsible for making sure everything looks suitably "bourgeois", "on point", "dank" and other popular words for describing the aesthetics of our society. Most importantly, if you feel uncomfortable by any of our font choices (say, oh I don\'t know, a rogue Comic Sans making an appearance), remember - IT\'S NOT MY FAULT BLAME ROB OR JOSH.'
   }, {
-    name: 'Martin Cnobel',
+    name: 'TBD',
     role: 'Company Interactions Officer',
-    avatar: 'martin',
-    bio: 'As Company Interaction Officer, my job is to make us <i>seem</i> important so that companies will think we’re a big deal and give us money to.. Do stuff.. But they do offer job opportunities and internships, so it’s all good. I’m also pretty fun.'
+    avatar: '',
+    bio: 'If you are interested in this position, visit the events page and find the CompSoc EGM. More information is available on the Facebook event.'
   }, {
     name: 'Kai Barclay',
     role: 'Outreach Officer',
