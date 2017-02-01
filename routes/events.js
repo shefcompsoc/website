@@ -20,6 +20,7 @@ module.exports.init = router => {
 
   // event details
   router.get('/event/linux101', linux101)
+  router.get('/event/workshops', workshops)
   router.get('/event/shefjam3', shefjam3)
 }
 
@@ -104,6 +105,11 @@ const shefjam3 = async ctx => {
 const linux101 = async ctx => {
   debug('rendering linux101 page')
   await ctx.render('event/linux101')
+}
+
+const workshops = async ctx => {
+  debug('rendering workshops page')
+  await ctx.render('event/workshops')
 }
 
 const {
