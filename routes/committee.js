@@ -55,10 +55,5 @@ const committee = [
     role: 'Media Team Member',
     avatar: 'louis',
     bio: 'As a member of the Media Team, I am (at least partly) responsible for making sure everything looks suitably "bourgeois", "on point", "dank" and other popular words for describing the aesthetics of our society. Most importantly, if you feel uncomfortable by any of our font choices (say, oh I don\'t know, a rogue Comic Sans making an appearance), remember - IT\'S NOT MY FAULT BLAME ROB OR JOSH.'
-  }, {
-    name: 'Kai Barclay',
-    role: 'Outreach Officer',
-    avatar: 'kai',
-    bio: 'As the outreach officer, I create events to encourage people outside Computer Science to try programming. My goal is to welcome those who can gain a lot from knowing a little programming but might not otherwise learn how to do so. We don\'t bite! I promise! (Well, maybe Josh.)'
   }
 ]
