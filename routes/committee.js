@@ -23,13 +23,13 @@ const committee = [
   }, {
     name: 'Bradley Sharp',
     role: 'Vice President',
-    avatar: 'tbd',
-    bio: ''
+    avatar: 'brad',
+    bio: 'Apparently I’m now second in command, but I guess that’s why they call me vice-president. My work in the society started in the second semester and despite only being a first year I am prepared to go above and beyond for you. If that means I occasionally give the other members of the committee a hard time then so be it. The most important thing to me, is you.'
   }, {
     name: 'S&acirc;nziana Chiorescu',
     role: 'Secretary',
-    avatar: 'tbd',
-    bio: ''
+    avatar: 'sanzi',
+    bio: 'I’m Sanzi.'
   }, {
     name: 'James Webb',
     role: 'Social Secretary',
