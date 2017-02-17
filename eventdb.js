@@ -150,6 +150,7 @@ const gamejamdb = [
 ]
 
 const codetoastdb = [
+  {moy: 2, dom: 22, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[0]', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/263678810721242/'}},
   {moy: 12, dom: 12, year: 2012, type: 'codetoast', title: 'Coding Competition', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/256100537849969/'}}
 ]
 
