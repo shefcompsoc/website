@@ -155,9 +155,9 @@ const codetoastdb = [
 ]
 
 const tutorialsdb = [
-  {moy: 2, dom: 20, year: 2017, url: '/event/workshops', type: 'tutorial', title: 'Workshop: Learn Git the Easy Way', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/803701049817669/'}},
-  {moy: 2, dom: 13, year: 2017, url: '/event/workshops', type: 'tutorial', title: 'Workshop: Modern Web Development', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/167960933694143/'}},
-  {moy: 2, dom: 6, year: 2017, url: '/event/workshops', type: 'tutorial', title: 'Workshop: PC Building', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/167960933694143/'}},
+  {moy: 2, dom: 20, year: 2017, url: '/event/workshops#gitkraken', type: 'tutorial', title: 'Workshop: Learn Git the Easy Way', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/803701049817669/'}},
+  {moy: 2, dom: 13, year: 2017, url: '/event/workshops#webdev', type: 'tutorial', title: 'Workshop: Modern Web Development', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/167960933694143/'}},
+  {moy: 2, dom: 6, year: 2017, url: '/event/workshops#pcbuilding', type: 'tutorial', title: 'Workshop: PC Building', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/167960933694143/'}},
   {moy: 11, dom: 21, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 5', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/571998606341858/'}},
   {moy: 11, dom: 14, year: 2016, url: '/event/linux101', type: 'tutorial', title: 'Linux 101: Week 4 (Git Gud)', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/670224403146078/'}},
   {moy: 11, dom: 9, year: 2016, type: 'tutorial', title: 'ShefJam Primer', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1175583659187576/'}},
