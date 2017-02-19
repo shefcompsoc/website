@@ -1,0 +1,34 @@
+block main
+	#header
+	  #countdown.content
+	    h1 Challenge Starts In
+	    .clock
+	      div
+	        span.days
+	        .smalltext Days
+	      div
+	        span.hours
+	        .smalltext Hours
+	      div
+	        span.minutes
+	        .smalltext Minutes
+	      div
+	        span.seconds
+	        .smalltext Seconds
+	    br
+	    br
+	    ul.actions
+	      li
+	        a.button.icon.fa-chevron-left.scrolly(href='/challenge.html') All Problems
+	  .inner
+	    img(src='images/logo.png', alt='')
+	section#one.wrapper
+	  .inner
+	    header.major
+	      h2 Pi Prime
+	    section
+	      p Ever played Fizzbuzz? The rules to this are quite similar.
+	      p
+	        | According to Wikipedia, FizzBuzz is a group word game for children to teach them about division. This may or may not be true, but this question is generally used to torture screen young computer science graduates during programming interviews.
+	      p
+	        | Your task is to write a program that will play the game up to 1000, however there&apos;s a twist. For any number that is prime, you must instead display &quot;Prime&quot;. For any number that is a factor of 3140 you must display &quot;Pi&quot;. If the number fits in both of these you must display &quot;Piprime&quot;. All other numbers should be displayed as normal.
