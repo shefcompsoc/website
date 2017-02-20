@@ -1,3 +1,5 @@
+extends ../layout
+
 block main
   #header
     #countdown.content
@@ -21,28 +23,42 @@ block main
         li
           a.button.icon.fa-chevron-down.scrolly(href='#one') Get Started
     .inner
-      img(src='images/logo.png', alt='')
-  section#one.wrapper
-    .inner
+      img(src='new/images/logo.png', alt='')
+  if page.active
+    section#one.wrapper
+      .inner
+        header.major
+          h2 Problems
+        section
+          .table-wrapper
+            table
+              thead
+                tr
+                  th Name
+                  th Difficulty
+              tbody
+                each challenge, index in page.challenges
+                  tr
+                    td
+                      a(href=`challenge/${index}`)= challenge.name
+                    td= challenge.difficulty
+
+
+    section#two.wrapper.style2.special
       header.major
-        h2 Problems
-      section
-        .table-wrapper
-          table
-            thead
-              tr
-                th Name
-                th Difficulty
-            tbody
+        h2 How did we do?
+        p
+          | We are always looking to improve the society and
+          br
+          |  want to know what you thought about today&apos;s event.
+      ul.actions
+        li
+          a.button.special.icon(href='#') Take Survey
 
-
-  section#two.wrapper.style2.special
-    header.major
-      h2 How did we do?
-      p
-        | We are always looking to improve the society and
-        br
-        |  want to know what you thought about today&apos;s event.
-    ul.actions
-      li
-        a.button.special.icon(href='#') Take Survey
+  else
+    section#one.wrapper
+      .inner
+        header.major
+          h2 Patience is a virtue
+        section
+          p We will begin shortly, please be patient until then.
