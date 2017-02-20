@@ -1,0 +1,19 @@
+header#test {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	z-index: 2;
+	background-color: #fff;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}

@@ -1,0 +1,21 @@
+#countdown .clock {
+	display: inline-block;
+	font-size: 80px;
+}
+
+#countdown .clock > div{
+	padding-left: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+#countdown .clock div > span{
+	padding: 20px 0;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+#countdown .clock .smalltext{
+	padding-top: 5px;
+	font-size: 20px;
+}
