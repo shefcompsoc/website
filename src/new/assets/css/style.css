@@ -17,3 +17,7 @@ header nav ul {
 header nav ul li {
 	float: left;
 }
+
+main {
+  overflow-x: hidden;
+}
