@@ -3,7 +3,7 @@
 const Debug = require('debug')
 const debug = new Debug('app:routes/challenge.js')
 
-const deadline = new Date(2017, 1, 22, 16, 19, 40)
+const deadline = new Date(2017, 1, 22, 16, 20)
 
 var active = false;
 
@@ -12,7 +12,7 @@ function isActive() {
     return true
   } else {
     var t = Date.parse(deadline) - Date.parse(new Date());
-    return t <= 0
+    return t <= 15
   }
 }
 
