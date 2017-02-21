@@ -1,0 +1,35 @@
+extends ../layout
+
+block main
+  #header
+    #countdown.content
+      h1 Challenge Starts In
+      .clock
+        div
+          span.days
+          .smalltext Days
+        div
+          span.hours
+          .smalltext Hours
+        div
+          span.minutes
+          .smalltext Minutes
+        div
+          span.seconds
+          .smalltext Seconds
+      br
+      br
+      ul.actions
+        li
+          a.button.icon.fa-chevron-left.scrolly(href='/challenges') All Problems
+        li
+          a.button.icon.fa-chevron-down.scrolly(href='#one') Problem
+    .inner
+      img(src='/new/images/logo.png', alt='')
+  section#one.wrapper
+    .inner
+      header.major
+        h2= challenge.name
+      section
+        - for (const para of challenge.tasks)
+          p= para
