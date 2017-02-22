@@ -184,7 +184,7 @@ const challenges = {
         tasks: [
             'You are a thief that\'s decided to rob the local bakery. This bakery stocks 5 different sorts of cakes, each cake takes up a certain amount of space and is worth a certain value.',
             'You\'ve stolen from this bakery before and you know about 4 of the cakes already, however one of the cakes is new and you don\'t know anything about it yet.',
-            'You want to make sure you leave with the largest amount possible. You have 20 spaces in your bag.',
+            'You want to make sure you leave with the largest value possible. You have 20 spaces in your bag.',
             'Given input for the size and value of the 5th cake, calculate the maximum amount of money you could make off of this heist.',
             '<table><thead><tr><th>Size</th><th>Value</th></tr></thead><tbody> <tr><td>7</td><td>160</td></tr> <tr><td>3</td><td>90</td></tr> <tr><td>2</td><td>15</td></tr> <tr><td>6</td><td>120</td></tr> </tbody></table>'
         ],
@@ -257,9 +257,9 @@ const challenges = {
     },
 
     nextprime: {
-        name: 'The Next Prime',
+        name: 'The First Prime',
         tasks: [
-          'Given a number N, find the first prime number that occurs after it.'
+          'Given a number N, find the first prime number that occurs after it and before it.'
         ],
         difficulty: 0
     },
@@ -279,6 +279,14 @@ const challenges = {
           'Starting with 0 and 1, the sequence goes 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so forth. Written as a rule, the expression is xn = xn-1 + xn-2',
           'What is the sum of the first 50 terms of the sequence?',
           '(Use an iterative approach)'
+        ],
+        difficulty: 0
+    },
+
+    paint: {
+        name: 'Paint me a Picture',
+        tasks: [
+          'Given a number between 0 and 9, display that number in the console using a 20x20 grid'
         ],
         difficulty: 0
     },
