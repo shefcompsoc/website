@@ -132,3 +132,39 @@
     }
   }
 }
+
+.sponsors {
+  padding-bottom: 2em;
+
+  background-color: $cs-light1;
+
+  h2 {
+    margin-bottom: 0.5em;
+
+    color: $cs-green1;
+  }
+
+  .flex-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      flex: 1 1 400px;
+      padding: 10px;
+
+      text-align: center;
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      img {
+        max-height: 150px;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}
