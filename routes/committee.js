@@ -29,7 +29,7 @@ const committee = [
     name: 'S&acirc;nziana Chiorescu',
     role: 'Secretary',
     avatar: 'sanzi',
-    bio: `<span title="I'm Batman!">I'm Sanzi.</span>`
+    bio: `<a href="https://www.youtube.com/watch?v=VSaDPc1Cs5U" style="text-decoration: none; color: inherit;" title="I'm Batman!">I'm Sanzi.</a>`
   }, {
     name: 'James Webb',
     role: 'Social Secretary',
