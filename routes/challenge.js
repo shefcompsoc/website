@@ -17,11 +17,15 @@ function isActive () {
 }
 
 module.exports.init = router => {
-  //router.get('/challenges', index)
-  //router.get('/setChallengeActive/:id', setActive)
-  //router.get('/challenge', redir)
-  //router.get('/challenge/:id', details)
-  //router.get('/challenges/:id', details)
+  router.get('/challenges', index)
+  router.get('/setChallengeActive/:id', setActive)
+  router.get('/challenge', redir)
+  router.get('/challenge/:id', details)
+
+  router.get('/challenges/admin', admin)
+  router.get('/challenges/login', login)
+  router.get('/challenges/logout', logout)
+  router.post('/challenges/login', doLogin)
 }
 
 const setActive = async ctx => {
@@ -58,6 +62,49 @@ const details = async ctx => {
     ctx.redirect('../challenges')
   }
 }
+
+const login = async ctx => {
+    if (ctx.session.user) {
+        ctx.redirect('admin')
+    }
+    else {
+        await ctx.render('new/challenge/login', {
+            
+        })
+    }
+}
+
+const logout = async ctx => {
+    ctx.session.user = null
+    ctx.redirect('login')
+}
+
+const doLogin = async ctx => {
+    var uid = ctx.request.body.uid
+    var code = ctx.request.body.code
+    if (users.indexOf(uid) && parseInt(code, 36) == uid) {
+        ctx.session.user = uid
+        ctx.redirect('admin')
+    }
+    else {
+        ctx.redirect('login')
+    }
+}
+
+const admin = async ctx => {
+    if (ctx.session.user) {
+        await ctx.render('new/challenge/admin', {
+            
+        })
+    }
+    else {
+        ctx.redirect('login')
+    }
+}
+
+const users = [
+    160151945
+]
 
 const challenges = {
 
