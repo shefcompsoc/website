@@ -1,0 +1,20 @@
+extends ../layout
+
+block main
+    section#one.wrapper
+        .inner
+            header.major
+                h2 Mark as Complete
+            section
+                form(method='post', action='/challenges/solution')
+                    .row.uniform
+                        .pug(class='12u 12u$(xsmall)')
+                            input#uid(type='text', name='id', value='', placeholder='Question Number')
+                        .pug(class='6u$')
+                            ul.actions
+                                li
+                                    input.special(type='submit', value='View Solution')
+    section#two.wrapper.special.style2
+        ul.actions
+            li
+                a.button.special.icon.fa-sign-out(href='/challenges/logout') Logout

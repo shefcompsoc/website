@@ -28,8 +28,9 @@ block main
     section#one.wrapper
       .inner
         header.major
-          h2 Problems
+          h2= "Problems"
         section
+          p= "User ID: " + page.user.id
           .table-wrapper
             table
               thead
@@ -40,7 +41,7 @@ block main
                 each challenge, index in page.challenges
                   tr
                     td
-                      a(href=`challenge/${index}`)= challenge.name
+                      a(href=`challenge/${challenge.id}`)= challenge.name
                     td= challenge.difficulty
 
 

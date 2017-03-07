@@ -16,6 +16,7 @@ const logger = require('./lib/koa-morgan')
 const json = require('koa-json')
 const bodyparser = require('koa-bodyparser')
 const error = require('koa-error')
+const sqlite3 = require('co-sqlite3');
 
 // instantiations
 const debug = new Debug('app:app.js')
@@ -52,6 +53,11 @@ app.use(serve({
 app.use(views(path.resolve('views'), {
   extension: 'pug'
 }))
+
+app.use(function*(next){
+    this.db = yield sqlite3('challenges.db');
+    yield next ;
+});
 
 // initialize routes
 fs.readdirSync('routes').forEach(file => {

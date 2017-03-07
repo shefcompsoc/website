@@ -31,5 +31,4 @@ block main
       header.major
         h2= challenge.name
       section
-        - for (const para of challenge.tasks)
-          p!= para
+        p!= challenge.description

@@ -2900,11 +2900,27 @@
 				border-top: 0;
 			}
 
+		table.collapse {
+
+		}
+
+			table.collapse tbody tr td {
+				column-span: 3;
+			}
+
 	table tbody tr {
 		border-color: #e6e6e6;
 	}
 
 		table tbody tr:nth-child(2n + 1) {
+			background-color: rgba(144, 144, 144, 0.075);
+		}
+
+		table.collapse tbody tr {
+			background-color: inherit;
+		}
+
+		table.collapse tbody tr:nth-child(3n + 1) {
 			background-color: rgba(144, 144, 144, 0.075);
 		}
 
