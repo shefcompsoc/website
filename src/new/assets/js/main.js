@@ -29,6 +29,18 @@
 				}, 100);
 			});
 
+			$('#challenges li').on('click', function () {
+				var node = this.querySelector('.row').children[3]
+				if (node) {
+					if (node.style.display == "none") {
+						node.style.display = "block"
+					}
+					else {
+						node.style.display = "none"
+					}
+				}
+			})
+
 		// Mobile?
 			if (skel.vars.mobile)
 				$body.addClass('is-mobile');

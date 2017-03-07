@@ -2457,20 +2457,30 @@
 			padding-left: 0.5em;
 		}
 
-		ul.alt {
+		ul.alt,ul.alt2 {
 			list-style: none;
 			padding-left: 0;
 		}
 
-			ul.alt li {
+			ul.alt li,ul.alt2 li {
 				border-top-style: solid;
 				border-top-width: 1px;
 				padding: 0.5em 0;
 			}
 
-				ul.alt li:first-child {
+			ul.alt2 li {
+				border-top-style: solid;
+				border-top-width: 1px;
+				padding: 0.5em 0.5em;
+			}
+
+				ul.alt li:first-child,ul.alt2 li:first-child {
 					border-top: 0;
 					padding-top: 0;
+				}
+
+				ul.alt2 li:nth-child(2n) {
+					background-color: rgba(144, 144, 144, 0.075);
 				}
 
 		ul.icons {
@@ -2681,7 +2691,7 @@
 			margin-left: 2em;
 		}
 
-	ul.alt > li {
+	ul.alt > li,ul.alt2 > li  {
 		border-top-color: #e6e6e6;
 	}
 

@@ -32,17 +32,22 @@ block main
         section
           p= "User ID: " + page.user.id
           .table-wrapper
-            table
-              thead
-                tr
-                  th Name
-                  th Difficulty
-              tbody
-                each challenge, index in page.challenges
-                  tr
-                    td
-                      a(href=`challenge/${challenge.id}`)= challenge.name
-                    td= challenge.difficulty
+            ul#challenges.alt2
+              li
+                .row
+                  .pug(class='1u 12u$(xsmall)')
+                    h4  ID
+                  .pug(class='9u 12u$(xsmall)')
+                    h4  Name
+                  .pug(class='2u 12u$(xsmall)')
+                    h4  Difficulty
+              each challenge, index in page.challenges
+                li
+                  .row
+                    .pug(class='1u 18u$(xsmall)')= challenge.id
+                    .pug(class='9u 12u$(xsmall)')= challenge.name
+                    .pug(class='2u 12u$(xsmall)')= challenge.difficulty
+                    .pug(class='12u 12u$(xsmall)' style='display: none; margin-top: 10px')= challenge.description
 
 
     section#two.wrapper.style2.special

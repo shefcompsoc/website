@@ -4,17 +4,11 @@ const Debug = require('debug')
 const debug = new Debug('app:routes/challenge.js')
 const progVer = new Date().getUTCMilliseconds();
 
-const deadline = new Date(2017, 2, 7, 14, 20)
+const deadline = new Date(2017, 2, 8, 16, 20)
 
-var active = false
-
-function isActive () {
-  if (active) {
-    return true
-  } else {
-    var t = Date.parse(deadline) - Date.parse(new Date())
-    return t <= 15
-  }
+function isActive() {
+    var t = Date.parse(deadline) - Date.parse(new Date());
+    return (t <= 15000 && t >= -4.8e6)
 }
 
 var users = []
@@ -51,7 +45,6 @@ function getTempUser(ctx, id) {
 
 module.exports.init = router => {
   router.get('/challenges', index)
-  router.get('/setChallengeActive/:id', setActive)
   router.get('/challenge', redir)
   router.get('/challenge/:id', details)
 
@@ -65,14 +58,9 @@ module.exports.init = router => {
   router.post('/challenges/mark', markCompleted)
 }
 
-const setActive = async ctx => {
-  active = ctx.params.id == 'true'
-  ctx.redirect('/challenges')
-}
-
 const index = async ctx => {
   debug('rendering challenges page')
-  var challenges = await ctx.db.all("SELECT id,name,description,difficulty FROM challenges ORDER BY id")
+  var challenges = await ctx.db.all("SELECT id,name,description,difficulty FROM challenges ORDER BY difficulty")
   console.log(challenges);
   var page = {
     active: isActive(),
@@ -108,7 +96,6 @@ const details = async ctx => {
 const solution = async ctx => {
     if (ctx.session.user) {
         var challenge = await ctx.db.get("SELECT * FROM challenges WHERE id = ?", ctx.params.id.toLowerCase())
-
         if (challenge) {
             await ctx.render('new/challenge/solution', {
                 challenge
@@ -164,8 +151,15 @@ const markCompleted = async ctx => {
     if (ctx.session.user) {
         var uid = ctx.request.body.uid
         var qid = ctx.request.body.cid
-        if (users[uid]) {
-            users[uid].completed[qid] = true
+        var user = users[uid]
+        if (user) {
+            var challenge = await ctx.db.get("SELECT * FROM challenges WHERE id = ?", qid)
+            if (challenge) {
+                if (!user.completed[qid]) {
+                    user.completed[qid] = true
+                    user.score = user.score + challenge.difficulty
+                }
+            }
             ctx.redirect("admin")
         }
         else {
@@ -179,15 +173,8 @@ const markCompleted = async ctx => {
 
 const admin = async ctx => {
     if (ctx.session.user) {
-        var challenges = await ctx.db.all("SELECT * FROM challenges")
-        users.forEach(function (user) {
-            for (var key in user.completed) {
-                var completed = user.completed[key]
-                
-            }
-        })
         await ctx.render('new/challenge/admin', {
-            
+            users
         })
     }
     else {
