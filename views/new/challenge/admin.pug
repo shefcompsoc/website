@@ -1,0 +1,36 @@
+extends ../layout
+
+block main
+    section#one.wrapper
+        .inner
+            header.major
+                h2 Mark as Complete
+            section
+                form(method='post', action='/challenges/solution')
+                    .row.uniform
+                        .pug(class='12u 12u$(xsmall)')
+                            input#uid(type='text', name='id', value='', placeholder='Question Number')
+                        .pug(class='6u$')
+                            ul.actions
+                                li
+                                    input.special(type='submit', value='View Solution')
+    section#two.wrapper.style2
+        .inner
+            header.major
+                h2= "Problems"
+            section
+                .table-wrapper
+                    table
+                        thead
+                            tr
+                                th ID
+                                th Score
+                        tbody
+                            each user, index in users
+                                tr
+                                    td= user.id
+                                    td= user.score
+    section#three.wrapper.special
+        ul.actions
+            li
+                a.button.special.icon.fa-sign-out(href='/challenges/logout') Logout

@@ -1,0 +1,25 @@
+extends ../layout
+
+block main
+    section#one.wrapper
+        .inner
+            header.major
+                h2= challenge.name
+            h3 Description
+            p!= challenge.description
+            h3 Solution
+            p!= challenge.solution
+    section#one.wrapper.style2
+        .inner
+            section
+                form(method='post', action='/challenges/mark')
+                    .row.uniform
+                        .pug(class='12u 12u$(xsmall)')
+                            input#uid(type='text', name='uid', value='', placeholder='Account ID')
+                            input#uid(type='hidden', name='cid', value= challenge.id, placeholder='Account ID')
+                        .pug(class='12u$')
+                            ul.actions
+                                li
+                                    input.special(type='submit', value='Mark Completed')
+                                li
+                                    a.button.special(href='/challenges/admin') Return

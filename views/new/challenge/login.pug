@@ -1,0 +1,18 @@
+extends ../layout
+
+block main
+  section#one.wrapper
+    .inner
+      header.major
+        h2 Login
+      section
+        form(method='post', action='/challenges/login')
+          .row.uniform
+            .pug(class='6u 12u$(xsmall)')
+              input#uid(type='text', name='uid', value='', placeholder='Username')
+            .pug(class='6u 12u$(xsmall)')
+              input#code(type='password', name='code', value='', placeholder='Password')
+            .pug(class='num12u')
+              ul.actions
+                li
+                  input.special(type='submit', value='Login')
