@@ -16,7 +16,7 @@ const logger = require('./lib/koa-morgan')
 const json = require('koa-json')
 const bodyparser = require('koa-bodyparser')
 const error = require('koa-error')
-const sqlite3 = require('co-sqlite3');
+const sqlite3 = require('co-sqlite3')
 
 // instantiations
 const debug = new Debug('app:app.js')
@@ -36,8 +36,8 @@ app.use(error({
 let format = app.env === 'development' ? 'tiny' : 'short'
 app.use(logger(format))
 
-//session keys
-app.keys = ['CosPmoc4lyfe'];
+// session keys
+app.keys = ['CosPmoc4lyfe']
 
 // middleware
 app.use(convert(session(app)))
@@ -54,10 +54,10 @@ app.use(views(path.resolve('views'), {
   extension: 'pug'
 }))
 
-app.use(function*(next){
-    this.db = yield sqlite3('challenges.db');
-    yield next ;
-});
+app.use(function* (next) {
+  this.db = yield sqlite3('challenges.db')
+  yield next
+})
 
 // initialize routes
 fs.readdirSync('routes').forEach(file => {

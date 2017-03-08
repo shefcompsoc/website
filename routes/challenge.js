@@ -46,16 +46,19 @@ function getTempUser (ctx, id) {
   }
 
   let user
+
   if (id) {
     user = users[id]
   } else {
     user = users[ctx.session.userId]
   }
+
   if (!user) {
     user = createTempUser()
     ctx.session.ver = progVer
     ctx.session.userId = user.id
   }
+
   return user
 }
 
