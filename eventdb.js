@@ -144,12 +144,15 @@ const socialsdb = [
 ]
 
 const gamejamdb = [
+  {moy: 3, dom: 25, year: 2017, url: '/event/shefjam4', type: 'gamejam', title: 'ShefJam 4', link: {text: 'Get Your Ticket', url: 'https://www.eventbrite.co.uk/e/shef-jam-4-tickets-32190002163'}},
   {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Reserve Ticket', url: 'https://www.eventbrite.co.uk/e/shefjam-3-tickets-28818430702'}},
   {moy: 4, dom: 30, year: 2016, url: '/event/shefjam2', type: 'gamejam', title: 'ShefJam 2', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/111821595886013/'}},
   {moy: 11, dom: 14, year: 2015, url: '/event/shefjam1', type: 'gamejam', title: 'ShefJam', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1217277844954075/'}}
 ]
 
 const codetoastdb = [
+  {moy: 3, dom: 22, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[2]', link: { text: 'Facebook Event', url: 'https://www.f acebook.com/events/1366346406721676/'}},
+  {moy: 3, dom: 8, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[1]', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1897412310542946/'}},
   {moy: 2, dom: 22, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[0]', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/263678810721242/'}},
   {moy: 12, dom: 12, year: 2012, type: 'codetoast', title: 'Coding Competition', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/256100537849969/'}}
 ]

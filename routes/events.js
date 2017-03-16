@@ -22,6 +22,7 @@ module.exports.init = router => {
   router.get('/event/linux101', linux101)
   router.get('/event/workshops', workshops)
   router.get('/event/shefjam3', shefjam3)
+  router.get('/event/shefjam4', shefjam4)
 }
 
 // events list
@@ -98,8 +99,13 @@ const gms = async ctx => {
 // event details
 
 const shefjam3 = async ctx => {
-  debug('rendering shefjam page')
+  debug('rendering shefjam3 page')
   await ctx.render('event/shefjam3')
+}
+
+const shefjam4 = async ctx => {
+  debug('rendering shefjam4 page')
+  ctx.redirect('https://shefjam.com')
 }
 
 const linux101 = async ctx => {
