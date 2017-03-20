@@ -42,13 +42,13 @@ debug('init middleware')
 app.use(convert(session(app)))
 app.use(bodyparser())
 app.use(json())
-app.use(serve({
+app.use(convert(serve({
   root: './dist',
   maxage: 60 * 60 * 1000,
   etag: {
     algorithm: 'md5'
   }
-}))
+})))
 app.use(views(path.resolve('views'), {
   extension: 'pug'
 }))
