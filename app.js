@@ -23,51 +23,52 @@ const debug = new Debug('app:app.js')
 const app = new Koa()
 const router = new Router()
 
-// tell koa about nginx
+debug('tell koa about nginx in production')
 if (app.env === 'production') app.proxy = true
 
-// error handling
+debug('set up error pages')
 app.use(error({
   engine: 'pug',
   template: path.resolve('views') + '/error.pug'
 }))
 
-// apache style loggins
+debug('set up apache style logging')
 let format = app.env === 'development' ? 'tiny' : 'short'
 app.use(logger(format))
 
-// session keys
+debug('set session keys')
 app.keys = ['CosPmoc4lyfe']
 
-// middleware
+debug('init middleware')
 app.use(convert(session(app)))
 app.use(bodyparser())
 app.use(json())
-app.use(serve({
+app.use(convert(serve({
   root: './dist',
   maxage: 60 * 60 * 1000,
   etag: {
     algorithm: 'md5'
   }
-}))
+})))
 app.use(views(path.resolve('views'), {
   extension: 'pug'
 }))
-
-app.use(function* (next) {
-  this.db = yield sqlite3('challenges.db')
-  yield next
+app.use(async (ctx, next) => {
+  ctx.db = await sqlite3('challenges.db')
+  await next
 })
 
-// initialize routes
-fs.readdirSync('routes').forEach(file => {
-  debug(`loading route file: routes/${file}`)
-  const routes = require(`./routes/${file}`)
-  routes.init(router)
-})
+debug('init routes')
+require('./routes/index').init(router)
+require('./routes/committee').init(router)
+require('./routes/events').init(router)
+require('./routes/signup').init(router)
+require('./routes/social').init(router)
+require('./routes/challenge').init(router)
 
 app.use(router.routes(), router.allowedMethods())
 
+debug('start listening')
 const port = process.env.PORT || 3000
 app.listen(port)
 console.log(`app started on port ${port}`)

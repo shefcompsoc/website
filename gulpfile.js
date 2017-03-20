@@ -6,13 +6,11 @@ const autoprefixer = require('gulp-autoprefixer')
 const livereload = require('gulp-livereload')
 const flatten = require('gulp-flatten')
 const imagemin = require('gulp-imagemin')
-const concat = require('gulp-concat')
 const cleancss = require('gulp-clean-css')
 const sass = require('gulp-sass')
 const purifycss = require('gulp-purifycss')
 const sourcemaps = require('gulp-sourcemaps')
 const cache = require('gulp-cached')
-const remember = require('gulp-remember')
 
 const paths = {
   dist: './dist',
@@ -74,7 +72,7 @@ gulp.task('styles:dist', ['clean:styles'], () => {
       browsers: ['last 3 versions']
     }))
     .pipe(cleancss({
-      keepBreaks: true
+      format: 'keep-breaks'
     }))
     .pipe(gulp.dest(paths.stylesOut))
 })
