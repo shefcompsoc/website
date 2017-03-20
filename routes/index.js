@@ -3,7 +3,7 @@
 const Debug = require('debug')
 const debug = new Debug('app:routes/index.js')
 
-module.exports.init = router => {
+module.exports = router => {
   router.get('/', index)
 }
 

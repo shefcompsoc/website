@@ -3,7 +3,7 @@
 const Debug = require('debug')
 const debug = new Debug('app:routes/membership.js')
 
-module.exports.init = router => {
+module.exports = router => {
   router.get('/signup', index)
   router.get('/register', register)
   router.get('/membership', membership)

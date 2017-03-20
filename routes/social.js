@@ -3,7 +3,7 @@
 const Debug = require('debug')
 const debug = new Debug('app:routes/social.js')
 
-module.exports.init = router => {
+module.exports = router => {
   router.get('/social', index)
 }
 

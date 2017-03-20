@@ -3,7 +3,7 @@
 const Debug = require('debug')
 const debug = new Debug('app:routes/challenge.js')
 
-module.exports.init = router => {
+module.exports = router => {
   router.get('/challenges', index)
   router.get('/challenge', redir)
   router.get('/challenge/:id', details)

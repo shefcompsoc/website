@@ -3,7 +3,7 @@
 const Debug = require('debug')
 const debug = new Debug('app:routes/events.js')
 
-module.exports.init = router => {
+module.exports = router => {
   // events list
   router.get('/events', index)
   router.get('/event', events)

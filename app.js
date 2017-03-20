@@ -2,7 +2,6 @@
 
 // builtin
 const Debug = require('debug')
-const fs = require('fs')
 const path = require('path')
 
 // middleware
@@ -43,28 +42,28 @@ debug('init middleware')
 app.use(convert(session(app)))
 app.use(bodyparser())
 app.use(json())
-app.use(convert(serve({
+app.use(serve({
   root: './dist',
   maxage: 60 * 60 * 1000,
   etag: {
     algorithm: 'md5'
   }
-})))
+}))
 app.use(views(path.resolve('views'), {
   extension: 'pug'
 }))
 app.use(async (ctx, next) => {
   ctx.db = await sqlite3('challenges.db')
-  await next
+  await next()
 })
 
 debug('init routes')
-require('./routes/index').init(router)
-require('./routes/committee').init(router)
-require('./routes/events').init(router)
-require('./routes/signup').init(router)
-require('./routes/social').init(router)
-require('./routes/challenge').init(router)
+require('./routes/index')(router)
+require('./routes/committee')(router)
+require('./routes/events')(router)
+require('./routes/signup')(router)
+require('./routes/social')(router)
+require('./routes/challenge')(router)
 
 app.use(router.routes(), router.allowedMethods())
 
