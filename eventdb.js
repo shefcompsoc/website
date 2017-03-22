@@ -158,6 +158,7 @@ const codetoastdb = [
 ]
 
 const tutorialsdb = [
+  {moy: 3, dom: 28, year: 2017, url: '/event/workshops#docker', type: 'tutorial', title: 'Workshop: Intro to Docker', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/319168215153014/'}},
   {moy: 2, dom: 20, year: 2017, url: '/event/workshops#gitkraken', type: 'tutorial', title: 'Workshop: Learn Git the Easy Way', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/803701049817669/'}},
   {moy: 2, dom: 13, year: 2017, url: '/event/workshops#webdev', type: 'tutorial', title: 'Workshop: Modern Web Development', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/167960933694143/'}},
   {moy: 2, dom: 6, year: 2017, url: '/event/workshops#pcbuilding', type: 'tutorial', title: 'Workshop: PC Building', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/167960933694143/'}},
