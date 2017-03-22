@@ -19,7 +19,7 @@ module.exports = router => {
 }
 
 const progVer = new Date().getUTCMilliseconds()
-const deadline = new Date(2017, 2, 8, 16, 20)
+const deadline = new Date(2017, 2, 22, 16, 20)
 
 const users = []
 
