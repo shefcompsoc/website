@@ -43,8 +43,8 @@
   "scripts": {
     "start:dev": "NODE_ENV=development nodemon -d 2 app.js",
     "start": "NODE_ENV=production PORT=3100 node app.js",
-    "build:dev": "npm run gulp",
-    "build": "npm run gulp build:dist",
+    "build:dev": "gulp",
+    "build": "gulp build:dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
