@@ -183,8 +183,6 @@ const balldb = [
   {moy: 5, dom: 20, year: 2016, type: 'ball', title: 'Masquerade Summer Ball', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/139368646462411/'}}
 ]
 
-const ctfdb = []
-
 const gmdb = [
   {moy: 4, dom: 26, year: 2017, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1850842741607899/'}},
   {moy: 2, dom: 8, year: 2017, type: 'gm', title: 'CompSoc EGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1050199091792495/'}},
@@ -202,6 +200,5 @@ module.exports.db = process([
   ...tutorialsdb,
   ...mentoringdb,
   ...balldb,
-  ...ctfdb,
   ...gmdb
 ])

@@ -7,6 +7,9 @@ block main
   h1.title Events
 
   section.upcoming
+    - if (events.length)
+      h2 Upcoming
+
     //- iterate months
     - for (const month of events) if (month)
       h3= month[0].fullmoy
