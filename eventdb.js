@@ -144,8 +144,8 @@ const socialsdb = [
 ]
 
 const gamejamdb = [
-  {moy: 3, dom: 25, year: 2017, url: '/event/shefjam4', type: 'gamejam', title: 'ShefJam 4', link: {text: 'Get Your Ticket', url: 'https://www.eventbrite.co.uk/e/shef-jam-4-tickets-32190002163'}},
-  {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Reserve Ticket', url: 'https://www.eventbrite.co.uk/e/shefjam-3-tickets-28818430702'}},
+  {moy: 3, dom: 25, year: 2017, url: '/event/shefjam4', type: 'gamejam', title: 'ShefJam 4', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/658255084384976/'}},
+  {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1341879175852841/'}},
   {moy: 4, dom: 30, year: 2016, url: '/event/shefjam2', type: 'gamejam', title: 'ShefJam 2', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/111821595886013/'}},
   {moy: 11, dom: 14, year: 2015, url: '/event/shefjam1', type: 'gamejam', title: 'ShefJam', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1217277844954075/'}}
 ]
@@ -179,12 +179,14 @@ const mentoringdb = [
 ]
 
 const balldb = [
+  {moy: 6, dom: 5, year: 2017, type: 'ball', title: 'CompSci Summer Ball 2017', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/378767122524684/'}},
   {moy: 5, dom: 20, year: 2016, type: 'ball', title: 'Masquerade Summer Ball', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/139368646462411/'}}
 ]
 
 const ctfdb = []
 
 const gmdb = [
+  {moy: 4, dom: 26, year: 2017, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1850842741607899/'}},
   {moy: 2, dom: 8, year: 2017, type: 'gm', title: 'CompSoc EGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1050199091792495/'}},
   {moy: 10, dom: 25, year: 2016, type: 'gm', title: 'CompSoc EGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1326701184016442/'}},
   {moy: 4, dom: 20, year: 2016, type: 'gm', title: 'CompSoc AGM', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/454115051465347/'}},
