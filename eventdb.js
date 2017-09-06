@@ -103,7 +103,7 @@ const socialsdb = [
   {moy: 2, dom: 3, year: 2017, type: 'social', title: 'Winter Party', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/227906127669634/'}},
   {moy: 11, dom: 23, year: 2016, type: 'social', title: 'Wednesday Corp', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1154334107986361/'}},
   {moy: 10, dom: 31, year: 2016, type: 'social', title: 'Halloween Social', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/190109711432601/'}},
-  {moy: 9, dom: 30, year: 2016, type: 'social', title: 'Freshers Bar Crawl', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/301175760255487/'}},
+  {moy: 9, dom: 30, year: 2016, type: 'social', title: 'Freshers Bar Crawl', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/165921290479081/'}},
   {moy: 9, dom: 28, year: 2016, type: 'social', title: 'Midweek Pint', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/301175760255487/'}},
   {moy: 3, dom: 16, year: 2016, type: 'social', title: 'Bar Crawl + Corp', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/203773056644735/'}},
   {moy: 3, dom: 11, year: 2016, type: 'social', title: 'CompSoc Pub Quiz', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/822871811155905/'}},
