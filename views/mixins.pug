@@ -17,5 +17,5 @@ mixin eventSummary(event)
           = event.title
 
       //- external facebook/ticket link
-      - if (event.link !== null)
+      - if (event.link)
         div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
