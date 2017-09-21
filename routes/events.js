@@ -3,10 +3,12 @@
 const Debug = require('debug')
 const debug = new Debug('app:routes/events.js')
 
+const { db, upcoming, filter } = require('../eventdb.js')
+
 module.exports = router => {
   // events list
   router.get('/events', index)
-  router.get('/event', events)
+  router.get('/event', ctx => ctx.redirect('/events'))
 
   // event categories
   router.get('/event/gamejams', gamejams)
@@ -18,11 +20,18 @@ module.exports = router => {
   router.get('/event/ctf', ctf)
   router.get('/event/gms', gms)
 
-  // event details
-  router.get('/event/linux101', linux101)
-  router.get('/event/workshops', workshops)
-  router.get('/event/shefjam3', shefjam3)
-  router.get('/event/shefjam4', shefjam4)
+  // event shortcuts
+  // router.get('/event/linux101', ctx => ctx.redirect('/event/2016-17/linux101'))
+  // router.get('/event/workshops', ctx => ctx.redirect('/event/2016-17/workshops'))
+
+  // 2017-18 event details
+  // router.get('/event/linux-essentials', ev2017.linuxEssentials)
+
+  // 2016-17 event details
+  router.get('/event/2016-17/linux101', ev2016.linux101)
+  router.get('/event/2016-17/workshops', ev2016.workshops)
+  router.get('/event/shefjam3', ev2016.shefjam3)
+  router.get('/event/shefjam4', ev2016.shefjam4)
 }
 
 // events list
@@ -31,11 +40,6 @@ const index = async ctx => {
   await ctx.render('events', {
     events: upcoming(db)
   })
-}
-
-const events = async ctx => {
-  debug('redirecting to events page')
-  ctx.redirect('/events')
 }
 
 // event categories
@@ -96,30 +100,31 @@ const gms = async ctx => {
   })
 }
 
-// event details
-
-const shefjam3 = async ctx => {
-  debug('rendering shefjam3 page')
-  await ctx.render('event/shefjam3')
+const ev2017 = {
+  // linuxEssentials: async (ctx) => {
+  //   ctx.render('event/linux-essentials')
+  // }
 }
 
-const shefjam4 = async ctx => {
-  debug('rendering shefjam4 page')
-  ctx.redirect('https://shefjam.com')
-}
+// 2016-17 event details
+const ev2016 = {
+  shefjam3: async ctx => {
+    debug('rendering shefjam3 page')
+    await ctx.render('event/shefjam3')
+  },
 
-const linux101 = async ctx => {
-  debug('rendering linux101 page')
-  await ctx.render('event/linux101')
-}
+  shefjam4: async ctx => {
+    debug('rendering shefjam4 page')
+    ctx.redirect('https://shefjam.com')
+  },
 
-const workshops = async ctx => {
-  debug('rendering workshops page')
-  await ctx.render('event/workshops')
-}
+  linux101: async ctx => {
+    debug('rendering linux101 page')
+    await ctx.render('event/linux101')
+  },
 
-const {
-  db,
-  upcoming,
-  filter
-} = require('../eventdb.js')
+  workshops: async ctx => {
+    debug('rendering workshops page')
+    await ctx.render('event/workshops')
+  }
+}
