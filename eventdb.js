@@ -100,7 +100,7 @@ const process = db => {
 // }
 
 const socialsdb = [
-  {moy: 9, dom: 28, year: 2017, type: 'social', title: 'Freshers Bar Crawl'},
+  {moy: 9, dom: 28, year: 2017, type: 'social', title: 'Freshers Bar Crawl', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/832116870282808'}},
   {moy: 2, dom: 3, year: 2017, type: 'social', title: 'Winter Party', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/227906127669634/'}},
   {moy: 11, dom: 23, year: 2016, type: 'social', title: 'Wednesday Corp', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1154334107986361/'}},
   {moy: 10, dom: 31, year: 2016, type: 'social', title: 'Halloween Social', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/190109711432601/'}},
@@ -159,12 +159,12 @@ const codetoastdb = [
 ]
 
 const tutorialsdb = [
-  {moy: 11, dom: 6, year: 2017, type: 'tutorial', title: 'Advanced Git'},
-  {moy: 10, dom: 30, year: 2017, type: 'tutorial', title: 'Git Basics'},
-  {moy: 10, dom: 23, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 4'},
-  {moy: 10, dom: 16, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 3'},
-  {moy: 10, dom: 9, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 2'},
-  {moy: 10, dom: 2, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 1'},
+  {moy: 11, dom: 6, year: 2017, type: 'tutorial', title: 'Advanced Git', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/661894257343238/'}},
+  {moy: 10, dom: 30, year: 2017, type: 'tutorial', title: 'Git Basics', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1749878045313985/'}},
+  {moy: 10, dom: 23, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 4', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/350658985375745/'}},
+  {moy: 10, dom: 16, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/350658985375745/'}},
+  {moy: 10, dom: 9, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 2', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/350658985375745/'}},
+  {moy: 10, dom: 2, year: 2017, type: 'tutorial', title: 'Linux Essentials: Week 1', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/350658985375745/'}},
   {moy: 3, dom: 28, year: 2017, url: '/event/2016-17/workshops#docker', type: 'tutorial', title: 'Workshop: Intro to Docker', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/319168215153014/'}},
   {moy: 2, dom: 20, year: 2017, url: '/event/2016-17/workshops#gitkraken', type: 'tutorial', title: 'Workshop: Learn Git the Easy Way', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/803701049817669/'}},
   {moy: 2, dom: 13, year: 2017, url: '/event/2016-17/workshops#webdev', type: 'tutorial', title: 'Workshop: Modern Web Development', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/167960933694143/'}},
