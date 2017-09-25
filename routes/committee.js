@@ -19,6 +19,12 @@ const committee = [
     name: 'Rob Ede',
     role: 'President',
     avatar: 'rob',
+    social: {
+      twitter: 'robjtede',
+      instagram: 'robjte.de',
+      github: 'robjtede',
+      facebook: 'robjtede'
+    },
     bio: `
       <p>Hey. Rob. Masters student and avid web developer.</p>
       <p>When I became President of this growing society, I promised to keep the good work of the previous years' committees going; putting on engaging regular meet ups and exciting large events for members.</p>
@@ -28,7 +34,20 @@ const committee = [
     name: 'Jodi Swift',
     role: 'Secretary',
     avatar: 'jodi',
-    bio: `Hi, I'm Jodi! Hobbies include writing minutes, booking stuff and sending lots of emails :P`
+    bio: `<p>Hi, I'm Jodi! Hobbies include writing minutes, booking stuff and sending lots of emails :P</p>`
+  }, {
+    name: 'Blayze Milward',
+    role: 'Events <nobr>Co-ordinator</nobr>',
+    avatar: 'blayze',
+    social: {
+      twitter: 'blayzeing',
+      github: 'blayzeing',
+      facebook: 'blayze.millward'
+    },
+    bio: `
+      <p>I am Blayze: maker of things, wearer of blazers, rider of skateboards.</p>
+      <p>I've been around for a while, having a lot to do with the first gamejams, but have spent the last year working at a defence company. I'm here to organize events, particularly those that involve tech. So, if you have any ideas or things you want to see done, I'm the man to talk to!</p>
+    `
   }, {
     name: 'Tom Thomas-Litman',
     role: 'Treasurer',
@@ -41,15 +60,7 @@ const committee = [
     name: 'James Webb',
     role: 'Inclusions Officer',
     avatar: 'james',
-    bio: `As inclusions officer I will be ensuring everything we do is accessible to everyone. Not feeling included? Hmu and we can fix it.`
-  }, {
-    name: 'Blayze Milward',
-    role: 'Events <nobr>Co-ordinator</nobr>',
-    avatar: 'blayze',
-    bio: `
-      <p>I am Blayze: maker of things, wearer of blazers, rider of skateboards.</p>
-      <p>I've been around for a while, having a lot to do with the first gamejams, but have spent the last year working at a defence company. I'm here to organize events, particularly those that involve tech. So, if you have any ideas or things you want to see done, I'm the man to talk to!</p>
-    `
+    bio: `<p>As inclusions officer I will be ensuring everything we do is accessible to everyone. Not feeling included? Hmu and we can fix it.</p>`
   }, {
     name: 'Louis Thorpe-Monaghan',
     role: 'Media Team',
