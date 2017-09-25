@@ -19,4 +19,23 @@ block main
           div.avatar
             img(src=`/images/committee/${member.avatar}.jpg`)
 
-        p.bio!= member.bio
+        div.bio!= member.bio
+
+        - if ('social' in member)
+          div.member-social
+            - if ('twitter' in member.social)
+              div.member-social-twitter
+                a(href=`https://twitter.com/${member.social.twitter}` title=`${member.name} on Twitter (${member.social.twitter})` target="_blank")
+                  img(src="/images/social/twitter.png" alt=`Twitter Logo`)
+            - if ('instagram' in member.social)
+              div.member-social-instagram
+                a(href=`https://instagram.com/${member.social.instagram}` title=`${member.name} on Instagram (${member.social.instagram})` target="_blank")
+                  img(src="/images/social/instagram.png" alt=`Instagram Logo`)
+            - if ('github' in member.social)
+              div.member-social-github
+                a(href=`https://github.com/${member.social.github}` title=`${member.name} on Github (${member.social.github})` target="_blank")
+                  img(src="/images/social/github.png" alt=`GitHub Logo`)
+            - if ('facebook' in member.social)
+              div.member-social-facebook
+                a(href=`https://facebook.com/${member.social.facebook}` title=`${member.name} on Facebook (${member.social.facebook})` target="_blank")
+                  img(src="/images/social/facebook.png" alt=`Facebook Logo`)
