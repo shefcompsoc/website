@@ -1,0 +1,42 @@
+extends ../layout-details
+
+append title
+  | Linux Essentials
+
+append venue
+  address.
+    Work Room 1 #[br]
+    The Diamond
+
+//- special case for recurring event
+block schedule
+  h2 Last Session
+  .start
+    time
+      span.moy Nov
+      span.dom 21
+    .details
+      .time 18:00
+      .duration 2 Hours
+
+block tickets
+  h2 Register Interest
+  p: a(href="https://www.facebook.com/events/571998606341858/") Facebook Event &rarr;
+
+append info
+  section
+    h2 Course
+    p A short weekly Linux course taking you from zero to Bash hero.
+    p Being profficient in a Linux environment is also a key skill for employability in the tech sector.
+    p This will be especially beneficial for second years taking Software Hut next semester.
+
+  section
+    h2 Virtual Machine
+    ul
+      li: a(href="https://www.virtualbox.org/wiki/Downloads") VirtualBox
+      li: a(href="https://drive.google.com/a/sheffield.ac.uk/file/d/0B8RGZhxPfAjSMTMxYWJnSTFrQVU/view?usp=sharing") Ubuntu Image
+
+  section
+    h2 Slides
+    ul
+      li: a(href="https://drive.google.com/open?id=1-U2Oc6s4lQoLcDm-BSISdeB1tYuVgRlTSIY8SNSvtnU") Session One: Basics

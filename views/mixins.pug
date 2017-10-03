@@ -12,7 +12,7 @@ mixin eventSummary(event)
       div.name
         //- if event has page on website link it
         - if (event.url)
-          a(href=event.url)= event.title
+          a(href=event.url)!= `${event.title} &rarr;`
         - else
           = event.title
 

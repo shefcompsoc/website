@@ -1,4 +1,4 @@
-extends layout-details
+extends ../layout-details
 
 append title
   | 2016/17 Workshops
@@ -8,27 +8,27 @@ append venue
     Lecture Theatre 1#[br]
     The Diamond
 
-append dom
-  | 28
+//- append dom
+//-   | 28
+//-
+//- append moy
+//-   | Mar
+//-
+//- append time
+//-   | 17:00
+//-
+//- append duration
+//-   | 2 hours
 
-append moy
-  | Mar
-
-append time
-  | 17:00
-
-append duration
-  | 2 hours
-
-//- block schedule
-//-   h2 Last Session
-//-   .start
-//-     time
-//-       span.moy Feb
-//-       span.dom 20
-//-     .details
-//-       .time 17:00
-//-       .duration 2 Hours
+block schedule
+  h2 Last Session
+  .start
+    time
+      span.moy Mar
+      span.dom 28
+    .details
+      .time 17:00
+      .duration 2 Hours
 
 
 block tickets

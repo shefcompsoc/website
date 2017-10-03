@@ -20,18 +20,16 @@ module.exports = router => {
   router.get('/event/ctf', ctf)
   router.get('/event/gms', gms)
 
-  // event shortcuts
-  // router.get('/event/linux101', ctx => ctx.redirect('/event/2016-17/linux101'))
-  // router.get('/event/workshops', ctx => ctx.redirect('/event/2016-17/workshops'))
+  // shefjam event details
+  router.get('/event/shefjam3', shefjams.shefjam3)
+  router.get('/event/shefjam4', shefjams.shefjam4)
 
   // 2017-18 event details
-  // router.get('/event/linux-essentials', ev2017.linuxEssentials)
+  router.get('/event/2017-18/linux-essentials', ev2017.linuxEssentials)
 
   // 2016-17 event details
   router.get('/event/2016-17/linux101', ev2016.linux101)
   router.get('/event/2016-17/workshops', ev2016.workshops)
-  router.get('/event/shefjam3', ev2016.shefjam3)
-  router.get('/event/shefjam4', ev2016.shefjam4)
 }
 
 // events list
@@ -100,14 +98,8 @@ const gms = async ctx => {
   })
 }
 
-const ev2017 = {
-  // linuxEssentials: async (ctx) => {
-  //   ctx.render('event/linux-essentials')
-  // }
-}
-
-// 2016-17 event details
-const ev2016 = {
+// shefjam event details
+const shefjams = {
   shefjam3: async ctx => {
     debug('rendering shefjam3 page')
     await ctx.render('event/shefjam3')
@@ -115,16 +107,26 @@ const ev2016 = {
 
   shefjam4: async ctx => {
     debug('rendering shefjam4 page')
-    ctx.redirect('https://shefjam.com')
-  },
+    await ctx.render('event/shefjam4')
+  }
+}
 
+// 2017-18 event details
+const ev2017 = {
+  linuxEssentials: async ctx => {
+    await ctx.render('event/2017-18/linux-essentials')
+  }
+}
+
+// 2016-17 event details
+const ev2016 = {
   linux101: async ctx => {
     debug('rendering linux101 page')
-    await ctx.render('event/linux101')
+    await ctx.render('event/2016-17/linux101')
   },
 
   workshops: async ctx => {
     debug('rendering workshops page')
-    await ctx.render('event/workshops')
+    await ctx.render('event/2016-17/workshops')
   }
 }
