@@ -11,6 +11,9 @@
 
 .committee-member {
   flex: 1 1 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   padding: 20px;
   padding-bottom: 0;
   margin: 5px;
@@ -33,6 +36,7 @@
     align-items: center;
     flex-flow: row-reverse nowrap;
 
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
 
@@ -86,6 +90,7 @@
   }
 
   .bio {
+    flex-grow: 1;
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 0;
@@ -101,6 +106,7 @@
   }
 
   .member-social {
+    justify-self: flex-end;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;

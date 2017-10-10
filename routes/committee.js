@@ -34,6 +34,9 @@ const committee = [
     name: 'Jodi Swift',
     role: 'Secretary',
     avatar: 'jodi',
+    social: {
+      facebook: 'jodi.swift.14'
+    },
     bio: `<p>Hi, I'm Jodi! Hobbies include writing minutes, booking stuff and sending lots of emails :P</p>`
   }, {
     name: 'Blayze Milward',
@@ -52,6 +55,9 @@ const committee = [
     name: 'Tom Thomas-Litman',
     role: 'Treasurer',
     avatar: 'tom',
+    social: {
+      facebook: 'thomaslitman'
+    },
     bio: `
       <p>I am the money money man.</p>
       <p>“If a man does not have the sauce, then he is lost. But the same man can be lost in the sauce.” - Gucci Mane</p>
@@ -60,11 +66,19 @@ const committee = [
     name: 'James Webb',
     role: 'Inclusions Officer',
     avatar: 'james',
+    social: {
+      facebook: 'JamesWebb8564'
+    },
     bio: `<p>As inclusions officer I will be ensuring everything we do is accessible to everyone. Not feeling included? Hmu and we can fix it.</p>`
   }, {
     name: 'Louis Thorpe-Monaghan',
     role: 'Media Team',
     avatar: 'louis',
+    social: {
+      twitter: 'WeeabooLou',
+      instagram: 'louis_t.m',
+      facebook: 'Louuuiis'
+    },
     bio: `
       <p>As a member of the Media Team, I am (at least partly) responsible for making sure everything looks suitably “bourgeois”, “on point”, “dank” and other popular words for describing the aesthetics of our society.</p>
       <p>Most importantly, if you feel uncomfortable by any of our font choices (say, oh I don't know, a rogue Comic Sans making an appearance), remember - IT'S NOT MY FAULT BLAME ROB.</p>
