@@ -7,3 +7,45 @@ main {
     padding: 0 1rem;
   }
 }
+
+.signup-levels {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.signup-level {
+  flex: 1 1 300px;
+  padding: 20px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  text-align: center;
+
+  transition: background-color 100ms ease, border-color 100ms ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: $cs-green3;
+    box-shadow: none !important;
+  }
+
+  h2 {
+    margin-top: 0;
+
+    color: $cs-green2;
+  }
+
+  p {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  img {
+    height: auto;
+    width: auto;
+    max-height: 120px;
+    margin-bottom: 1.2em;
+  }
+}

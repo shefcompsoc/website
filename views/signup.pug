@@ -6,5 +6,15 @@ append styles
 block main
   h1.title Signup
 
-  p| #[a(href="/register" target="_blank") Register your email] with us to receive newsletters and be added to the Slack team.
-  p Membership is only &pound;5 for the year and entitles you to reduced price (or free) event tickets. Use #[a(href="/membership" target="_blank") the Union website to pay by card.]
+  div.signup-levels
+    a.signup-level(href="/register" target="_blank")
+      h2 Mailing List
+      div
+        img(src="/images/signup/mailing.png")
+      p Click here to register your email with us and receive newsletters and be added to the Slack team.
+
+    a.signup-level(href="/membership" target="_blank")
+      h2 Membership
+      div
+        img(src="/images/signup/membership.png")
+      p Membership is only &pound;5 for the year and entitles you to reduced price (or free) event tickets. Click here to to pay by card on the Union website.
