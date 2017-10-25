@@ -12,10 +12,10 @@ mixin eventSummary(event)
       div.name
         //- if event has page on website link it
         - if (event.url)
-          a(href=event.url)!= `${event.title} &rarr;`
+          a(href=event.url)!= `${event.title}&nbsp;&rarr;`
         - else
           = event.title
 
       //- external facebook/ticket link
       - if (event.link)
-        div.link: a(href=event.link.url)!= `${event.link.text} &rarr;`
+        div.link: a(href=event.link.url)!= `${event.link.text}&nbsp;&rarr;`
