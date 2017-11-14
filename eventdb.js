@@ -100,6 +100,7 @@ const process = db => {
 // }
 
 const socialsdb = [
+  {moy: 11, dom: 23, year: 2017, type: 'social', title: 'Bierkeller Social', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/553856751630361/'}},
   {moy: 9, dom: 28, year: 2017, type: 'social', title: 'Freshers Bar Crawl', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/832116870282808'}},
   {moy: 2, dom: 3, year: 2017, type: 'social', title: 'Winter Party', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/227906127669634/'}},
   {moy: 11, dom: 23, year: 2016, type: 'social', title: 'Wednesday Corp', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1154334107986361/'}},
@@ -145,6 +146,7 @@ const socialsdb = [
 ]
 
 const gamejamdb = [
+  {moy: 11, dom: 25, year: 2017, url: '/event/shefjamv', type: 'gamejam', title: 'ShefJam V', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/796289680543322/'}},
   {moy: 3, dom: 25, year: 2017, url: '/event/shefjam4', type: 'gamejam', title: 'ShefJam 4', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/658255084384976/'}},
   {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1341879175852841/'}},
   {moy: 4, dom: 30, year: 2016, url: '/event/shefjam2', type: 'gamejam', title: 'ShefJam 2', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/111821595886013/'}},
