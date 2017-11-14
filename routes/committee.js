@@ -21,7 +21,7 @@ const committee = [
     avatar: 'rob',
     social: {
       twitter: 'robjtede',
-      instagram: 'robjte.de',
+      instagram: 'robjtede',
       github: 'robjtede',
       facebook: 'robjtede'
     },
@@ -57,7 +57,7 @@ const committee = [
   {
     name: 'Russell Penn',
     role: 'Events <nobr>Co-ordinator</nobr>',
-    avatar: 'tbd',
+    avatar: 'russell',
     social: {},
     bio: ``
   },
@@ -85,7 +85,7 @@ const committee = [
   {
     name: 'Eeshan Jaiswal',
     role: 'General Committee',
-    avatar: 'tbd',
+    avatar: 'eeshan',
     social: {},
     bio: ``
   },
@@ -102,5 +102,19 @@ const committee = [
       <p>As a member of the Media Team, I am (at least partly) responsible for making sure everything looks suitably “bourgeois”, “on point”, “dank” and other popular words for describing the aesthetics of our society.</p>
       <p>Most importantly, if you feel uncomfortable by any of our font choices (say, oh I don't know, a rogue Comic Sans making an appearance), remember - IT'S NOT MY FAULT BLAME ROB.</p>
     `
+  },
+  {
+    name: 'Alexander Yates',
+    role: 'Organiser',
+    avatar: 'alex',
+    social: {},
+    bio: ``
+  },
+  {
+    name: 'Tim Carr',
+    role: 'Organiser',
+    avatar: 'tbd',
+    social: {},
+    bio: ``
   }
 ]
