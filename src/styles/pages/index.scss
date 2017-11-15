@@ -7,7 +7,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #10121E;
-  background-position: 0 200px;
+  background-position: 0 calc(250px - 5vw);
 }
 
 .intro {
@@ -29,12 +29,13 @@ body {
 }
 
 .shefjam {
-  padding-top: 20rem;
+  padding-top: 30vw;
 
   p {
     @include responsive-font(4vw, 1.5rem, 2.5rem);
     font-family: Aleo;
     text-align: center;
+    color: $cs-light1;
   }
 }
 
