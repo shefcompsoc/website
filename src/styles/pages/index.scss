@@ -2,10 +2,18 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
+body {
+  background-image: url("/images/event/shefjam5/banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #10121E;
+  background-position: 0 200px;
+}
+
 .intro {
   padding: 20px;
 
-  background: $cs-dark1;
+  /* background: $cs-dark1; */
   border-radius: 5px;
 
   color: $cs-green3;
@@ -21,67 +29,12 @@
 }
 
 .shefjam {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 20rem;
 
-  @include mq(small) {
-    flex-direction: column;
-  }
-
-  > div {
-    &:first-child {
-      flex: 3;
-      padding-right: 40px;
-
-      text-align: right;
-      font-family: Aleo;
-      font-weight: 300;
-
-      @include mq(small) {
-        margin-bottom: 1rem;
-        padding-right: 0;
-
-        text-align: center;
-      }
-
-      h2 {
-        @include responsive-font(6vw, 2.2rem, 4rem);
-        margin: 0;
-        font-weight: 300;
-      }
-
-      p {
-        @include responsive-font(4vw, 1.5rem, 2.5rem);
-        margin: 0;
-      }
-    }
-
-    &:last-child {
-      flex: 3;
-
-      text-align: left;
-
-      @include mq(small) {
-        text-align: center;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        max-height: 250px;
-
-        @include mq(small) {
-          max-width: 80vw;
-          max-height: 50vw;
-          width: 100%;
-          height: 50vw;
-
-        }
-      }
-    }
-
+  p {
+    @include responsive-font(4vw, 1.5rem, 2.5rem);
+    font-family: Aleo;
+    text-align: center;
   }
 }
 
