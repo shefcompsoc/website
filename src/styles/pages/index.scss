@@ -8,6 +8,11 @@ body {
   background-repeat: no-repeat;
   background-color: #10121E;
   background-position: 0 calc(250px - 5vw);
+
+  @include mq(mobile) {
+    background-size: 200%;
+    background-position: center calc(275px - 5vw);
+  }
 }
 
 .intro {
@@ -30,6 +35,10 @@ body {
 
 .shefjam {
   padding-top: 22.5vw;
+
+  @include mq(mobile) {
+    padding-top: 50vw;
+  }
 
   p {
     @include responsive-font(4vw, 1.5rem, 2.5rem);

@@ -4,13 +4,9 @@ append styles
   link(rel="stylesheet", type="text/css", href="/styles/event.css")
 
 block main
-  h1.title: block main-heading
-
   div.flex
     aside
-      section.icon
-        block icon
-
+      block icon
 
       section.venue
         block venue
@@ -34,4 +30,5 @@ block main
           h2 Tickets
 
     div.info
+      h1.title: block main-heading
       block info

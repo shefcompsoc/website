@@ -154,7 +154,7 @@ const gamejamdb = [
 ]
 
 const codetoastdb = [
-  {moy: 3, dom: 22, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[2]', link: { text: 'Facebook Event', url: 'https://www.f acebook.com/events/1366346406721676/'}},
+  {moy: 3, dom: 22, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[2]', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1366346406721676/'}},
   {moy: 3, dom: 8, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[1]', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/1897412310542946/'}},
   {moy: 2, dom: 22, year: 2017, type: 'codetoast', title: 'Programming Challenge: Episode[0]', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/263678810721242/'}},
   {moy: 12, dom: 12, year: 2012, type: 'codetoast', title: 'Coding Competition', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/256100537849969/'}}
