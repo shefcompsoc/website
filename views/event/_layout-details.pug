@@ -1,4 +1,4 @@
-extends ../layout
+extends ../_layout
 
 append styles
   link(rel="stylesheet", type="text/css", href="/styles/event/event.css")
@@ -8,6 +8,10 @@ block main
 
   div.flex
     aside
+      section.icon
+        block icon
+
+
       section.venue
         block venue
           h2 Venue
