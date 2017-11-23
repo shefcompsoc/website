@@ -19,7 +19,12 @@ const paths = {
   markup: ['./views/**/*.pug'],
   styles: ['./src/styles/**/*.{sass,scss}'],
   fonts: ['./src/fonts/**/*.{woff,woff2,ttf,otf,eot}'],
-  stylesEntry: ['./src/styles/style.scss', './src/styles/pages/**/*.scss', './src/styles/vendor/**/*.scss'],
+  stylesEntry: [
+    './src/styles/style.scss',
+    './src/styles/pages/**/*.scss',
+    './src/styles/event/**/*.scss',
+    './src/styles/vendor/**/*.scss'
+  ],
   scripts: ['./src/scripts/**/*.js'],
   images: ['./src/images/**/*.{png,jpg,svg,ico}'],
   favicons: ['./src/images/favicon.{ico,png}'],
@@ -33,9 +38,13 @@ const paths = {
 }
 
 // Clean Tasks
-gulp.task('clean:all', ['clean:styles', 'clean:scripts', 'clean:images', 'clean:fonts'], () => {
-  return
-})
+gulp.task(
+  'clean:all',
+  ['clean:styles', 'clean:scripts', 'clean:images', 'clean:fonts'],
+  () => {
+    return
+  }
+)
 
 gulp.task('clean:styles', () => {
   return del(paths.stylesOut)
@@ -63,94 +72,115 @@ gulp.task('clean:files', () => {
 
 // Build Tasks
 gulp.task('styles:dist', ['clean:styles'], () => {
-  return gulp.src(paths.stylesEntry)
-    .pipe(sass({
-      outputStyle: 'compact'
-    }).on('error', sass.logError))
-    // .pipe(purifycss([...paths.markup, ...paths.scripts]))
-    .pipe(autoprefixer({
-      browsers: ['last 3 versions']
-    }))
-    .pipe(cleancss({
-      format: 'keep-breaks'
-    }))
-    .pipe(gulp.dest(paths.stylesOut))
+  return (
+    gulp
+      .src(paths.stylesEntry)
+      .pipe(
+        sass({
+          outputStyle: 'compact'
+        }).on('error', sass.logError)
+      )
+      // .pipe(purifycss([...paths.markup, ...paths.scripts]))
+      .pipe(
+        autoprefixer({
+          browsers: ['last 3 versions']
+        })
+      )
+      .pipe(
+        cleancss({
+          format: 'keep-breaks'
+        })
+      )
+      .pipe(gulp.dest(paths.stylesOut))
+  )
 })
 
 gulp.task('styles', ['clean:styles'], () => {
-  return gulp.src(paths.stylesEntry)
+  return gulp
+    .src(paths.stylesEntry)
     .pipe(sourcemaps.init())
-    .pipe(sass({
-      outputStyle: 'compact'
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 3 versions']
-    }))
+    .pipe(
+      sass({
+        outputStyle: 'expanded'
+      }).on('error', sass.logError)
+    )
+    .pipe(
+      autoprefixer({
+        browsers: ['last 3 versions']
+      })
+    )
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.stylesOut))
     .pipe(livereload())
 })
 
 gulp.task('markup', () => {
-  return gulp.src(paths.markup)
+  return gulp
+    .src(paths.markup)
     .pipe(cache('markup'))
     .pipe(livereload())
 })
 
 gulp.task('images:dist', ['clean:images', 'favicons:dist'], () => {
-  return gulp.src(paths.images)
-  .pipe(imagemin())
-  .pipe(gulp.dest(paths.imagesOut))
+  return gulp
+    .src(paths.images)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.imagesOut))
 })
 
 gulp.task('images', ['clean:images', 'favicons'], () => {
-  return gulp.src(paths.images)
+  return gulp
+    .src(paths.images)
     .pipe(gulp.dest(paths.imagesOut))
     .pipe(livereload())
 })
 
 gulp.task('favicons:dist', ['clean:favicons'], () => {
-  return gulp.src(paths.favicons)
-  .pipe(imagemin())
-  .pipe(gulp.dest(paths.dist))
+  return gulp
+    .src(paths.favicons)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.dist))
 })
 
 gulp.task('favicons', ['clean:favicons'], () => {
-  return gulp.src(paths.favicons)
+  return gulp
+    .src(paths.favicons)
     .pipe(gulp.dest(paths.dist))
     .pipe(livereload())
 })
 
 gulp.task('files:dist', ['clean:files'], () => {
-  return gulp.src(paths.files)
-    .pipe(gulp.dest(paths.filesOut))
+  return gulp.src(paths.files).pipe(gulp.dest(paths.filesOut))
 })
 
 gulp.task('files', ['clean:files'], () => {
-  return gulp.src(paths.files)
+  return gulp
+    .src(paths.files)
     .pipe(gulp.dest(paths.filesOut))
     .pipe(livereload())
 })
 
 gulp.task('scripts:dist', ['clean:scripts'], () => {
-  return gulp.src(paths.scripts)
-    .pipe(gulp.dest(paths.scriptsOut))
+  return gulp.src(paths.scripts).pipe(gulp.dest(paths.scriptsOut))
 })
 
 gulp.task('scripts', ['clean:scripts'], () => {
-  return gulp.src(paths.scripts)
+  return gulp
+    .src(paths.scripts)
     .pipe(gulp.dest(paths.scriptsOut))
     .pipe(livereload())
 })
 
 gulp.task('fonts:dist', ['clean:fonts'], () => {
-  return gulp.src(paths.fonts)
+  return gulp
+    .src(paths.fonts)
     .pipe(flatten())
     .pipe(gulp.dest(paths.fontsOut))
 })
 
 gulp.task('fonts', ['clean:fonts'], () => {
-  return gulp.src(paths.fonts)
+  return gulp
+    .src(paths.fonts)
     .pipe(flatten())
     .pipe(gulp.dest(paths.fontsOut))
     .pipe(livereload())
@@ -168,7 +198,13 @@ gulp.task('observe', () => {
 })
 
 gulp.task('clean', ['clean:all'])
-gulp.task('build:dist', ['styles:dist', 'images:dist', 'fonts:dist', 'scripts:dist', 'files:dist'])
+gulp.task('build:dist', [
+  'styles:dist',
+  'images:dist',
+  'fonts:dist',
+  'scripts:dist',
+  'files:dist'
+])
 gulp.task('build', ['styles', 'images', 'fonts', 'scripts', 'files', 'markup'])
 gulp.task('watch', ['build', 'observe'])
 gulp.task('default', ['watch'])

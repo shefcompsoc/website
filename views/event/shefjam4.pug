@@ -1,0 +1,59 @@
+html
+  head
+    title ShefJam 4
+
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
+
+    link(rel='stylesheet' href='/styles/shefjam4/main.css')
+    //[if lte IE 8]
+      link(rel='stylesheet' href='/styles/shefjam4/ie8.css')
+    //[if lte IE 9]
+      link(rel='stylesheet' href='/styles/shefjam4/ie9.css')
+
+    //[if lte IE 8]
+      script(src='/scripts/event/shefjam4/ie/html5shiv.js')
+
+body
+  // Header
+  header#header
+    h1 ShefJam 4
+    p Sheffield CompSoc's 30-hour game jam
+    p.
+      March 25th 2016, 11am start #[br]
+      Diamond Computer Room 3
+
+  // Buttons
+  section
+    a.button(href='http://shefjam4.eventbrite.co.uk/') Buy Tickets
+    a.button.alt(href='https://www.facebook.com/events/658255084384976/') Facebook Event
+    a.button.alt(href='https://goo.gl/forms/ejHpV7mCrBckJxxM2') Find a Team
+
+  // Footer
+  footer#footer
+    ul.icons
+      li
+        a.icon.fa-slack(href='https://shefcompsoc.slack.com')
+          span.label Slack
+      li
+        a.icon.fa-github(href='https://github.com/shefcompsoc')
+          span.label GitHub
+      li
+        a.icon.fa-twitter(href='https://twitter.com/shefcompsoc/')
+          span.label Twitter
+      li
+        a.icon.fa-facebook(href='https://www.facebook.com/shefcompsoc/')
+          span.label Facebook
+      li
+        a.icon.fa-instagram(href='https://www.instagram.com/shefcompsoc/')
+          span.label Instagram
+    ul.copyright
+      li &copy; Sheffield CompSoc 2016-2017.
+      li
+        | Credits:
+        a(href='http://html5up.net') HTML5 UP
+
+  // Scripts
+  //[if lte IE 8]
+    script(src='/scripts/event/shefjam4/ie/respond.min.js')
+  script(src='/scripts/event/shefjam4/main.js')
