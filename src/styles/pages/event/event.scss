@@ -74,6 +74,18 @@
     }
   }
 
+  .icon {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 380px;
+
+      border: 1px solid $cs-light5;
+      border-radius: 5px;
+    }
+  }
+
   .start {
     flex: 1 1 400px;
 
@@ -81,6 +93,16 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+
+    .start-year {
+      display: inline-block;
+
+      writing-mode: vertical-lr;
+      font-size: 1.5rem;
+      line-height: 1;
+
+      transform: translateX(-4px) rotateZ(180deg);
+    }
 
     time {
       flex: 0 0 75px;

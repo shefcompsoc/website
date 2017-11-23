@@ -115,7 +115,7 @@ const shefjams = {
   },
 
   shefjam5: async ctx => {
-    debug('redirecting shefjam5 page')
+    debug('rendering shefjam5 page')
     await ctx.render('event/shefjamv')
   }
 }
