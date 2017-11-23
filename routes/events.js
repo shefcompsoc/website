@@ -22,11 +22,11 @@ module.exports = router => {
 
   // shefjam event details
   router.get('/event/shefjam3', shefjams.shefjam3)
-  router.get('/shefjam3', (ctx) => ctx.redirect('/event/shefjam3'))
+  router.get('/shefjam3', ctx => ctx.redirect('/event/shefjam3'))
   router.get('/event/shefjam4', shefjams.shefjam4)
-  router.get('/shefjam4', (ctx) => ctx.redirect('/event/shefjam4'))
+  router.get('/shefjam4', ctx => ctx.redirect('/event/shefjam4'))
   router.get('/event/shefjamv', shefjams.shefjam5)
-  router.get('/shefjamv', (ctx) => ctx.redirect('/event/shefjamv'))
+  router.get('/shefjamv', ctx => ctx.redirect('/event/shefjamv'))
 
   // 2017-18 event details
   router.get('/event/2017-18/linux-essentials', ev2017.linuxEssentials)
@@ -116,7 +116,7 @@ const shefjams = {
 
   shefjam5: async ctx => {
     debug('redirecting shefjam5 page')
-    ctx.redirect('https://www.facebook.com/events/796289680543322/')
+    await ctx.render('event/shefjamv')
   }
 }
 
