@@ -101,13 +101,15 @@
     align-items: center;
 
     .start-year {
+      width: 36px;
+      flex: 0 0 auto;
       display: inline-block;
 
       writing-mode: vertical-lr;
       font-size: 1.5rem;
-      line-height: 1;
+      line-height: 1.2;
 
-      transform: translateX(-4px) rotateZ(180deg);
+      transform: translate(-4px) rotate(180deg);
     }
 
     time {
@@ -145,7 +147,10 @@
     }
 
     .details {
+      flex: 1 0 auto;
       margin-left: 1rem;
+
+      overflow-wrap: none;
 
       .time {
         font-size: 1.6rem;
