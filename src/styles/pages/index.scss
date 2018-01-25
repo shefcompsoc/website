@@ -2,23 +2,10 @@
 @import '../variables/sizes';
 @import '../variables/mixins';
 
-body {
-  background-image: url("/images/event/shefjam5/banner.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #10121E;
-  background-position: 0 calc(250px - 5vw);
-
-  @include mq(mobile) {
-    background-size: 200%;
-    background-position: center calc(275px - 5vw);
-  }
-}
-
 .intro {
   padding: 20px;
 
-  /* background: $cs-dark1; */
+  background: $cs-dark1;
   border-radius: 5px;
 
   color: $cs-green3;
