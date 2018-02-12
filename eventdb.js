@@ -100,6 +100,7 @@ const process = db => {
 // }
 
 const socialsdb = [
+  {moy: 2, dom: 14, year: 2018, type: 'social', title: 'Red Deer Social v1.0', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1778686535496923/'}},
   {moy: 11, dom: 23, year: 2017, type: 'social', title: 'Bierkeller Social', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/553856751630361/'}},
   {moy: 9, dom: 28, year: 2017, type: 'social', title: 'Freshers Bar Crawl', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/832116870282808'}},
   {moy: 2, dom: 3, year: 2017, type: 'social', title: 'Winter Party', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/227906127669634/'}},
@@ -161,6 +162,11 @@ const codetoastdb = [
 ]
 
 const tutorialsdb = [
+  {moy: 3, dom: 7, year: 2018, type: 'tutorial', title: 'Web Hacking Fundamentals - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/162247984428070/'}},
+  {moy: 2, dom: 28, year: 2018, type: 'tutorial', title: 'Blender 3D Design - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/390178224763636/'}},
+  {moy: 2, dom: 21, year: 2018, type: 'tutorial', title: 'Front-end Showdown - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/325102314645029/'}},
+  {moy: 2, dom: 14, year: 2018, type: 'tutorial', title: 'PC Building - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/755280394660904/'}},
+
   {moy: 11, dom: 6, year: 2017, type: 'tutorial', title: 'Advanced Git', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/661894257343238/'}},
   {moy: 10, dom: 30, year: 2017, type: 'tutorial', title: 'Git Basics', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1749878045313985/'}},
   {moy: 10, dom: 23, year: 2017, url: '/event/2017-18/linux-essentials', type: 'tutorial', title: 'Linux Essentials: Week 4', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/350658985375745/'}},
