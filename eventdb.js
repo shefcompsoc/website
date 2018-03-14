@@ -100,6 +100,8 @@ const process = db => {
 // }
 
 const socialsdb = [
+  {moy: 3, dom: 24, year: 2018, type: 'social', title: 'Bletchley Park + NMOC Trip', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1609094459186772/'}},
+  {moy: 3, dom: 14, year: 2018, type: 'social', title: 'CompSoc Social - Bar One', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/139942050168190/'}},
   {moy: 3, dom: 7, year: 2018, type: 'social', title: 'CompSoc Social - Beehive', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1892987090734024/'}},
   {moy: 2, dom: 21, year: 2018, type: 'social', title: 'CompSoc Social - Cavendish', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/188814138547527/'}},
   {moy: 2, dom: 14, year: 2018, type: 'social', title: 'Red Deer Social v1.0', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1778686535496923/'}},
