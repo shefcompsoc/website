@@ -197,7 +197,6 @@ const mentoringdb = [
 ]
 
 const balldb = [
-  {moy: 5, dom: 4, year: 2018, type: 'ball', title: 'CompSci Broadway Ball 2018', link: { text: 'Facebook Event & Tickets', url: 'https://www.facebook.com/events/2052335898318984/'}},
   {moy: 6, dom: 5, year: 2017, type: 'ball', title: 'CompSci Summer Ball 2017', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/378767122524684/'}},
   {moy: 5, dom: 20, year: 2016, type: 'ball', title: 'Masquerade Summer Ball', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/139368646462411/'}}
 ]

@@ -21,18 +21,18 @@
 }
 
 body {
-  background: #171717; // ball theme
+  /* background: #171717; // ball theme */
 }
 
 .shefjam {
-  padding-top: 50%;
+  /* padding-top: 50%; */
 
-  background: url("/images/event/ball-2018/ball-plain.png") no-repeat center top transparent;
-  background-size: contain;
+  /* background: url("/images/event/ball-2018/ball-plain.png") no-repeat center top transparent; */
+  /* background-size: contain; */
 
-  @include mq(mobile) {
+  /* @include mq(mobile) {
     padding-top: 50vw;
-  }
+  } */
 
   p {
     @include responsive-font(4vw, 1.5rem, 2.5rem);
