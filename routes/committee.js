@@ -16,23 +16,20 @@ const index = async ctx => {
 
 const committee = [
   {
-    name: 'Rob Ede',
+    name: 'Russell Penn',
     role: 'President',
     avatar: 'rob',
     social: {
-      twitter: 'robjtede',
-      instagram: 'robjtede',
-      github: 'robjtede',
-      facebook: 'robjtede'
+      facebook: 'profile.php?id=100009496727269'
     },
     bio: `
-      <p>Hey. Rob. Masters student and avid web developer.</p>
-      <p>When I became President of this growing society, I promised to keep the good work of the previous years' committees going; putting on engaging regular meet ups and exciting large events for members.</p>
-      <p>This year, I'll be endeavouring to grow the society and make it easier for you to find placements and career opportunities, too.</p>
+      <p>Hello!</p>
+      <p>It's my pleasure to be the president of CompSoc for this year</p>
+      <p>This year, I hope to continue the great work this society is doing and continue to grow it and appeal to more people!</p>
     `
   },
   {
-    name: 'Jodi Swift',
+    name: 'Alex Yates',
     role: 'Secretary',
     avatar: 'jodi',
     social: {
@@ -55,7 +52,7 @@ const committee = [
     `
   },
   {
-    name: 'Russell Penn',
+    name: 'Barnabas',
     role: 'Events <nobr>Co-ordinator</nobr>',
     avatar: 'russell',
     social: {},
