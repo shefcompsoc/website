@@ -100,6 +100,7 @@ const process = db => {
 // }
 
 const socialsdb = [
+  {moy: 10, dom: 12, year: 2018, type: 'social', title: 'Freshers Bar Crawl', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/288697245296870/'}},
   {moy: 3, dom: 24, year: 2018, type: 'social', title: 'Bletchley Park + NMOC Trip', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1609094459186772/'}},
   {moy: 3, dom: 14, year: 2018, type: 'social', title: 'CompSoc Social - Bar One', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/139942050168190/'}},
   {moy: 3, dom: 7, year: 2018, type: 'social', title: 'CompSoc Social - Beehive', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1892987090734024/'}},
@@ -166,6 +167,7 @@ const codetoastdb = [
 ]
 
 const tutorialsdb = [
+  {moy: 10, dom: 3, year: 2018, type: 'tutorial', title: 'Programming Basics - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/225574341650833/'}},
   {moy: 3, dom: 21, year: 2018, type: 'tutorial', title: 'Blender 3D Design - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/390178224763636/'}},
   {moy: 3, dom: 14, year: 2018, type: 'tutorial', title: 'Front-end Showdown - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/325102314645029/'}},
   {moy: 3, dom: 7, year: 2018, type: 'tutorial', title: 'Web Hacking Fundamentals - Workshop', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/162247984428070/'}},
