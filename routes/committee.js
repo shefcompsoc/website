@@ -16,63 +16,43 @@ const index = async ctx => {
 
 const committee = [
   {
-    name: 'Russell Penn',
+    name: 'Alex Yates',
     role: 'President',
-    avatar: 'russell',
+    avatar: 'alex',
     social: {
-      facebook: 'profile.php?id=100009496727269'
+      facebook: 'alex.yates.35'
     },
     bio: `
       
     `
   },
   {
-    name: 'Alex Yates',
-    role: 'Secretary',
-    avatar: 'alex',
-    social: {
-      facebook: 'alex.yates.35'
-    },
-    bio: `<p></p>`
-  },
-  {
-    name: 'Barnabas Hermesz',
-    role: 'Events <nobr>Co-ordinator</nobr>',
-    avatar: 'barnabas',
-    social: {
-      facebook: 'barnabas.hermesz'
-    },
-    bio: `
-      <p></p>
-    `
-  },
-  {
-    name: 'Rafael Cavagnoli',
-    role: 'Treasurer',
-    avatar: 'rafael',
-    social: {
-      facebook: 'rafael.cavagnoli'
-    },
-    bio: `<p></p>`
-  },
-  {
-    name: 'Tiggy Carr',
-    role: 'Inclusions Officer',
-    avatar: 'tiggy',
-    social: {
-      facebook: 'norelevances'
-    },
-    bio: `<p></p>`
-  },
-  {
-    name: 'Bhavesh Prajapat',
-    role: 'Publicity Officer',
+    name: 'Bhav Prajapat',
+    role: 'Vice President and Secretary',
     avatar: 'bhav',
     social: {
       facebook: 'bhaveshprajapat99'
     },
+    bio: `<p></p>`
+  },
+  {
+    name: 'Chloe Jambor',
+    role: 'Events Co-ordinator and Inclusions Officer',
+    avatar: 'chloe',
+    social: {
+      facebook: 'chloe.jambor'
+    },
     bio: `
       <p></p>
     `
+  },
+  {
+    name: 'Simon Bone',
+    role: 'Treasurer',
+    avatar: 'simon',
+    social: {
+      facebook: 'simon.bone.9'               
+    },
+    bio: `<p></p>`
   },
 ]
