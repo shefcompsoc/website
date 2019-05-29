@@ -59,6 +59,11 @@
 - Run `npm run build` to re-build the JS/CSS/image assets (but you can skip this step if you're sure these assets have not changed)
 - Run `systemctl restart shefcompsocuk` to restart the server (there is a custom systemd service, **DON'T** run `npm start`)
 
+### Debugging errors on server
+- Restart with `sudo reboot`. This just makes the next step quicker and easier.
+- As root, in any directory, run `sudo journalctl`. This will show you all logs from all systemd services *since the server was last started*.
+- Use the spacebar to jump quickly to the last items in the log. These will be the Node.JS server errors.
+- The errors here should be helpful in debugging the issues encountered, especially 500 errors which shut down the entire website.
 
 ## Contributors
 - Rob Ede
