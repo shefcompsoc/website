@@ -156,7 +156,7 @@ const socialsdb = [
 ]
 
 const gamejamdb = [
-  {moy: 05, dom: 4, year: 2019, url: '/events/271867533524429/', type: 'gamejam', title: 'ShefJam VI', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/271867533524429/'}},
+  {moy: 5, dom: 4, year: 2019, url: '/events/271867533524429/', type: 'gamejam', title: 'ShefJam VI', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/271867533524429/'}},
   {moy: 11, dom: 25, year: 2017, url: '/event/shefjamv', type: 'gamejam', title: 'ShefJam V', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/796289680543322/'}},
   {moy: 3, dom: 25, year: 2017, url: '/event/shefjam4', type: 'gamejam', title: 'ShefJam 4', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/658255084384976/'}},
   {moy: 11, dom: 19, year: 2016, url: '/event/shefjam3', type: 'gamejam', title: 'ShefJam 3', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1341879175852841/'}},
