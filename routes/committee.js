@@ -20,7 +20,9 @@ const committee = [
     role: 'President',
     avatar: 'alex',
     social: {
-      facebook: 'alex.yates.35'
+      facebook: 'alex.yates.35',
+      instagram: 'faxittoalex',
+      github: 'adyates1'
     },
     bio: `
       
@@ -31,7 +33,8 @@ const committee = [
     role: 'Vice President and Secretary',
     avatar: 'bhav',
     social: {
-      facebook: 'bhaveshprajapat99'
+      facebook: 'bhaveshprajapat99',
+      instagram: 'bhaveshp99'
     },
     bio: `<p></p>`
   },
@@ -51,7 +54,8 @@ const committee = [
     role: 'Treasurer',
     avatar: 'simon',
     social: {
-      facebook: 'simon.bone.9'               
+      facebook: 'simon.bone.9',
+      github: 'SimonCBone'
     },
     bio: `<p></p>`
   },
