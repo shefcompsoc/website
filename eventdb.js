@@ -100,7 +100,7 @@ const process = db => {
 // }
 
 const socialsdb = [
-  {moy: 15, dom: 5, year: 2019, type: 'social', title: 'National Video Game Museum Trip', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/424665224974003/'}},
+  {moy: 5, dom: 15, year: 2019, type: 'social', title: 'National Video Game Museum Trip', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/424665224974003/'}},
   {moy: 2, dom: 16, year: 2019, type: 'social', title: "Refresher's Pop Tarts", link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/257981401817608/'}},
   {moy: 11, dom: 12, year: 2018, type: 'social', title: 'Bierkeller Quiz Night', link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/1437962646348750/'}},
   {moy: 12, dom: 14, year: 2018, type: 'social', title: "CompSoc Xmas Meal at Nando's", link: {text: 'Facebook Event', url: 'https://www.facebook.com/events/484393575300784/'}},
@@ -207,7 +207,7 @@ const mentoringdb = [
 ]
 
 const balldb = [
-  {moy: 10, dom: 5, year: 2019, type: 'ball', title: 'CompSoc Summer Ball 2019', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/2203831719696708/'}},
+  {moy: 5, dom: 10, year: 2019, type: 'ball', title: 'CompSoc Summer Ball 2019', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/2203831719696708/'}},
   {moy: 6, dom: 5, year: 2017, type: 'ball', title: 'CompSci Summer Ball 2017', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/378767122524684/'}},
   {moy: 5, dom: 20, year: 2016, type: 'ball', title: 'Masquerade Summer Ball', link: { text: 'Facebook Event', url: 'https://www.facebook.com/events/139368646462411/'}}
 ]
