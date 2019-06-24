@@ -18,7 +18,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-purifycss": "^0.2.0",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^2.6.5",
     "imagemin": "^5.3.1",
     "imagemin-gifsicle": "^5.2.0",
     "imagemin-jpegtran": "^5.0.2",
@@ -35,10 +35,10 @@
     "koa-router": "^7.4.0",
     "koa-session": "^5.8.1",
     "koa-views": "^6.1.4",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^2.0.4"
   },
   "devDependencies": {
-    "nodemon": "^1.17.1"
+    "nodemon": "^1.19.1"
   },
   "scripts": {
     "start:dev": "NODE_ENV=development nodemon -d 2 app.js",
