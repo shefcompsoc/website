@@ -21,5 +21,5 @@ const register = async ctx => {
 
 const membership = async ctx => {
   debug('redirecting to SU membership')
-  ctx.redirect('https://su.sheffield.ac.uk/groups/computer-science-society-4dd7')
+  ctx.redirect('https://yoursu.sheffield.ac.uk/groups/computer-science-society-4dd7/join')
 }
