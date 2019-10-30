@@ -59,4 +59,22 @@ const committee = [
     },
     bio: `<p></p>`
   },
+  {
+    name: 'Sam West',
+    role: 'Events Co-ordinator',
+    avatar: 'sam',
+    social: {
+      facebook: 'sam.west.7503314'
+    },
+    bio: `<p></p>`
+  },
+  {
+    name: 'Rachel Smith',
+    role: 'Publicity Officer',
+    avatar: 'rachel',
+    social: {
+      facebook: '100000000910318'
+    },
+    bio: `<p></p>`
+  },
 ]
