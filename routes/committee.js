@@ -68,13 +68,4 @@ const committee = [
     },
     bio: `<p></p>`
   },
-  {
-    name: 'Rachel Smith',
-    role: 'Publicity Officer',
-    avatar: 'rachel',
-    social: {
-      facebook: '100000000910318'
-    },
-    bio: `<p></p>`
-  },
 ]
